@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "title": "Kidest Silase",
+      "image": "assets/Image/trinity.jpg",
+      "sub_categories": [
+        {
+            "title": "Tir Silase",
+            "image": "assets/Image/image1.png",
+            "fileLocation": ""
+          }
+        ,
+         {
+            "title": "Hamle Silase",
+            "image": "assets/Image/image1.png",
+            "fileLocation": ""
+
+        },
+         {
+            "title": "Misgana Silase",
+            "image": "assets/Image/image1.png",
+            "fileLocation": ""
+
+        }
+      ]
+    },
+    {
+      "title": "Kidest Kidanmhret",
+      "image": "assets/Image/kidanmhret.jpg",
+      "sub_categories": [
+    {
+        "title": "Yekatit Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+      }, {
+        "title": "Nehase Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+    },
+   {
+        "title": "Misgana Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+      }
+       ]
+    },
+    {
+      "title": "Kidus Gebriel",
+      "image": "assets/Image/gebriel.png",
+      "sub_categories": [
+    {
+        "title": "Tahsas Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+      },
+    {
+        "title": "Hamle Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+      },
+    {
+        "title": "Misgana Silase",
+        "image": "assets/Image/image1.png",
+        "fileLocation": ""
+      }
+      ]
+    },
+    {
+      "title": "Kidusan Meleakt",
+      "image": "assets/Image/angels.jpg",
+       "fileLocation": "",
+      "sub_categories":[]
+    },
+    {
+      "title": "Bealat Mezmur",
+      "image": "assets/Image/beal.png",
+      "fileLocation": "",
+      "sub_categories":[]
+    },
+    {
+      "title": "Nesha Mezmur",
+      "image": "assets/Image/dawit.png",
+      "fileLocation": "",
+      "sub_categories":[]
+    },
+    {
+      "title": "Kidanesh Ayalkm",
+      "image": "assets/Image/blueLogo.png",
+      "fileLocation": "",
+      "sub_categories":[]
+    }
+  ]
+}

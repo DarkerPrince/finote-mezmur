@@ -1,0 +1,89 @@
+{
+  "version": 1.0,
+  "song": [
+    {
+      "id": "4578",
+      "title": "ማርያም አርጋለች",
+      "major": null,
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics":{
+          "lyrics": null,
+          "translation": null
+        },
+        "longLyrics": {
+          "chorus": "\"ማርያም አርጋለች ወደገነት /፬/\\nየሰማይ መላዕክት እያረጓጓት /፪/\\nእሷም እንደ ልጅዋ ተነስታለች /፪/",
+          "verse":[
+            "ማርያም አርጋለች ወደገነት /፬/\nየሰማይ መላዕክት እያረጓጓት /፪/\nእሷም እንደ ልጅዋ ተነስታለች /፪/",
+            "\n\nየአባትዋ ዳዊትን ትንቢት ልትፈፅም \n ወርቁን ተጎናጽፋ በቀኙ ልትቆም \nወደ አምላክ ማደሪያ ወደሰማያት\nአረገች በእልልታ ድንግል የእኛ እናት\nአርጋለችማርያምተነስታለች ሰማያት",
+            "\n\nሰማያት ይከፈት ደመናም ይዘርጋ \nዝምታም አይኖርም እመአምላክ አርጋ\nአንደበት ይከፈት ማርያምን ያመስግን\nከዘለዓለም ጥፋት በምልጃዋ እንድንድን \nአርጋለች ማርያም ተነስታለች",
+            "\n\nየአምላክ ማደሪያ ያቅዱስ ሥጋሽ \nአምላክን ያቀፉት እነዛ እጆችሽ \nሙስና መቃብር ይዞ አላስቀረሽም\nተነስተዋል በክብር በእምነት አየናቸው\nአርጋለች ማርያም ተነስታለች",
+            "\n\nሐዋርያት አበው እንኳን ደስአላችሁ\nበክብር አረገች ማርያም ሞገሳችሁ\nወደ ዓለምም ውጡ ስበኗን ይዛችሁ\nየድንግል እርገቷን ንገሩ ተግታችሁ\nአርጋለች ማርያም ተነስታለች\n"
+          ]
+
+        }
+      },
+      "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
+      "repentanceSong": null,
+      "others": "የሕፃናት",
+      "about": ["የእመቤታችን","የመላእክት"],
+      "Trinity_Song": {
+        "Tir": true,
+        "Hamle": true,
+        "Mesgana": true
+      },
+      "St_Mary_Song": {
+        "Yekatit": true,
+        "Nehase": true,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": true,
+        "Hamle": true,
+        "Mesgana": true
+      },
+      "angels": ["ቅዱስ ሚካኤል","ቅዱስ ገብርኤል","ቅዱስ ገብርኤል","ቅዱስ ሩፋኤል","ቅዱስ ራጉኤል","ቅዱስ ፍኑኤል","ቅዱስ ኡራኤል"],
+      "main_holidays": ["ጥምቀት","ልደት"],
+      "minor_holidays": ["መስቀል","ስብከት"]
+    },
+    {
+      "id": "4579",
+      "title":"የሰማይ መላዕክት",
+      "major": null,
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics":{
+          "lyrics": "\"ማርያም አርጋለች ወደገነት /፬/\nየሰማይ መላዕክት እያረጓጓት /፪/\nእሷም እንደ ልጅዋ ተነስታለች /፪/",
+          "translation":  "የአባትዋ ዳዊትን ትንቢት ልትፈፅም \n ወርቁን ተጎናጽፋ በቀኙ ልትቆም \nወደ አምላክ ማደሪያ ወደሰማያት\nአረገች በእልልታ ድንግል የእኛ እናት\nአርጋለች ማርያም ተነስታለች ሰማያት"
+        },
+        "longLyrics": {
+          "chorus": null,
+          "verse":[
+          ]
+        }
+      },
+      "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
+      "repentanceSong": null,
+      "others": "የሕፃናት",
+      "about": ["የእመቤታችን","የመላእክት"],
+      "Trinity_Song": {
+        "Tir": true,
+        "Hamle": true,
+        "Mesgana": true
+      },
+      "St_Mary_Song": {
+        "Yekatit": true,
+        "Nehase": true,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": true,
+        "Hamle": true,
+        "Mesgana": true
+      },
+      "angels": ["ቅዱስ ሚካኤል","ቅዱስ ገብርኤል","ቅዱስ ገብርኤል","ቅዱስ ሩፋኤል","ቅዱስ ራጉኤል","ቅዱስ ፍኑኤል","ቅዱስ ኡራኤል"],
+      "main_holidays": ["ጥምቀት","ልደት"],
+      "minor_holidays": ["መስቀል","ስብከት"]
+    }
+  ]
+}
