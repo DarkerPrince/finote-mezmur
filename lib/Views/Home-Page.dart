@@ -2,6 +2,7 @@ import 'package:finotemezmur/Views/Listing-Page.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:finotemezmur/Model/category.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,15 +20,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   // List of pages to switch between
-  List<dynamic> _data = [];
+  List<Category> _data = [];
 
   Future<void> loadJson() async {
     final String response =
     await rootBundle.loadString('assets/Mezmur/categories.json');
     final Map<String,dynamic> jsonData = json.decode(response);
-    print(jsonData);
+    List<Category> categoryList = (jsonData['categories'] as List<dynamic>)
+        .map((category) => Category.fromJson(category))
+        .toList();
+    // print(jsonData);
     setState(() {
-      _data = jsonData['categories'];
+      _data = categoryList;
     });
   }
 
@@ -80,9 +84,7 @@ class _HomePageState extends State<HomePage> {
                 children: List.generate(_data.length, (index) {
                   return InkWell(
                     onTap: () {
-                      List<Map<String, dynamic>> songs = (_data[index]['sub_categories'] as List).map((item) => Map<String, dynamic>.from(item)).toList();
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(tabs: songs,categoryName: _data[index]['title']??"")),
-                      );
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(tabs: _data[index].subCategories,categoryName: _data[index].title??"")));
                     },
                     child: Card(
                       elevation: 16,
@@ -97,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text( _data[index]['title'].toString()??"" ,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                              Text( _data[index].title.toString()??"" ,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
                               const Text("32 Songs"),
                             ],
                           ),
@@ -105,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Expanded(
                             child: Image.asset(
-                              _data[index]['image'],
+                              _data[index].image,
                               fit: BoxFit.cover,
                               alignment: Alignment.topCenter,
                               width: double.infinity,

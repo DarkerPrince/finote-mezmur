@@ -4,9 +4,14 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:finotemezmur/Views/Lyrics-Show.dart';
 import 'package:finotemezmur/Views/Search-Page.dart';
 import 'package:finotemezmur/CONSTANT/constant.dart';
+import 'package:finotemezmur/Model/mezmur.dart';
+import 'package:finotemezmur/Model/Lyrics.dart';
+import 'package:finotemezmur/Model/ShortLyrics.dart';
+import 'package:finotemezmur/Model/LongLyrics.dart';
+import 'package:finotemezmur/Model/subCategory.dart';
 
 class ListPage extends StatefulWidget {
-  final List<Map<String, dynamic>> tabs;
+  final List<SubCategory> tabs;
   final String categoryName;
   const ListPage({super.key, required this.tabs,required this.categoryName});
 
@@ -17,7 +22,7 @@ class ListPage extends StatefulWidget {
 class _ListPageState extends State<ListPage>
     with SingleTickerProviderStateMixin {
   bool _showSheet = false;
-  Map<String, dynamic> _selectedMezmur = {};
+  late Mezmur _selectedMezmur;
   double _sheetSize = 1;
   final DraggableScrollableController _controller =
       DraggableScrollableController();
@@ -79,15 +84,19 @@ class _ListPageState extends State<ListPage>
     );
   }
 
-  List<dynamic> _data = [];
+  List<Mezmur> _data = [];
 
   Future<void> loadJson() async {
     final String response =
         await rootBundle.loadString('assets/Mezmur/kidanmhret.json');
     final Map<String, dynamic> jsonData = json.decode(response);
-    print(jsonData);
+
+    List<Mezmur> mezmurList = (jsonData['song'] as List<dynamic>)
+        .map((mezmur) => Mezmur.fromJson(mezmur))
+        .toList();
+
     setState(() {
-      _data = jsonData['song'];
+      _data = mezmurList;
     });
   }
 
@@ -126,21 +135,20 @@ class _ListPageState extends State<ListPage>
                   ),
                 ),
                 ListTile(
-                  title: Text(_selectedMezmur['title'] ?? ""),
-                  subtitle: Text(_selectedMezmur['singer'] ?? ""),
+                  title: Text(_selectedMezmur.title ?? ""),
+                  subtitle: Text(_selectedMezmur.singer ?? ""),
                   trailing: IconButton(
                       onPressed: () {
                         setState(() {
                           _showSheet = false;
-                          _selectedMezmur = {};
                         });
                       },
                       icon: Icon(Icons.close)),
                 ),
                 Divider(),
-                _selectedMezmur['songLyrics']['isShortSong']
-                    ? ShortMezmur(_selectedMezmur['songLyrics']['shortLyrics'])
-                    : LongMezmur(_selectedMezmur['songLyrics']['longLyrics'])
+                _selectedMezmur.songLyrics.isShortSong
+                    ? ShortMezmur(_selectedMezmur.songLyrics.shortLyrics)
+                    : LongMezmur(_selectedMezmur.songLyrics.longLyrics)
                 // Add more content as needed
               ],
             ),
@@ -152,19 +160,19 @@ class _ListPageState extends State<ListPage>
     }
   }
 
-  ShortMezmur(shortMezmurLyrics) {
+  ShortMezmur(ShortLyrics shortMezmurLyrics) {
     return Column(
       children: [
-        DisplayVerse(shortMezmurLyrics['lyrics']),
-        TranslationDisplay(shortMezmurLyrics['translation'])
+        DisplayVerse(shortMezmurLyrics.lyrics ?? ""),
+        TranslationDisplay(shortMezmurLyrics.translation ?? "")
       ],
     );
   }
 
-  LongMezmur(longMezmurLyrics) {
+  LongMezmur(LongLyrics longMezmurLyrics) {
     return Container(
         child: Column(
-      children: (longMezmurLyrics['verse'] as List)
+      children: (longMezmurLyrics.verse as List)
           .map((verse) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: DisplayVerse(verse),
@@ -173,8 +181,8 @@ class _ListPageState extends State<ListPage>
     ));
   }
 
-  void _handleItemTap(Map<String, dynamic> mezmur, double size) {
-    if (_showSheet && _selectedMezmur[TITLE] == mezmur[TITLE]) {
+  void _handleItemTap(Mezmur mezmur, double size) {
+    if (_showSheet && _selectedMezmur.title == mezmur.title) {
       // If same item is tapped again, expand to full size
       _controller.animateTo(
         1.0,
@@ -203,9 +211,9 @@ class _ListPageState extends State<ListPage>
             controller: _tabController,
             isScrollable: true,
             tabs: widget.tabs.map(
-              (tabName) {
+              (tabName){
                 print(tabName);
-                return Tab(text: tabName['title']?.toString() ?? 'Untitled');
+                return Tab(text: tabName.title ?? 'Untitled');
               },
             ).toList(),
           ),
@@ -219,11 +227,11 @@ class _ListPageState extends State<ListPage>
                       ListView.builder(
                         itemCount: _data.length,
                         itemBuilder: (context, index) {
-                          final item = _data[index];
+                          final Mezmur item = _data[index];
                           return ListTile(
-                            title: Text(item['title'] ?? "None"),
+                            title: Text(item.title ?? ""),
                             leading: Icon(Icons.music_note),
-                            subtitle: Text(item['singer'] ?? ""),
+                            subtitle: Text(item.singer ?? ""),
                             trailing: IconButton(
                               onPressed: () {
                                 setState(() {
