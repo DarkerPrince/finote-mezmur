@@ -4,21 +4,22 @@
     {
       "title": "Kidest Silase",
       "image": "assets/Image/trinity.jpg",
+      "fileLocation": "assets/Mezmur/kidanmhret.json",
       "sub_categories": [
         {
-            "title": "Tir Silase",
+            "title": "Tir",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
           }
         ,
          {
-            "title": "Hamle Silase",
+            "title": "Hamle",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
 
         },
          {
-            "title": "Misgana Silase",
+            "title": "Mesgana",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
 
@@ -28,18 +29,19 @@
     {
       "title": "Kidest Kidanmhret",
       "image": "assets/Image/kidanmhret.jpg",
+      "fileLocation": "assets/Mezmur/kidanmhret.json",
       "sub_categories": [
     {
-        "title": "Yekatit Silase",
+        "title": "Yekatit",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }, {
-        "title": "Nehase Silase",
+        "title": "Nehase",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
     },
    {
-        "title": "Misgana Silase",
+        "title": "Mesgana",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }
@@ -48,19 +50,20 @@
     {
       "title": "Kidus Gebriel",
       "image": "assets/Image/gebriel.png",
+      "fileLocation": "assets/Mezmur/kidanmhret.json",
       "sub_categories": [
     {
-        "title": "Tahsas Silase",
+        "title": "Tahsas",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       },
     {
-        "title": "Hamle Silase",
+        "title": "Hamle",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       },
     {
-        "title": "Misgana Silase",
+        "title": "Misgana",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }
@@ -69,26 +72,51 @@
     {
       "title": "Kidusan Meleakt",
       "image": "assets/Image/angels.jpg",
-       "fileLocation": "",
-      "sub_categories":[]
+       "fileLocation": "assets/Mezmur/kidanmhret.json",
+      "sub_categories":[
+        {
+          "title": "Meleakt",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        }
+      ]
     },
     {
       "title": "Bealat Mezmur",
       "image": "assets/Image/beal.png",
-      "fileLocation": "",
-      "sub_categories":[]
+      "fileLocation": "assets/Mezmur/kidanmhret.json",
+      "sub_categories":[
+        {
+          "title": "Bealat",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        }
+      ]
     },
     {
       "title": "Nesha Mezmur",
       "image": "assets/Image/dawit.png",
-      "fileLocation": "",
-      "sub_categories":[]
+      "fileLocation": "assets/Mezmur/kidanmhret.json",
+      "sub_categories":[
+        {
+          "title": "Nesha",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        }
+      ]
     },
     {
       "title": "Kidanesh Ayalkm",
-      "image": "assets/Image/blueLogo.png",
-      "fileLocation": "",
-      "sub_categories":[]
+      "image": "assets/Image/yellow.png",
+      "fileLocation": "assets/Mezmur/kidaneshAyalkm.json",
+      "sub_categories":[
+        {
+          "title": "Kidanesh Ayalkm",
+          "image": "assets/Image/yellow.png",
+          "fileLocation": ""
+        }
+
+      ]
     }
   ]
 }

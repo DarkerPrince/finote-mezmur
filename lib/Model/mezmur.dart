@@ -3,8 +3,10 @@ import 'package:finotemezmur/Model/Lyrics.dart';
 class Mezmur {
   final String id;
   final String title;
-  final String? major;
-  final String singer;
+  // final String? major;
+
+  final String? singer;
+  final String? singerOther;
   final String? repentanceSong;
   final String? others;
   final List<String> about;
@@ -19,9 +21,10 @@ class Mezmur {
   Mezmur({
     required this.id,
     required this.title,
-    required this.major,
-    required this.singer,
+    // required this.major,
     required this.repentanceSong,
+    required this.singer,
+    required this.singerOther,
     required this.others,
     required this.about,
     required this.angels,
@@ -36,11 +39,12 @@ class Mezmur {
   factory Mezmur.fromJson(Map<String, dynamic> json) {
     return Mezmur(
       id: json['id'],
-      title: json['title'],
-      major: json['major'],
-      singer: json['singer'],
+      title: json['Title']??"",
+      // major: json['major'],
+      singer: json['singer']??"",
+      singerOther: json['singerOther']??"",
       repentanceSong: json['repentanceSong'],
-      others: json['others'],
+      others: json['others']??"",
       about: List<String>.from(json['about'] ?? []),
       angels: List<String>.from(json['angels'] ?? []),
       mainHolidays: List<String>.from(json['main_holidays'] ?? []),

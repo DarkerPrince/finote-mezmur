@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                 children: List.generate(_data.length, (index) {
                   return InkWell(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(tabs: _data[index].subCategories,categoryName: _data[index].title??"")));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(category: _data[index])));
                     },
                     child: Card(
                       elevation: 16,
