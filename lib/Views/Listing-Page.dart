@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:finotemezmur/Views/Lyrics-Show.dart';
@@ -24,8 +25,7 @@ class _ListPageState extends State<ListPage>
   bool _showSheet = false;
   late Mezmur _selectedMezmur;
   double _sheetSize = 1;
-  final DraggableScrollableController _controller =
-      DraggableScrollableController();
+  late DraggableScrollableController _controller;
 
   late TabController _tabController;
 
@@ -33,6 +33,7 @@ class _ListPageState extends State<ListPage>
   void initState() {
     super.initState();
     loadJson();
+    _controller = DraggableScrollableController();
     _tabController = TabController(length: widget.category.subCategories.length, vsync: this);
   }
 
@@ -44,7 +45,6 @@ class _ListPageState extends State<ListPage>
 
   DisplayVerse(String Verse) {
     return Container(
-      color: Colors.white,
       alignment: Alignment.center,
       child: Wrap(
         children: [
@@ -86,97 +86,171 @@ class _ListPageState extends State<ListPage>
 
   List<Mezmur> _data = [];
 
-  List<Mezmur> filteredMezmur=[];
+  // List<Mezmur> filteredMezmur=[];
 
+  Map<String, List<Mezmur>> categorizedMezmur = {};
 
-  filterMezmurList(List<Mezmur> allMezmur){
-    List<Mezmur> filteredMezmur;
-
-    switch (widget.category.title) {
-    // Special case: Trinity
+  void categorizeMezmurMethod(List<Mezmur> allMezmur, String categoryTitle) {
+    switch (categoryTitle) {
       case "Kidest Silase":
+        print("Category in Kidest Silase");
 
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        (mezmur.trinitySong["Tir"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
-        ).toList();
-
-        setState(() {
-          _data = filteredMezmur;
-        });
+        categorizedMezmur = {
+          "Tir": allMezmur.where((m) => m.trinitySong["Tir"] == true).toList(),
+          "Hamle": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
+          "Mesgana": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
+        };
         break;
 
       case "Kidest Kidanmhret":
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        (mezmur.stMarySong["Yekatit"] == true) || (mezmur.stMarySong["Nehase"] == true) || (mezmur.stMarySong["Mesgana"] == true)
-        ).toList();
-
-        print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-        setState(() {
-          _data = filteredMezmur;
-        });
+        print("Category in Kidest kidanmhret");
+        categorizedMezmur = {
+          "Yekatit": allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
+          "Nehase": allMezmur.where((m) => m.stMarySong["Nehase"] == true).toList(),
+          "Mesgana": allMezmur.where((m) => m.stMarySong["Mesgana"] == true).toList(),
+        };
         break;
 
       case "Kidus Gebriel":
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        (mezmur.kGebrielSong["Tahsas"] == true) || (mezmur.kGebrielSong["Hamle"] == true) || (mezmur.kGebrielSong["Mesgana"] == true)
-        ).toList();
-
-        print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-        setState(() {
-          _data = filteredMezmur;
-        });
+        print("Category in Kidest Silase");
+        categorizedMezmur = {
+          "Tahsas": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
+          "Hamle": allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
+          "Mesgana": allMezmur.where((m) => m.kGebrielSong["Mesgana"] == true).toList(),
+        };
         break;
 
       case "Kidusan Meleakt":
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        (mezmur.trinitySong["Tahsas"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
-        ).toList();
-
-        print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-        setState(() {
-          _data = filteredMezmur;
-        });
+        print("Category in Angels");
+        categorizedMezmur = {
+          "Tahsas": allMezmur.where((m) => m.trinitySong["Tahsas"] == true).toList(),
+          "Hamle": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
+          "Mesgana": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
+        };
         break;
 
-
       case "Bealat Mezmur":
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        ( mezmur.mainHolidays.isNotEmpty ) || (mezmur.minorHolidays.isNotEmpty)
-        ).toList();
-
-        print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-        setState(() {
-          _data = filteredMezmur;
-        });
+        print("Category in Bealat");
+        categorizedMezmur = {
+          "Main Holidays": allMezmur.where((m) => m.mainHolidays.isNotEmpty).toList(),
+          "Minor Holidays": allMezmur.where((m) => m.minorHolidays.isNotEmpty).toList(),
+        };
         break;
 
       case "Nesha Mezmur":
-
-        filteredMezmur = allMezmur.where((mezmur) =>
-        ( mezmur.repentanceSong!="")
-        ).toList();
-
-        print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-        setState(() {
-          _data = filteredMezmur;
-        });
+        print("Category in Nesha Mezmur");
+        categorizedMezmur = {
+          "Repentance": allMezmur.where((m) => m.repentanceSong?.isNotEmpty ?? false).toList(),
+        };
         break;
 
+      case "Kidanesh Ayalkm":
+        print("Category in Nesha Mezmur");
+        categorizedMezmur = {
+          "Kidanesh Ayalkm": allMezmur,
+        };
+        break;
 
-      //
       default:
-        setState(() {
-          _data = allMezmur;
-        });
-        break;
-        
+        print("Category in Default Switch");
+        categorizedMezmur = {
+          "All": allMezmur,
+        };
     }
+    print(categorizedMezmur);
+
+    setState(() {});
   }
+
+
+  // filterMezmurLists(List<Mezmur> allMezmur){
+  //   List<Mezmur> filteredMezmur;
+  //
+  //   switch (widget.category.title) {
+  //   // Special case: Trinity
+  //     case "Kidest Silase":
+  //
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       (mezmur.trinitySong["Tir"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
+  //       ).toList();
+  //
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //     case "Kidest Kidanmhret":
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       (mezmur.stMarySong["Yekatit"] == true) || (mezmur.stMarySong["Nehase"] == true) || (mezmur.stMarySong["Mesgana"] == true)
+  //       ).toList();
+  //
+  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //     case "Kidus Gebriel":
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       (mezmur.kGebrielSong["Tahsas"] == true) || (mezmur.kGebrielSong["Hamle"] == true) || (mezmur.kGebrielSong["Mesgana"] == true)
+  //       ).toList();
+  //
+  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //     case "Kidusan Meleakt":
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       (mezmur.trinitySong["Tahsas"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
+  //       ).toList();
+  //
+  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //
+  //     case "Bealat Mezmur":
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       ( mezmur.mainHolidays.isNotEmpty ) || (mezmur.minorHolidays.isNotEmpty)
+  //       ).toList();
+  //
+  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //     case "Nesha Mezmur":
+  //
+  //       filteredMezmur = allMezmur.where((mezmur) =>
+  //       ( mezmur.repentanceSong!="")
+  //       ).toList();
+  //
+  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
+  //       setState(() {
+  //         _data = filteredMezmur;
+  //       });
+  //       break;
+  //
+  //
+  //     //
+  //     default:
+  //       setState(() {
+  //         _data = allMezmur;
+  //       });
+  //       break;
+  //
+  //   }
+  // }
 
   Future<void> loadJson() async {
 
@@ -188,14 +262,16 @@ class _ListPageState extends State<ListPage>
         .map((mezmur) => Mezmur.fromJson(mezmur))
         .toList();
 
-    setState(() {
-      _data = allMezmur;
-    });
+      categorizeMezmurMethod(allMezmur,widget.category.title);
+
   }
 
 
 
   LyricsDisplaySheet() {
+    Color backgroundColor = Theme.of(context).brightness == Brightness.dark
+        ? Color(0xFF121212)
+        : Colors.white;
     if (_showSheet) {
       return DraggableScrollableSheet(
         initialChildSize: _sheetSize, // Starts small like a mini player
@@ -205,11 +281,10 @@ class _ListPageState extends State<ListPage>
         builder: (context, scrollController) {
           return Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 10,
+                  color: backgroundColor,
                 ),
               ],
             ),
@@ -230,7 +305,7 @@ class _ListPageState extends State<ListPage>
                   ),
                 ),
                 ListTile(
-                  title: Text(_selectedMezmur.title ?? ""),
+                  title: Text(_selectedMezmur.title ?? "" ,style: TextStyle(color: Theme.of(context).primaryColor),),
                   subtitle: Text(_selectedMezmur.singer ?? ""),
                   trailing: IconButton(
                       onPressed: () {
@@ -265,15 +340,55 @@ class _ListPageState extends State<ListPage>
   }
 
   LongMezmur(LongLyrics longMezmurLyrics) {
-    return Container(
-        child: Column(
+    return Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(12),
+            alignment: Alignment.center,
+            width: MediaQuery.of(context).size.width,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? Colors.yellow.withOpacity(0.1)
+                : Theme.of(context).primaryColor.withOpacity(0.1),
+            child: Text(longMezmurLyrics.chorus ??"እዝ",
+                textAlign: TextAlign.center,
+                softWrap: true,
+                style: TextStyle(
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? Colors.yellow
+                      : Theme.of(context).primaryColor,
+                  fontSize: 24,
+                )),
+          ),
+          Column(
       children: (longMezmurLyrics.verse as List)
           .map((verse) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
-                child: DisplayVerse(verse),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                  DisplayVerse(verse),
+                  verse==""?Container():Container(
+                    padding: EdgeInsets.all(12),
+                    alignment: Alignment.center,
+                    width: MediaQuery.of(context).size.width,
+                    color: Theme.of(context).brightness == Brightness.dark
+                        ? Colors.yellow.withOpacity(0.1)
+                        : Theme.of(context).primaryColor.withOpacity(0.1),
+                    child: Text("እዝ",
+                        textAlign: TextAlign.center,
+                        softWrap: true,
+                        style: TextStyle(
+                          color: Theme.of(context).brightness == Brightness.dark
+                              ? Colors.yellow
+                              : Theme.of(context).primaryColor,
+                          fontSize: 24,
+                        )),
+                  )
+                ],)
+
               ))
           .toList(),
-    ));
+    )]);
   }
 
   void _handleItemTap(Mezmur mezmur, double size) {
@@ -323,44 +438,47 @@ class _ListPageState extends State<ListPage>
         ),
         body: TabBarView(
           controller: _tabController,
-          children: widget.category.subCategories
-              .map((tabName) {
-             print(tabName.title);
-             // tabfiltering(_data,tabName.title);
+          children: widget.category.subCategories.map((tabName) {
+            // final List<Mezmur> _data = tabName.value;
+             print("Amount of ${widget.category.title} ${tabName.title} \n");
+             // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
+             print("============ \n\n");
+            // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
                 return Center(
             child: Stack(
             children: [
             ListView.builder(
-            itemCount: _data.length,
+            itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
             itemBuilder: (context, index) {
-              if(_data.isEmpty){
+
+              if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
                 return Container(
                   child: Text("Empty Mezmur"),
                 );
               }
-              final Mezmur item = _data[index];
+              final Mezmur item = categorizedMezmur![tabName.title]![index];
               return ListTile(
                 title: Text(item.title ?? ""),
-                leading: Icon(Icons.music_note),
+                leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
                 subtitle: SingerInfoDisplay(item),
-                trailing: IconButton(
-                  onPressed: () {
-                    setState(() {
-                      _isFavorite = !_isFavorite;
-                    });
-                  },
-                  icon: Icon(
-                    _isFavorite
-                        ? Icons.church
-                        : Icons.church_outlined,
-                    color: _isFavorite ? Colors.red : Colors.grey,
-                  ),
-                ),
+                // trailing: IconButton(
+                //   onPressed: () {
+                //     setState(() {
+                //       _isFavorite = !_isFavorite;
+                //     });
+                //   },
+                //   icon: Icon(
+                //     _isFavorite
+                //         ? Icons.church
+                //         : Icons.church_outlined,
+                //     color: _isFavorite ? Colors.red : Colors.grey,
+                //   ),
+                // ),
                 onTap: () => _handleItemTap(item, 1),
               );
             },
           ),
-          LyricsDisplaySheet(), // Your bottom sheet widget
+            LyricsDisplaySheet(), // Your bottom sheet widget
           ],
         ));
 

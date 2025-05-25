@@ -15,7 +15,6 @@ class _LyricsPageState extends State<LyricsPage> {
       appBar: AppBar(),
       // backgroundColor: Color(0x04041B00),
       body: Container(
-        color: Colors.red,
         child: Stack(
           children: [
             DraggableScrollableSheet(
@@ -25,7 +24,6 @@ class _LyricsPageState extends State<LyricsPage> {
               builder: (context, scrollController) {
                 return Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
                     borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
                     boxShadow: [
                       BoxShadow(

@@ -5,7 +5,8 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:finotemezmur/Model/category.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final bool isDarkMode;
+  const HomePage({super.key,required this.isDarkMode});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -40,17 +41,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
               expandedHeight: 200,
               forceElevated: true,
-              floating: true,
-              snap: true,
               pinned: true,
-              backgroundColor: Colors.white,
               flexibleSpace: FlexibleSpaceBar(
+                collapseMode: CollapseMode.parallax,
+                centerTitle: true,
+                title: Text("ፍኖተ ጽድቅ መዝሙር",style: TextStyle(fontWeight: FontWeight.w800
+                    ,fontFamily: 'FinotFont'
+
+                    ,color: Theme.of(context).colorScheme.primary),),
                 background: Stack(
                   fit: StackFit.expand,
                   children: [
@@ -59,11 +63,15 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.cover,
                     ),
                     Container(
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: [
+                          colors: widget.isDarkMode?[
+                          Colors.transparent,
+                            Color(0x80121212),
+                          Color(0xFF121212),
+                          ]:[
                             Colors.transparent,
                             Colors.white12,
                             Colors.white,
@@ -78,20 +86,25 @@ class _HomePageState extends State<HomePage> {
             SliverPadding(
               padding: const EdgeInsets.all(10),
               sliver: SliverGrid.count(
-                crossAxisCount: 2,
+                crossAxisCount: 1,
+
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
+                childAspectRatio: 3,
                 children: List.generate(_data.length, (index) {
                   return InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(category: _data[index])));
                     },
                     child: Card(
-                      elevation: 16,
+                      color: widget.isDarkMode? const Color(0xFF1E1E1E) // dark mode card background
+                            : Colors.white,
                       clipBehavior: Clip.hardEdge,
-                      child: Column(
+                      child: Row(
+
                         mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             padding: EdgeInsets.symmetric(vertical: 4,horizontal: 8),
@@ -99,20 +112,52 @@ class _HomePageState extends State<HomePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text( _data[index].title.toString()??"" ,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                              Text( _data[index].title.toString()??"" ,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold ,color: Theme.of(context).colorScheme.primary),),
                               const Text("32 Songs"),
+                            ],
+                          ),),
+                          Stack(
+                            alignment: Alignment.bottomCenter,
+                            children: [
+                              // Background Image
+                              Container(
+                                width: 200,
+                                height: 160,
+                                child: Image.asset(
+                                  height: 160,
+                                  width: 200,
+                                  _data[index].image,
+                                  fit: BoxFit.cover,
+                                  alignment: Alignment.topCenter,
+                                ),
+                              ),
+
+                              // Gradient Overlay
+                              Container(
+                                width: 200,
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.centerRight,
+                                    end: Alignment.centerLeft,
+                                    colors: widget.isDarkMode
+                                        ? [
+                                      Colors.transparent,
+                                      Color(0x801E1E1E),
+                                      Color(0xFF1E1E1E),
+                                    ]
+                                        : [
+                                      Colors.transparent,
+                                      Colors.white12,
+                                      Colors.white,
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
 
-                          ),
-                          Expanded(
-                            child: Image.asset(
-                              _data[index].image,
-                              fit: BoxFit.cover,
-                              alignment: Alignment.topCenter,
-                              width: double.infinity,
-                            ),
-                          ),
+
                         ],
                       ),
                     ),

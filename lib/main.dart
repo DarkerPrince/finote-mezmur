@@ -10,29 +10,62 @@ void main() {
   // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   // FlutterNativeSplash.remove();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+
+  void toggleTheme(bool value) {
+    setState(() {
+      isDarkMode = value;
+    });
+  }
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Finote Mezmur',
+       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        splashColor: Colors.white,
-        useMaterial3: true,
-      ),
-      home: AnimatedSplashScreen(
-          duration: 1000,
-          splash: 'assets/Image/blueLogo.png',
-          nextScreen: MainScreen(),
-          splashTransition: SplashTransition.fadeTransition,
-          backgroundColor: Colors.white,
-      ),
+        theme: ThemeData(
+          fontFamily: 'FinotFont',
+          brightness: Brightness.light,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blue,
+            brightness: Brightness.light,
+            primary: Colors.blue,
+            secondary: Colors.blue,
+          ),
+          useMaterial3: true,
+        ),
+        darkTheme: ThemeData(
+          fontFamily: 'FinotFont',
+          brightness: Brightness.dark,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blue,
+            brightness: Brightness.dark,
+            primary: Colors.yellow,
+            secondary: Colors.yellow,
+          ),
+          useMaterial3: true,
+        ),
+       home:  MainScreen(onThemeToggle:toggleTheme,isDarkMode:isDarkMode)
+      // home: AnimatedSplashScreen(
+      //     duration: 1000,
+      //     splash: 'assets/Image/blueLogo.png',
+      //     nextScreen: ,
+      //     splashTransition: SplashTransition.fadeTransition,
+      //     backgroundColor: Colors.white,
+      // ),
     );
   }
 }

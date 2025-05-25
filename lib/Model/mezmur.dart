@@ -55,4 +55,26 @@ class Mezmur {
       kGebrielSong: Map<String, bool>.from(json['K_Gebriel_Song'] ?? {}),
     );
   }
+
+  @override
+  String toString() {
+    return 'Mezmur('
+        'id: $id, '
+        'title: $title, '
+        'singer: $singer, '
+        'singerOther: $singerOther, '
+        'repentanceSong: $repentanceSong, '
+        'others: $others, '
+        'about: ${about.join(", ")}, '
+        'angels: ${angels.join(", ")}, '
+        'mainHolidays: ${mainHolidays.join(", ")}, '
+        'minorHolidays: ${minorHolidays.join(", ")}, '
+        'songLyrics: ${songLyrics.toString()}, '
+        'trinitySong: $trinitySong, '
+        'stMarySong: $stMarySong, '
+        'kGebrielSong: $kGebrielSong'
+        ')';
+  }
+
+
 }
