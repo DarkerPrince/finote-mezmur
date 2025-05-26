@@ -24,7 +24,7 @@ class _ListPageState extends State<ListPage>
     with SingleTickerProviderStateMixin {
   bool _showSheet = false;
   late Mezmur _selectedMezmur;
-  double _sheetSize = 1;
+  double _sheetSize = 0;
   late DraggableScrollableController _controller;
 
   late TabController _tabController;
@@ -266,27 +266,44 @@ class _ListPageState extends State<ListPage>
 
   }
 
+  double _sheetExtent = 1; // Default initial value
 
+  Widget LyricsDisplaySheet() {
+    if (!_showSheet) return SizedBox.shrink();
 
-  LyricsDisplaySheet() {
-    Color backgroundColor = Theme.of(context).brightness == Brightness.dark
-        ? Color(0xFF121212)
-        : Colors.white;
-    if (_showSheet) {
-      return DraggableScrollableSheet(
-        initialChildSize: _sheetSize, // Starts small like a mini player
+    return NotificationListener<DraggableScrollableNotification>(
+      onNotification: (notification) {
+        setState(() {
+          _sheetExtent = notification.extent;
+        });
+        return true;
+      },
+      child: DraggableScrollableSheet(
+        controller: _controller,
+        initialChildSize: _sheetSize,
         minChildSize: 0.14,
-        controller: _controller, // Minimum size when collapsed
-        maxChildSize: 1, // Maximum height when expanded
+        maxChildSize: 1.0,
         builder: (context, scrollController) {
-          return Container(
-            decoration: BoxDecoration(
 
-              boxShadow: [
-                BoxShadow(
-                  color: backgroundColor,
-                ),
-              ],
+
+
+          final Color minColor = Theme.of(context).colorScheme.secondary;
+          final Color maxColor = Theme.of(context).brightness == Brightness.dark
+              ? const Color(0xFF121212)
+              : Colors.white;
+
+          print("The SheetSize initial is ${_sheetSize}");
+          print("The SheetExtent initial is ${_sheetExtent}");
+
+          final double factor = ((_sheetExtent - 0.14) / (1.0 - 0.14)).clamp(0.0, 1.0);
+          final double flippedFactor = 1.0 - factor;
+          final Color animatedColor = Color.lerp(minColor, maxColor, factor)!;
+
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            decoration: BoxDecoration(
+              color: animatedColor,
+              boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 8)],
             ),
             child: ListView(
               controller: scrollController,
@@ -305,30 +322,33 @@ class _ListPageState extends State<ListPage>
                   ),
                 ),
                 ListTile(
-                  title: Text(_selectedMezmur.title ?? "" ,style: TextStyle(color: Theme.of(context).primaryColor),),
+                  title: Text(
+                    _selectedMezmur.title ?? "",
+                    style: TextStyle(fontSize: 20,  color: Theme.of(context).colorScheme.primary,fontWeight: FontWeight.bold),
+                  ),
                   subtitle: Text(_selectedMezmur.singer ?? ""),
                   trailing: IconButton(
-                      onPressed: () {
-                        setState(() {
-                          _showSheet = false;
-                        });
-                      },
-                      icon: Icon(Icons.close)),
+                    icon: Icon(Icons.close),
+                    onPressed: () {
+                      setState(() {
+                        _showSheet = false;
+                      });
+                    },
+                  ),
                 ),
                 Divider(),
                 _selectedMezmur.songLyrics.isShortSong
                     ? ShortMezmur(_selectedMezmur.songLyrics.shortLyrics)
-                    : LongMezmur(_selectedMezmur.songLyrics.longLyrics)
-                // Add more content as needed
+                    : LongMezmur(_selectedMezmur.songLyrics.longLyrics),
               ],
             ),
           );
         },
-      );
-    } else {
-      return Container();
-    }
+      ),
+    );
   }
+
+
 
   ShortMezmur(ShortLyrics shortMezmurLyrics) {
     return Column(
@@ -404,6 +424,7 @@ class _ListPageState extends State<ListPage>
         _selectedMezmur = mezmur;
         _sheetSize = size;
         _showSheet = true;
+
       });
     }
   }
@@ -436,54 +457,45 @@ class _ListPageState extends State<ListPage>
             ).toList(),
           ),
         ),
-        body: TabBarView(
-          controller: _tabController,
-          children: widget.category.subCategories.map((tabName) {
-            // final List<Mezmur> _data = tabName.value;
-             print("Amount of ${widget.category.title} ${tabName.title} \n");
-             // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
-             print("============ \n\n");
-            // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
+        body: Stack(
+          children: [
+            TabBarView(
+              controller: _tabController,
+              children: widget.category.subCategories.map((tabName) {
+                // final List<Mezmur> _data = tabName.value;
+                print("Amount of ${widget.category.title} ${tabName.title} \n");
+                // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
+                print("============ \n\n");
+                // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
                 return Center(
-            child: Stack(
-            children: [
-            ListView.builder(
-            itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
-            itemBuilder: (context, index) {
+                    child:  ListView.separated(
+                      shrinkWrap: true,
+                      separatorBuilder: (context, index) => SizedBox(height: 4),
+                      itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
+                      itemBuilder: (context, index) {
 
-              if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
-                return Container(
-                  child: Text("Empty Mezmur"),
-                );
-              }
-              final Mezmur item = categorizedMezmur![tabName.title]![index];
-              return ListTile(
-                title: Text(item.title ?? ""),
-                leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
-                subtitle: SingerInfoDisplay(item),
-                // trailing: IconButton(
-                //   onPressed: () {
-                //     setState(() {
-                //       _isFavorite = !_isFavorite;
-                //     });
-                //   },
-                //   icon: Icon(
-                //     _isFavorite
-                //         ? Icons.church
-                //         : Icons.church_outlined,
-                //     color: _isFavorite ? Colors.red : Colors.grey,
-                //   ),
-                // ),
-                onTap: () => _handleItemTap(item, 1),
-              );
-            },
-          ),
-            LyricsDisplaySheet(), // Your bottom sheet widget
+                        if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
+                          return Container(
+                            child: Text("Empty Mezmur"),
+                          );
+                        }
+                        final Mezmur item = categorizedMezmur![tabName.title]![index];
+                        return ListTile(
+                          tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                          title: Text(item.title ?? "",style: TextStyle(fontWeight: FontWeight.bold),),
+                          leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
+                          subtitle: SingerInfoDisplay(item),
+                          trailing: Icon(Icons.keyboard_arrow_right_rounded),
+                          onTap: () => _handleItemTap(item, 1),
+                        );
+                      },
+                    ));
+
+              })
+                  .toList(),
+            ),
+            LyricsDisplaySheet()
           ],
-        ));
-
-          })
-              .toList(),
         ),
       ),
     );

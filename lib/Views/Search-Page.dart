@@ -67,7 +67,12 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
   DraggableScrollableController();
 
 
+
+
   LyricsDisplaySheet() {
+    Color backgroundColor = Theme.of(context).brightness == Brightness.dark
+        ? Color(0xFF121212)
+        : Colors.white;
     if (_showSheet) {
       return DraggableScrollableSheet(
         initialChildSize: _sheetSize, // Starts small like a mini player
@@ -77,11 +82,10 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
         builder: (context, scrollController) {
           return Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 10,
+                  color: backgroundColor,
                 ),
               ],
             ),
@@ -102,7 +106,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
                   ),
                 ),
                 ListTile(
-                  title: Text(_selectedMezmur.title ?? ""),
+                  title: Text(_selectedMezmur.title ?? "" ,style: TextStyle(color: Theme.of(context).colorScheme.primary),),
                   subtitle: Text(_selectedMezmur.singer ?? ""),
                   trailing: IconButton(
                       onPressed: () {
@@ -125,6 +129,22 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
     } else {
       return Container();
     }
+  }
+
+  DisplayVerse(String Verse) {
+    return Container(
+      alignment: Alignment.center,
+      child: Wrap(
+        children: [
+          Text(Verse,
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: TextStyle(
+                fontSize: 24,
+              ))
+        ],
+      ),
+    );
   }
 
   TranslationDisplay(String Verse) {
@@ -151,22 +171,6 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
       ),
     );
   }
-  DisplayVerse(String Verse) {
-    return Container(
-      color: Colors.white,
-      alignment: Alignment.center,
-      child: Wrap(
-        children: [
-          Text(Verse,
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: TextStyle(
-                fontSize: 24,
-              ))
-        ],
-      ),
-    );
-  }
 
   ShortMezmur(ShortLyrics shortMezmurLyrics) {
     return Column(
@@ -178,18 +182,56 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
   }
 
   LongMezmur(LongLyrics longMezmurLyrics) {
-    return Container(
-        child: Column(
-          children: (longMezmurLyrics.verse as List)
-              .map((verse) => Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: DisplayVerse(verse),
-          ))
-              .toList(),
-        ));
+    return Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(12),
+            alignment: Alignment.center,
+            width: MediaQuery.of(context).size.width,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? Colors.yellow.withOpacity(0.1)
+                : Theme.of(context).primaryColor.withOpacity(0.1),
+            child: Text(longMezmurLyrics.chorus ??"እዝ",
+                textAlign: TextAlign.center,
+                softWrap: true,
+                style: TextStyle(
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? Colors.yellow
+                      : Theme.of(context).primaryColor,
+                  fontSize: 24,
+                )),
+          ),
+          Column(
+            children: (longMezmurLyrics.verse as List)
+                .map((verse) => Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    DisplayVerse(verse),
+                    verse==""?Container():Container(
+                      padding: EdgeInsets.all(12),
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width,
+                      color: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.yellow.withOpacity(0.1)
+                          : Theme.of(context).primaryColor.withOpacity(0.1),
+                      child: Text("እዝ",
+                          textAlign: TextAlign.center,
+                          softWrap: true,
+                          style: TextStyle(
+                            color: Theme.of(context).brightness == Brightness.dark
+                                ? Colors.yellow
+                                : Theme.of(context).primaryColor,
+                            fontSize: 24,
+                          )),
+                    )
+                  ],)
+
+            ))
+                .toList(),
+          )]);
   }
-
-
 
   Future<void> loadJson() async {
 
@@ -220,13 +262,13 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
     _searchController.dispose();
     super.dispose();
   }
+
   SingerInfoDisplay(Mezmur item){
     if(item.singer == "ሌላ ዘማሪ" ||item.singer == "ሌላ"){
       return Text(item.singerOther??"");
     }
     return Text(item.singer??"");
   }
-
 
   void _handleItemTap(Mezmur mezmur, double size) {
     if (_showSheet && _selectedMezmur.title == mezmur.title) {
@@ -275,8 +317,8 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
                   itemBuilder: (context, index) {
                     final mezmur = _filteredMezmur[index];
                     return ListTile(
-                      title: Text(mezmur.title),
-                      leading: Icon(Icons.music_note),
+                      title: Text(mezmur.title,style: TextStyle(fontWeight: FontWeight.bold),),
+                      leading: Icon(Icons.queue_music , color: Theme.of(context).colorScheme.primary,),
                       subtitle: SingerInfoDisplay(mezmur),
                       onTap: () => _handleItemTap(mezmur, 1),
                     );

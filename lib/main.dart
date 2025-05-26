@@ -42,8 +42,8 @@ class _MyAppState extends State<MyApp> {
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.blue,
             brightness: Brightness.light,
-            primary: Colors.blue,
-            secondary: Colors.blue,
+            primary: Colors.blueAccent,
+            secondary: Colors.amber,
           ),
           useMaterial3: true,
         ),
@@ -53,8 +53,8 @@ class _MyAppState extends State<MyApp> {
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.blue,
             brightness: Brightness.dark,
-            primary: Colors.yellow,
-            secondary: Colors.yellow,
+            primary: Colors.amber,
+            secondary: Colors.blue,
           ),
           useMaterial3: true,
         ),

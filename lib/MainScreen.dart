@@ -16,17 +16,6 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
-  // bool isDarkMode = false;
-
-  // void toggleTheme(bool value) {
-  //   setState(() {
-  //     isDarkMode = value;
-  //   });
-  // }
-
-  // List of pages to switch between
-
-
   @override
   Widget build(BuildContext context) {
     final List<Widget> _pages = [
@@ -37,34 +26,56 @@ class _MainScreenState extends State<MainScreen> {
       ), // Create this page or use any placeholder
     ];
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      extendBody: true,
+      extendBodyBehindAppBar: true,// So nav bar can float
       appBar: AppBar(
-      forceMaterialTransparency: true,
-      actions: [IconButton(onPressed: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => SearchMezmurPage()));
-      }, icon: Icon(Icons.search))],
-      ),
-      body: _pages[_currentIndex], // Show the selected page
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Theme.of(context).colorScheme.primary,
-        currentIndex: _currentIndex,
-        onTap: (int index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.music_note_outlined),
-            activeIcon: Icon(Icons.music_note),
-            label: 'Finote',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            activeIcon: Icon(Icons.settings),
-            label: 'Settings',
+        forceMaterialTransparency: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => SearchMezmurPage()));
+            },
           ),
         ],
+      ),
+      body: _pages[_currentIndex],
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: BottomNavigationBar(
+            backgroundColor: Theme.of(context).brightness == Brightness.dark
+                ? Color(0xFF212121)
+                : Theme.of(context).primaryColor,
+            selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+            elevation: 16,
+            selectedItemColor: Theme.of(context).brightness == Brightness.dark? Theme.of(context).colorScheme.primary:Colors.white,
+            currentIndex: _currentIndex,
+            unselectedItemColor: Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
+            selectedIconTheme: IconThemeData(color:Theme.of(context).brightness == Brightness.dark? Theme.of(context).colorScheme.primary:Colors.white),
+            showSelectedLabels: true,
+            showUnselectedLabels: false,
+            onTap: (index) {
+              setState(() {
+                _currentIndex = index;
+              });
+            },
+            type: BottomNavigationBarType.fixed,
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.music_note_outlined),
+                activeIcon: Icon(Icons.music_note),
+                label: 'Finote',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.settings_outlined),
+                activeIcon: Icon(Icons.settings),
+                label: 'Settings',
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

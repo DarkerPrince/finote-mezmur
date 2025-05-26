@@ -19,9 +19,10 @@ class SettingsPage extends StatelessWidget {
     // }
   }
 
-  Widget _buildSocialIcon(String name, IconData icon, String url) {
+  Widget _buildSocialIcon(String name, IconData icon, String url,BuildContext context) {
     return IconButton(
       icon: Icon(icon),
+      color: Theme.of(context).colorScheme.primary,
       onPressed: () => _launchURL(url),
       tooltip: name,
     );
@@ -43,13 +44,20 @@ class SettingsPage extends StatelessWidget {
               'Finote Tsidk is a spiritual and event-based app designed to guide users through meaningful experiences with curated content and community activities.',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
+            SizedBox(height: 12),
+            ListTile(
+              tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.4),
+              title: Text("Comment Feedback"),
+              leading: Icon(Icons.comment_bank),
+              trailing: Icon(Icons.arrow_forward_ios_rounded),
+            ),
             SizedBox(height: 24),
             Text('Follow us', style: Theme.of(context).textTheme.titleMedium),
             Row(
               children: [
-                _buildSocialIcon('Facebook', Icons.facebook, socialLinks['Facebook']!),
-                _buildSocialIcon('Telegram', Icons.telegram, socialLinks['Telegram']!),
-                _buildSocialIcon('Instagram', Icons.camera_alt, socialLinks['Instagram']!),
+                _buildSocialIcon('Facebook', Icons.facebook, socialLinks['Facebook']!,context),
+                _buildSocialIcon('Telegram', Icons.telegram, socialLinks['Telegram']!,context),
+                _buildSocialIcon('Instagram', Icons.camera_alt, socialLinks['Instagram']!,context),
               ],
             ),
             SizedBox(height: 24),

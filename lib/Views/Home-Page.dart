@@ -46,14 +46,19 @@ class _HomePageState extends State<HomePage> {
           slivers: [
             SliverAppBar(
               expandedHeight: 200,
+              collapsedHeight: 10,
+              toolbarHeight: 10,
               forceElevated: true,
+              backgroundColor: Theme.of(context).brightness == Brightness.dark
+                  ? Color(0xFF212121)
+                  : Colors.white,
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 collapseMode: CollapseMode.parallax,
+                expandedTitleScale: 1.2,
                 centerTitle: true,
                 title: Text("ፍኖተ ጽድቅ መዝሙር",style: TextStyle(fontWeight: FontWeight.w800
                     ,fontFamily: 'FinotFont'
-
                     ,color: Theme.of(context).colorScheme.primary),),
                 background: Stack(
                   fit: StackFit.expand,
@@ -91,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 childAspectRatio: 3,
-                children: List.generate(_data.length, (index) {
+                children:  List.generate(_data.length, (index) {
                   return InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => ListPage(category: _data[index])));
@@ -100,6 +105,7 @@ class _HomePageState extends State<HomePage> {
                       color: widget.isDarkMode? const Color(0xFF1E1E1E) // dark mode card background
                             : Colors.white,
                       clipBehavior: Clip.hardEdge,
+                      elevation: 12,
                       child: Row(
 
                         mainAxisSize: MainAxisSize.min,
@@ -164,6 +170,9 @@ class _HomePageState extends State<HomePage> {
                   );
                 }),
               ),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(height: 80), // or 100 depending on your bottom nav height
             ),
           ],
         ),
