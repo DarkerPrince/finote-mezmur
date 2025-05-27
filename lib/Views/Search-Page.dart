@@ -235,13 +235,30 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
 
   Future<void> loadJson() async {
 
-    final String response =
-    await rootBundle.loadString('assets/Mezmur/kidanmhret.json');
-    final Map<String, dynamic> jsonData = json.decode(response);
+    final List<String> jsonFiles = [
+      'assets/Mezmur/kidanmhret.json',
+      'assets/Mezmur/angels.json',
+      'assets/Mezmur/holidays.json',
+      'assets/Mezmur/HolyThrinity.json',
+      'assets/Mezmur/kidaneshAyalkm.json',
+      'assets/Mezmur/Others.json',
+      'assets/Mezmur/Repentance.json',
+      'assets/Mezmur/St_Gebriel.json'
+    ];
+    List<Mezmur> allMezmur = [];
 
-    List<Mezmur> allMezmur = (jsonData['song'] as List<dynamic>)
-        .map((mezmur) => Mezmur.fromJson(mezmur))
-        .toList();
+    for (String path in jsonFiles) {
+      final String response = await rootBundle.loadString(path);
+      final Map<String, dynamic> jsonData = json.decode(response);
+
+      List<Mezmur> mezmurList = (jsonData['song'] as List<dynamic>)
+          .map((mezmur) => Mezmur.fromJson(mezmur))
+          .toList();
+
+      allMezmur.addAll(mezmurList);
+    }
+
+
 
     setState(() {
       _allMezmur = allMezmur;
@@ -296,15 +313,26 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(12.0),
             child: TextField(
               controller: _searchController,
               onChanged: _performSearch,
               decoration: InputDecoration(
                 hintText: 'የመዝሙሩን ርዕስ ፣ ዘማሪ ወይም በዓል ይፈልጉ...',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                prefixIcon: const Icon(Icons.search, color: Colors.grey),
+                filled: true,
+                fillColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                contentPadding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.grey.shade300),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: const BorderSide(color: Colors.blue, width: 1.5),
+                ),
               ),
+              style: const TextStyle(fontSize: 16),
             ),
           ),
           Expanded(

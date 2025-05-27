@@ -1,0 +1,287 @@
+{
+  "version": 1.0,
+  "song":  [
+    {
+      "id": "1",
+      "Timestamp": "5/26/2025 15:36:52",
+      "Title": "ሕጻን ወእሙ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": true,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ሕጻን ወእሙ /3/\nክልኤሆሙ ፈጸሙ ገድሎሙ /2/",
+          "translation": "ልጅና እናቱ /3/\nገድላቸውን ፈጸሙ ሁለቱ /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "Timestamp": "5/26/2025 15:48:48",
+      "Title": "ገብርኤል ሊቀ መላእክት",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": true,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ገብርኤል ሊቀ መላእክት /2/\nሠለሥቱ ደቂቅን ያወጣ ከእሳት ",
+          "verse": [
+            "በሠለሥቱ ደቂቅ ናቡከደነጾር ተቆጣ\nእሳቱ ነደደ ነበልባሉ ወጣ \nግን ኃያል ገብርኤል ሊያድናቸው መጣ\n",
+            "ሠለሥቱ ደቂቅ ይባርክዎ ለእግዚአብሔር\nስቡህኒ ውእቱ ወልኡልኒ ውእቱ ብለው\nምስጋና አቀረቡ ከእሳቱ ላይ ሆነው",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "3",
+      "Timestamp": "5/26/2025 15:52:01",
+      "Title": "የአርባብ አለቃ",
+      "singer": "ማሕበረ ቅዱሳን",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": true
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የአርባብ አለቃ ቅዱስ ገብርኤል\nአብሳሪ ትስብዕት ለቀዳሚ ቃል\nምሕረት ለሰጠን ከአምላከ ልዑል",
+          "verse": [
+            "በሦስቱ ሰማያት በመላእክት ከተማ\nሳጥናኤል ተነስቶ ክህደትን ሲያሰማ\nጽኑ ብለህ ያቆምክ መላእክትን በእምነት\nእኛንም አኛንም አድነን አጽናን በሃይማኖት",
+            "ቂርቆስ ኢየሉጣን ከመቃጠል ያዳንክ\nበመልካሙ ዜና ድንግልን ያበሰርክ\nተስፋ በቆረጥን በተከፋን ጊዜ\nአንተ ድረስልን አውጣን ከትካዜ",
+            "ከምግባር ለይቶ በአለም ፍቅር ስቦ \nየመስቀሉን ፍቅር ከልባችን ሰልቦ\nዲያቢሎስ በምኞት ሊጥለን ነውና\nጠብቀን ገብርኤል ከስህተት ጎዳና",
+            "ስልጣንህን አምነን የምልጃህን ጸጋ\nአስታርቀን ስንልህ ዘወትር ስንተጋ\nፈቅደህ ተለመነን ድምጻችንን ስማ\nየአርባን አለቃ መልአክ ዘራማ",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "Timestamp": "5/26/2025 15:56:46",
+      "Title": "ገብርኤል ግሩም",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": true
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ሃሌ ሉያ ገብርኤል ግሩም በመንፈስ ቅዱስ ኅቱም መአዛ ቅዳሴከ ጥዑም ከመ ጽጌረዳ /2/\nንአ ንአ ማእከሌነ ቁም በበዓልከ ገብርኤል\nባርከነ ዮም ሊቀ መላዕክት /2/",
+          "translation": "በመንፈስ ቅዱስ የታተምክ ኃያል ገብኤል ሆይ በበዓልህ ቀን ትባርከን ዘንድ ና በመካከላችን ቁም"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "Timestamp": "5/26/2025 15:59:04",
+      "Title": "ለአናንያ ወአዛርያ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": true,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ለአናንያ ወአዛርያ ወሚሳኤል /2/\nወሚሳኤል ውእቱ ያድኅነነ /2/",
+          "translation": "አናንያ አዛርያንና ሚሳኤልን ያዳነ እኛንም ያድነን"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "Timestamp": "5/26/2025 16:15:16",
+      "Title": "ምስክርነቱን ገለፀ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": true,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ምስክርነቱን ገለፀ ቂርቆስ ሕጻን /2/\nበእሳት ተፈትኖ አለፈ ፈተናውን \nበእሳት ተፈትኖ አለፈ ኧኸ ፈተናውን \nደስ ይበለን ቂርቆስ ኢየሉጣ ሁለቱም በአንድ ልብ ምንኛ ጨከኑ /2/\nተቃቅፈው ሲገቡ ወደ እሳት ጋኑ /2/",
+          "verse": [
+            "ሕጻኑና እናቱ በእሳት ውስጥ ሲዋኙ ያለምንም ፍርሀት /2/\nገብርኤል ተላከ እነርሱን ለማውጣት /2/",
+            "በርዶና ቀዝቅዞ የእሳቱ ነበልባል በጌታችን መስቀል /2/\nሁለቱም ሰማዕታት ተጎናጸፉ ድል /2/",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}

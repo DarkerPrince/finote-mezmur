@@ -123,24 +123,24 @@ class _ListPageState extends State<ListPage>
       case "Kidusan Meleakt":
         print("Category in Angels");
         categorizedMezmur = {
-          "Tahsas": allMezmur.where((m) => m.trinitySong["Tahsas"] == true).toList(),
-          "Hamle": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
-          "Mesgana": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
+          "Meleakt": allMezmur,
         };
         break;
 
       case "Bealat Mezmur":
         print("Category in Bealat");
         categorizedMezmur = {
-          "Main Holidays": allMezmur.where((m) => m.mainHolidays.isNotEmpty).toList(),
-          "Minor Holidays": allMezmur.where((m) => m.minorHolidays.isNotEmpty).toList(),
+          "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
+          "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
+          "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
+          "Leloch": allMezmur.where((m) => m.about.isNotEmpty||m.mainHolidays.isNotEmpty||m.minorHolidays.isNotEmpty).toList()
         };
         break;
 
       case "Nesha Mezmur":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
-          "Repentance": allMezmur.where((m) => m.repentanceSong?.isNotEmpty ?? false).toList(),
+          "Neseha": allMezmur,
         };
         break;
 
@@ -148,6 +148,17 @@ class _ListPageState extends State<ListPage>
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
           "Kidanesh Ayalkm": allMezmur,
+        };
+        break;
+
+      case "Leyu Leyu":
+        print("Category in Nesha Mezmur");
+        categorizedMezmur = {
+          "የሐዘን": allMezmur.where((m) => m.others=="የሐዘን").toList(),
+          "የሕፃናት": allMezmur.where((m) => m.others=="የሕፃናት").toList(),
+          "የጳጳሳት መቀበያ": allMezmur.where((m) => m.others=="የጳጳሳት መቀበያ").toList(),
+          "የሠርግ": allMezmur.where((m) => m.about.contains("የሠርግ")).toList(),
+          "የቤተ ክርስቲያን": allMezmur.where((m) => m.about.contains("የቤተ ክርስቲያን")).toList(),
         };
         break;
 
@@ -467,29 +478,29 @@ class _ListPageState extends State<ListPage>
                 // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
                 print("============ \n\n");
                 // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
-                return Center(
-                    child:  ListView.separated(
-                      shrinkWrap: true,
-                      separatorBuilder: (context, index) => SizedBox(height: 4),
-                      itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
-                      itemBuilder: (context, index) {
+                return ListView.separated(
+                  shrinkWrap: true,
+                  separatorBuilder: (context, index) => SizedBox(height: 4),
+                  itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
+                  itemBuilder: (context, index) {
 
-                        if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
-                          return Container(
-                            child: Text("Empty Mezmur"),
-                          );
-                        }
-                        final Mezmur item = categorizedMezmur![tabName.title]![index];
-                        return ListTile(
-                          tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
-                          title: Text(item.title ?? "",style: TextStyle(fontWeight: FontWeight.bold),),
-                          leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
-                          subtitle: SingerInfoDisplay(item),
-                          trailing: Icon(Icons.keyboard_arrow_right_rounded),
-                          onTap: () => _handleItemTap(item, 1),
-                        );
-                      },
-                    ));
+                    if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
+                      return Center(
+                        child: Text("Empty Mezmur"),
+                      );
+                    }
+                    final Mezmur item = categorizedMezmur![tabName.title]![index];
+                    return ListTile(
+                      tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                      title: Text(item.title ?? "",style: TextStyle(fontWeight: FontWeight.bold),),
+                      leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
+                      subtitle: SingerInfoDisplay(item),
+                      trailing: Text(item.id),
+                      // trailing: Icon(Icons.keyboard_arrow_right_rounded),
+                      onTap: () => _handleItemTap(item, 1),
+                    );
+                  },
+                );
 
               })
                   .toList(),

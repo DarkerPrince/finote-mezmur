@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:url_launcher/url_launcher.dart';
+import 'package:finotemezmur/Views/webView.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SettingsPage extends StatelessWidget {
   final bool isDarkMode;
@@ -8,12 +9,21 @@ class SettingsPage extends StatelessWidget {
   SettingsPage({required this.isDarkMode, required this.onThemeToggle});
 
   final socialLinks = {
-    'Facebook': 'https://facebook.com/',
-    'Telegram': 'https://t.me/',
-    'Instagram': 'https://instagram.com/',
+    'Facebook': 'https://www.facebook.com/FinoteTsidkeSundaySchool',
+    'Telegram': 'https://t.me/Finote1619',
+    'Tiktok': 'https://www.tiktok.com/@finote1619_?_t=8oiZzAgbsXu&_r=1',
+    'Youtube': 'https://youtube.com/@finote1619?si=HDw0RDGj0I1kSAKI',
+    'Instagram': 'https://www.instagram.com/finote16_19?utm_source=qr&igsh=MW90eHZvOGlnZndwOA=',
   };
 
-  void _launchURL(String url) async {
+  void _launchURL(String url , BuildContext context,String pageTitle) async {
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WebViewExample(url: url ,pageTitle:pageTitle),
+      ),
+    );
     // if (!await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
     //   throw 'Could not launch $url';
     // }
@@ -23,7 +33,7 @@ class SettingsPage extends StatelessWidget {
     return IconButton(
       icon: Icon(icon),
       color: Theme.of(context).colorScheme.primary,
-      onPressed: () => _launchURL(url),
+      onPressed: () => _launchURL(url,context,"ፍኖት ሚዲያ"),
       tooltip: name,
     );
   }
@@ -37,40 +47,81 @@ class SettingsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Finote Tsidk',
+            Text('ፍኖተ ጽድቅ',
                 style: Theme.of(context).textTheme.headlineMedium),
             SizedBox(height: 8),
             Text(
-              'Finote Tsidk is a spiritual and event-based app designed to guide users through meaningful experiences with curated content and community activities.',
+              'ይህ የአየር ጤና አንቀጸ ብርሃን ቅድስት ኪዳነ ምሕረት ፍኖተ ጽድቅ ሰንበት ት/ቤት የመዝሙር መተግበሪያ ሲሆን ማንኛውም አይነት ሐሳብ፣ አስተያየትና ማስተካከያ ካሎት ከዚህ በታች ያለውን የሐሳብ መስጫ በመጫን ያስቀምጡልን:: እናመሰግናለን 🙏',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             SizedBox(height: 12),
             ListTile(
-              tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.4),
-              title: Text("Comment Feedback"),
-              leading: Icon(Icons.comment_bank),
+              tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              title: Text("አስተያየት ይስጡ"),
+              leading: Icon(Icons.comment_bank,),
               trailing: Icon(Icons.arrow_forward_ios_rounded),
+              onTap: ()=>_launchURL("https://forms.gle/XhXgCSmSekQvtGuL8", context,"አስተያየት መስጫ ገጽ")
             ),
             SizedBox(height: 24),
             Text('Follow us', style: Theme.of(context).textTheme.titleMedium),
             Row(
               children: [
-                _buildSocialIcon('Facebook', Icons.facebook, socialLinks['Facebook']!,context),
-                _buildSocialIcon('Telegram', Icons.telegram, socialLinks['Telegram']!,context),
-                _buildSocialIcon('Instagram', Icons.camera_alt, socialLinks['Instagram']!,context),
+                _buildSocialIcon('Facebook', FontAwesomeIcons.facebook, socialLinks['Facebook']!,context),
+                _buildSocialIcon('Telegram', FontAwesomeIcons.telegram, socialLinks['Telegram']!,context),
+                _buildSocialIcon('Tiktok', FontAwesomeIcons.tiktok, socialLinks['Tiktok']!,context),
+                _buildSocialIcon('Youtube', FontAwesomeIcons.youtube, socialLinks['Youtube']!,context),
+                _buildSocialIcon('Instagram', FontAwesomeIcons.instagram, socialLinks['Instagram']!,context),
               ],
             ),
             SizedBox(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('Dark Mode'),
-                Switch(
-                  value: isDarkMode,
-                  onChanged: onThemeToggle,
-                )
-              ],
-            )
+            ListTile(
+              title: Text('Dark Mode'),
+              trailing: Switch(
+                value: isDarkMode,
+                onChanged: onThemeToggle,
+              ),),
+              Spacer(),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.primary,
+                    width: 1,
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                ),
+                child: ListTile(
+                  title: Text("Update Mezmur"),
+                  leading: Icon(Icons.library_music,),
+                  subtitle: Text("Current Version: 1"),
+                  trailing: Icon(Icons.download),
+                  onTap: (){
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text('ያረጋግጡ'),
+                        content: Text('እርግጠኛ? የመዝሙርን ፋይል ማዘመን ትፈልጋለህ?'),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context), // Cancel
+                            child: Text('አልፈልግም'),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                              // TODO: Add your update logic here
+                            },
+                            child: Text('አዎ'),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              ),
+              SizedBox(height: 80),
           ],
         ),
       ),

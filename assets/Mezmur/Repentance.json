@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "song":  [
+    {
+      "id": "35",
+      "Timestamp": "5/26/2025 21:01:54",
+      "Title": "አቤት የዚያን ጊዜ",
+      "singer": "ሊቀ መዘምራን ኪነ ጥበብ ወ/ቂርቆስ",
+      "singerOther": "",
+      "repentanceSong": "ሌሎች",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "አቤት የዚያን ጊዜ ክርስቶስ ሲመጣ \nትንሹም ትልቁም /3/ መድረውን ሲያጣ ",
+          "verse": [
+            "ከምስቅ ከምዕራብ ከሰሜን ከደቡብ \nነፋሳት ሲላኩ /3/ መአትን ለማዝነብ \nሰማይና ምድር በአንድ ሲዋሀዱ\nየት መሆን መድረሻው /3/ የት ይሆን መንገዱ",
+            "ጻድቃንን በቀኝ በኩል ሀጥአንን በግራ\nሲነፋ መለከት /3/ ስደለቅ እንዝራ\nምድር ቀውጢ ስትሆን አጽም ሲሰበሰብ \nፍጥረት ይይዘዋል /3/ ሰው ለፍርድ ሲቀርብ ",
+            "ጩኸት ሲበረታ የማይጠቅም ለቅሶ /2/\nእንደቁራ ሲጮኽ /3/ፅልመትን ተላብሶ\nገነትን ሲያገኙ ፃደስቃን በስራቸው \nኃጥአን ወደ ሲዖል /3/ ተፈረደባቸው",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}

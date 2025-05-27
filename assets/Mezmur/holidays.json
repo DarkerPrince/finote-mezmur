@@ -1,0 +1,250 @@
+{
+  "version": 1.0,
+  "song":  [
+    {
+      "id": "30",
+      "Timestamp": "5/26/2025 20:35:02",
+      "Title": "የዕለት የዓመት ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [
+        "የአዲስ ዓመት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የዕለት አዓመት የዘመናት ጌታ \nለዚህ ካደረስከኝ ዘመኔን ሳትገታ \nአቀርብልሃለሁ የክብር ሰላምታ/2/",
+          "verse": [
+            " ኑ እናማስግነው ከልባችን \nየሰማዩን አባታችን \nለዚህ እለት ለዚህ አመት \nላደረሰን ሁላችንን",
+            "የሰው ልጆች እድሜ ጥንቱንም ሲጀምር \nምን ቢመጣ ቢወርድ ቢበዛ ቢደምር\nአንድቀን አይሞላም እንደ አንተ አቆጣጠር/2/",
+            "ሰለዚህ  አምላክ ሆይ ክቡር ነው ምስጉን ነው\nወደ አንተ እንዲመለስ ቀን የሰጠኸው ሰው \nደካማ ነውና ሰው እድሜ ከራበው /2/",
+            "እጅግ አደንቃለው የአምላኬን ጥበብ \nምድር በአበባ ሰማይን በኮከብ\nእንዳሸበረቃት አስተውዬ ሳስብ /2/",
+            "በከንቱ ጊዜያችንን ፈጽሞ እንዳይጠፋ\nበርትተን ከሰራን ያላንዳች ነቀፋ\nአምላክ የሚሰጠን አለን ብዙ ተስፋ /2/",
+            "ከቶ ካሳለፍኩት ጊዜዬን በዋዛ \nምን ያደርግልኛል ዘመኔ ቢበዛ\nደግሞ በጠቅላላው አለምንብገዛ /2/",
+            "ወርኃ ክረምት አልፎ መስከረም ሲጠባ\nምድር በልምላሜ ስታጌጥ በአበባ \nእናምናለን በአንተ ምስጋና እንዲገባ/2/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "31",
+      "Timestamp": "5/26/2025 20:40:46",
+      "Title": "ባርክለነ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [
+        "የአዲስ ዓመት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ባርክለነ እግዚኦ ዘንተ ዓመተ ምሕረትነ በብዝኃ ኂሩትከ\nለህዝብከ ኢትዮጵያ ከመንግነይ ለስምከ ቅዱስ /2/\nወከመይኩን ንብረተነ በሰላም ወበዳኅና ለዝንቱ ዓመት /2/",
+          "translation": "ባርክልን አቤቱ ይህንን የምሕረት ዓመታችንን በቸርነትህ ብዛት ለህዝቦችህ\nኢትዮጵያ እንድገዛ ለቅዱስ ስምህ /2/\nእንዲሆንልን ኑሮአችን የሰላም የደህና በዚህ ዓመት/2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "32",
+      "Timestamp": "5/26/2025 20:49:31",
+      "Title": "የዓለምን በደል",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [
+        "ጥምቀት"
+      ],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የዓለምን በደል የሰውን ግፍ አይቶ\nዘጠና ዘጠኙን መላዕክቱን ትቶ\nጽድቅን ለመፈፀም በደልን አጥፍቶ\nየሰላሙ መሪ የሰላሙ ዳኛ \nአምላክ ተወለደ ተጠመቀ ለእኛ",
+          "verse": [
+            "የሰማያት ሰማይየማይችለው ንጉሥ\nተወልዶ ሲጠመቅ እኛን ለመቀደስ                                      \nተራሮች  ደንግጠው ዘለሉ በመንፈስ",
+            "ባህር ተጨነቀች ጠበባት መሬቱ\n ዮርዳኖስም ሸሸ አልቆመም ከፊቱ\nእንደተናገረው ዳዊት በትንቢቱ",
+            "ልጁ በዮርዳኖስ ጽድቅን ሲመሰርት \nመጣ በደመና ሰማያዊው አባት \n እየመሰከረ የልጁን ጌትነት\n",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "33",
+      "Timestamp": "5/26/2025 20:52:31",
+      "Title": "በጎል ሰከበ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [
+        "ልደት"
+      ],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በጎል ሰከበ በአፅርቅት ተጠብለለ/2/\nቤዛ ኩሉዓለም/2/ ዮምተወልደ/2/",
+          "translation": "በበረት ተኛ በጨርቅ ተጠቀለለ/2/\nየዓለም መድኃኒት/2/ ዛሬ ተወለደ/2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "34",
+      "Timestamp": "5/26/2025 20:57:40",
+      "Title": "ብርሃን ወጣ",
+      "singer": "ሊቀ መዘምራን ይልማ ኃይሉ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [
+        "ትንሳኤ"
+      ],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ብርሐን ወጣ ከመስቀሉ የሚያንፀባርቅ\nየአምላክና የሰው ልጆች እውነኛ እርቅ\nደስ ይበለን በትንሳኤው ብርሀን \nእልል እንበል በአንድነት ሆነን \nተነሳልን መድሀኒታችን ",
+          "verse": [
+            "ከፊት ለፊት በመሳሉ የመስቀሉ ነገር \nየማወደው ሐዋርያ የወንጌል መምህር \nዮሐንስም ስቅለቱን በማየቱ\nሲያዝን ኖረ በምድራዊ ህይወቱ\nቢያሰቅቀው ሞቱ ግርፋቱ",
+            "ሞኝነት ነው ለሚጠፉት መሰናከያቸው \nበአለም ጥበብ ለሚኖሩት እውነት ተስኗቸው \nለጠቢብ ሰው በመንፈስ ለሚኖረው \nእውነተኛ የመዳን አርማ ነው \nከገሀነም እሳት የሚያድናቸው ",
+            "እስከ ሞት ላልተለየው ቅዱስ ሐዋርያ \nለዮሀንስ የወነወጌል ሰው ለፅድቅ ባለሙያ \nምስጋናችን ከምድር ያድርሰው\nሰዎች ሁሉ እንከተለው\n",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}

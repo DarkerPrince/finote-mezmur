@@ -25,6 +25,7 @@ class _MainScreenState extends State<MainScreen> {
         onThemeToggle: widget.onThemeToggle,
       ), // Create this page or use any placeholder
     ];
+
     return Scaffold(
       extendBody: true,
       extendBodyBehindAppBar: true,// So nav bar can float
@@ -32,7 +33,17 @@ class _MainScreenState extends State<MainScreen> {
         forceMaterialTransparency: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.4), // background color you want
+                shape: BoxShape.circle,
+              ),
+              padding: EdgeInsets.all(8), // padding inside the circle
+              child: Icon(
+                Icons.search,
+                color: Colors.white, // icon color
+              ),
+            ),
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (_) => SearchMezmurPage()));
             },
@@ -47,7 +58,7 @@ class _MainScreenState extends State<MainScreen> {
           child: BottomNavigationBar(
             backgroundColor: Theme.of(context).brightness == Brightness.dark
                 ? Color(0xFF212121)
-                : Theme.of(context).primaryColor,
+                : Theme.of(context).colorScheme.primary,
             selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
             elevation: 16,
             selectedItemColor: Theme.of(context).brightness == Brightness.dark? Theme.of(context).colorScheme.primary:Colors.white,

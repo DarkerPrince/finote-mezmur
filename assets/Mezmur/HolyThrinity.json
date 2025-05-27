@@ -1,0 +1,240 @@
+{
+  "version": 1.0,
+  "song": [
+    {
+      "id": "7",
+      "Timestamp": "5/26/2025 16:22:59",
+      "Title": "ሥላሴ ትትረመም",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ዲያቆን ፍሬዘር ደሳለኝ",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": true
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ሥላሴ ትትረመም ወትትነከር\nሥላሴ ትትረመም ወትትነከር",
+          "verse": [
+            "ይገባል ምስጋና ይገባል ውዳሴ\nሁሉን ለፈጠረ ለቅድስት ሥላሴ\nከዘመናት በፊት ቀድሞ የነበረ \nፍጥረቱን በሙሉ ለክብሩ ፈጠረ",
+            "ልበል ሃሌ ሉያ ኪሩቤልን ልምሰል \nበእግረ ምስጋና ያሬድን ልከተል\nላቅርብ ምስጋናውን ዘምስለ ሱራፌል\nውዳሴ ምስጋና ነውና ለልዑል",
+            "በስም ሦስት ሲሆን እንዲሁም በአካል\nበግብርም ሦስት ነው ያለ መቀላቀል\nፍጥረትን በመፍጠር በአምላክነት\nበባህርይና ደግሞም በመንግሥት\nአንድ አምላክ ነው እንጂ አይባልም ሦስት",
+            "በኪሩቤል ጀርባ ዙፋኑን ዘርግቶ\nክብሩን ጌትነቱን ከፍጥረት ለይቶ\nይኖራል ዘለዓለም በመንግሥቱ ፀንቶ /2/",
+            "ይመስክር ዮርዳኖስ ይናገር ታቦር\nየአምላክን ጌትነት የሥላሴን ክብር\nየኸው በዮርዳኖስ ወልድ ተገለጠ\nመንፈስ ቅዱስ ታየ አብም ቃሉን ሰጠ",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "8",
+      "Timestamp": "5/26/2025 16:24:31",
+      "Title": "ነአምን በአብ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": true
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ነአምን በአብ ወነአምን በወልድ /2/\nወነአምን /4/ ነአምን በመንፈስ ቅዱስ",
+          "translation": "እናምናለን በአብ እናምናለን በወልድ /4/\nእናምናለን /4/በመንፈስ ቅዱስ /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "9",
+      "Timestamp": "5/26/2025 16:34:18",
+      "Title": "በአርሃብም ቤት",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": true,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በአብርሃም ቤት በእንግድነት የተገኘህ ዘለአለሙ ሥላሴ /2/\nአደራህን /3/ ይቹትልህ ነፍሴ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "10",
+      "Timestamp": "5/26/2025 16:38:15",
+      "Title": "ይለመነናል",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ታዴዎስ ግርማ",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": true,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ይለመነናል አምላከ አብርሃም\n ይታደገናል መድኃኔዓለም\nለፍጥረት ሁሉ እጁን የዘረጋ \nቸር እረኛ ነው አልፋና ኦሜጋ",
+          "verse": [
+            "አብርሃም ይሥሐቅን ያዕቆብን አስበህ\nየማልክላቸውን ቃልኪዳን አስታውሰህ\nደካማ ለሆንነው ሥጋ ሰልጥኖብን\nአትመልስ ጌታ የምሕረት አይንህን\nከሰማየ ሰማይ ይድረስ ጩኸታችን \nእንዘን እናልቅስ ስለበደላችን",
+            "ባይመለከተን አምላከ አብርሃም\nበምሕረት አይኖቹ መድኃኔዓለም\nባይዘረጋልን አምላከ አብርሃም\nየፍቅር እጆቹ መድኃኔዓለም\nሕዝበ እግዚአብሔር ሁሉ ለአምላክ ዘምሩ\nአድኖናልና በሚያስደንቅ ፍቅሩ",
+            "ምንም እንኳን ክህደት ቅጥፈት ቢበረታ \nስለአብርሃም ብለህ አልተውከንም ጌታ\nለቅዱሳን ያለህ ቃልኪዳን ሲጸና\nቀስተ ደመናህን አይተነዋልና\nየእስራኤል አምላክ የማታንቀላፋ\nበፍቅርህ ታደገን በሞት ሳንጠፋ",
+            "ቃልኪዳኑ ግሩም አምላከ አብርሃም\nምሕረቱ የበዛ መድኃኔዓለም\nርስት ጉልታችን አምላከ አብርሃም\nየሕይወታችን ቤዛ መድኃኔዓለም\nሳይጸየፍ ጌታ ያደፈው ኀጥያቴን \nከማጥ ውስጥ አወጣኝ ታደጋት ሕይወቴን",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "11",
+      "Timestamp": "5/26/2025 16:45:49",
+      "Title": "ዘይክል ኵሉ",
+      "singer": "ሌላ",
+      "singerOther": "መንበረ ልዑል  ቅዱስ ማርቆስ ቤ/ክ ሰ/ት/ቤት",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": true,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ዘይክል ኵሉ ወአልቦ ዘይሰአኖ ለእግዚአብሔር \nአምላከ ነዳያን ረዳኤ ምንዱባን \nንሕነ ኀቤከ /2/ ተማኅጸነ",
+          "verse": [
+            "የድሆች መጋቢ ተስፋ ላጡ ተስፋ\nሁሉንም የሚችል ደራሽ ለተከፋ\nለእኛም ድረስልን በኃጢአት ሳንጠፋ\n",
+            "ዘይክል ኵሉ ወአልቦ ዘይሰአኖ ለእግዚአብሔር \nአምላከ ነዳያን ናዛዜ ኅዙናን ንሕነ ኀቤከ /2/ ተማኅጸነ",
+            "ከገነት ሲባረር አዳም ተሳስቶ\nበአለቀሰ ጊዜ ልጅነቱን አጥቶ\nትድናለህ ብለህ ያዳንከው በመስቀል\nየቅዱሳን አምላክ አቤቱ ቸል አትበል\n",
+            "ዘይክል ኵሉ ወአልቦ ዘይሰአኖ ለእግዚአብሔር \nአምላከ ነዳያን ወተስፋ ቅቡጻን ንሕነ ኀቤከ /2/ ተማኅጸነ",
+            "ሕዝበ እሥራኤልን ፈርዖን ሲገዛቸው\nጭንቅና መከራን እያበዛባቸው\nለነ ራሔል ለቅሶ ሙሴን ላክክላቸው",
+            "ዘይክል ኵሉ ወአልቦ ዘይሰአኖ ለእግዚአብሔር\nአምላከ ነዳያን ረዳኤ ምንዱባን ንሕነ ኀቤከ /2/ ተማኅጸነ",
+            "እኛም ወገኖችህ ወደ አንተ እንጮሃለን\nከጭንቀት ፈተና እንድትታደገን\nጌታችን ነህና ናዛዜ ኅዙናን"
+          ]
+        }
+      }
+    }
+  ]
+}
