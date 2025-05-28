@@ -343,6 +343,7 @@ class _ListPageState extends State<ListPage>
                     onPressed: () {
                       setState(() {
                         _showSheet = false;
+                        _sheetExtent = 1;
                       });
                     },
                   ),

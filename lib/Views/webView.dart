@@ -17,15 +17,17 @@ class _WebViewExampleState extends State<WebViewExample> {
   void initState() {
     super.initState();
     // Initialize controller if needed here
+    _controller = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..loadRequest(Uri.parse(widget.url));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.pageTitle)),
-      body: WebView(
-        initialUrl: widget.url,
-        javascriptMode: JavascriptMode.unrestricted, // allow JS if needed
+      body: WebViewWidget(
+       controller: _controller, // allow JS if needed
       )
     );
   }
