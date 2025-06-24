@@ -77,12 +77,12 @@ class _MainScreenState extends State<MainScreen> {
               BottomNavigationBarItem(
                 icon: Icon(Icons.music_note_outlined),
                 activeIcon: Icon(Icons.music_note),
-                label: 'Finote',
+                label: 'ፍኖት',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.settings_outlined),
                 activeIcon: Icon(Icons.settings),
-                label: 'Settings',
+                label: 'ቅንብሮች',
               ),
             ],
           ),

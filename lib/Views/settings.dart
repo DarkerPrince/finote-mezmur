@@ -9,10 +9,10 @@ class SettingsPage extends StatelessWidget {
   SettingsPage({required this.isDarkMode, required this.onThemeToggle});
 
   final socialLinks = {
-    'Facebook': 'https://www.facebook.com/FinoteTsidkeSundaySchool',
+    'Facebook': 'https://web.facebook.com/FinoteTsidkeSundaySchool?_rdc=1&_rdr#',
     'Telegram': 'https://t.me/Finote1619',
     'Tiktok': 'https://www.tiktok.com/@finote1619_?_t=8oiZzAgbsXu&_r=1',
-    'Youtube': 'https://youtube.com/@finote1619?si=HDw0RDGj0I1kSAKI',
+    'Youtube': 'https://www.youtube.com/@finote1619',
     'Instagram': 'https://www.instagram.com/finote16_19?utm_source=qr&igsh=MW90eHZvOGlnZndwOA=',
   };
 
@@ -41,7 +41,7 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Settings')),
+      appBar: AppBar(title: Text('ቅንብሮች')),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Column(
@@ -50,10 +50,15 @@ class SettingsPage extends StatelessWidget {
             Text('ፍኖተ ጽድቅ',
                 style: Theme.of(context).textTheme.headlineMedium),
             SizedBox(height: 8),
-            Text(
-              'ይህ የአየር ጤና አንቀጸ ብርሃን ቅድስት ኪዳነ ምሕረት ፍኖተ ጽድቅ ሰንበት ት/ቤት የመዝሙር መተግበሪያ ሲሆን ማንኛውም አይነት ሐሳብ፣ አስተያየትና ማስተካከያ ካሎት ከዚህ በታች ያለውን የሐሳብ መስጫ በመጫን ያስቀምጡልን:: እናመሰግናለን 🙏',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            Wrap(
+              children: [
+                Text(
+                  'ይህ የአየር ጤና አንቀጸ ብርሃን ቅድስት ኪዳነ ምሕረት ፍኖተ ጽድቅ ሰንበት ት/ቤት የመዝሙር መተግበሪያ ሲሆን ማንኛውም አይነት ሐሳብ፣ አስተያየትና ማስተካከያ ካሎት ከዚህ በታች ያለውን የሐሳብ መስጫ በመጫን ያስቀምጡልን:: እናመሰግናለን 🙏',
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+              ],
+            )
+,
             SizedBox(height: 12),
             ListTile(
               tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
@@ -63,8 +68,9 @@ class SettingsPage extends StatelessWidget {
               onTap: ()=>_launchURL("https://forms.gle/XhXgCSmSekQvtGuL8", context,"አስተያየት መስጫ ገጽ")
             ),
             SizedBox(height: 24),
-            Text('Follow us', style: Theme.of(context).textTheme.titleMedium),
-            Row(
+            Text('የእኛን ማህበራዊ ይከተሉ', style: Theme.of(context).textTheme.titleMedium),
+            Wrap(
+              spacing: 1,
               children: [
                 _buildSocialIcon('Facebook', FontAwesomeIcons.facebook, socialLinks['Facebook']!,context),
                 _buildSocialIcon('Telegram', FontAwesomeIcons.telegram, socialLinks['Telegram']!,context),
@@ -93,7 +99,7 @@ class SettingsPage extends StatelessWidget {
                   color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
                 ),
                 child: ListTile(
-                  title: Text("Update Mezmur"),
+                  title: Text("Update መዝሙር"),
                   leading: Icon(Icons.library_music,),
                   subtitle: Text("Current Version: 1"),
                   trailing: Icon(Icons.download),

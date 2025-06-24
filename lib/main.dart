@@ -7,9 +7,9 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 
 void main() {
-  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  // FlutterNativeSplash.remove();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
   runApp(MyApp());
 }
 
@@ -27,6 +27,13 @@ class _MyAppState extends State<MyApp> {
       isDarkMode = value;
     });
   }
+
+  @override
+  void initState() {
+    super.initState();
+    FlutterNativeSplash.remove();
+  }
+
 
   // This widget is the root of your application.
   @override
@@ -58,14 +65,14 @@ class _MyAppState extends State<MyApp> {
           ),
           useMaterial3: true,
         ),
-       home:  MainScreen(onThemeToggle:toggleTheme,isDarkMode:isDarkMode)
-      // home: AnimatedSplashScreen(
-      //     duration: 1000,
-      //     splash: 'assets/Image/blueLogo.png',
-      //     nextScreen: ,
-      //     splashTransition: SplashTransition.fadeTransition,
-      //     backgroundColor: Colors.white,
-      // ),
+      home: AnimatedSplashScreen(
+          duration: 8000,
+          splashIconSize: 200,
+          splash: 'assets/Image/logoSplash.gif',
+          nextScreen: MainScreen(onThemeToggle:toggleTheme,isDarkMode:isDarkMode),
+          splashTransition: SplashTransition.fadeTransition,
+          backgroundColor: Color(0xFFFCFCFA)
+      ),
     );
   }
 }

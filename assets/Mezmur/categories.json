@@ -2,24 +2,23 @@
   "version": "1.0",
   "categories": [
     {
-      "title": "Kidest Silase",
+      "title": "የቅድስት ሥላሴ",
       "image": "assets/Image/trinity.jpg",
       "fileLocation": "assets/Mezmur/HolyThrinity.json",
       "sub_categories": [
         {
-            "title": "Tir",
+            "title": "ጥር",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
-          }
-        ,
+          },
          {
-            "title": "Hamle",
+            "title": "ሐምሌ",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
 
         },
          {
-            "title": "Mesgana",
+            "title": "ምሥጋና",
             "image": "assets/Image/image1.png",
             "fileLocation": ""
 
@@ -27,65 +26,98 @@
       ]
     },
     {
-      "title": "Kidest Kidanmhret",
+      "title": "የቅድስት ኪዳነምሕረት",
       "image": "assets/Image/kidanmhret.jpg",
       "fileLocation": "assets/Mezmur/kidanmhret.json",
       "sub_categories": [
     {
-        "title": "Yekatit",
+        "title": "የካቲት",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }, {
-        "title": "Nehase",
+        "title": "ነሐሴ",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
     },
    {
-        "title": "Mesgana",
+        "title": "ምሥጋና",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }
        ]
     },
     {
-      "title": "Kidus Gebriel",
+      "title": "የቅዱስ ገብርኤል",
       "image": "assets/Image/gebriel.png",
       "fileLocation": "assets/Mezmur/St_Gebriel.json",
       "sub_categories": [
     {
-        "title": "Tahsas",
+        "title": "ታህሳስ",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       },
     {
-        "title": "Hamle",
+        "title": "ሐምሌ",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       },
     {
-        "title": "Mesgana",
+        "title": "ምሥጋና",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       }
       ]
     },
     {
-      "title": "Kidusan Meleakt",
+      "title": "የመላእክት",
       "image": "assets/Image/angels.jpg",
        "fileLocation": "assets/Mezmur/angels.json",
       "sub_categories":[
         {
-          "title": "Meleakt",
+          "title": "የመላእክት",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         }
       ]
     },
     {
-      "title": "Bealat Mezmur",
+      "title": "በዓላት",
       "image": "assets/Image/beal.png",
       "fileLocation": "assets/Mezmur/holidays.json",
       "sub_categories":[
+        {
+          "title": "የአዲስ ዓመት",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "የዘመነ ጽጌ",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+
+        {
+          "title": "መስቀል",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+
+        {
+          "title": "ጥምቀት",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+
+        {
+          "title": "ብሥራት",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "ሆሳዕና",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
         {
           "title": "ልደት",
           "image": "assets/Image/image1.png",
@@ -102,26 +134,26 @@
           "fileLocation": ""
         },
         {
-          "title": "Leloch",
+          "title": "ሌላ",
           "image": "assets/Image/blue.png",
           "fileLocation": ""
         }
       ]
     },
     {
-      "title": "Nesha Mezmur",
+      "title": "የንስሐ",
       "image": "assets/Image/dawit.png",
       "fileLocation": "assets/Mezmur/Repentance.json",
       "sub_categories":[
         {
-          "title": "Neseha",
+          "title": "የንስሐ",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         }
       ]
     },
     {
-      "title": "Leyu Leyu",
+      "title": "ልዩ ልዩ",
       "image": "assets/Image/blue.png",
       "fileLocation": "assets/Mezmur/Others.json",
       "sub_categories":[
@@ -153,12 +185,12 @@
       ]
     },
     {
-      "title": "Kidanesh Ayalkm",
+      "title": "ኪዳንሽ አያልቅም",
       "image": "assets/Image/yellow.png",
       "fileLocation": "assets/Mezmur/kidaneshAyalkm.json",
       "sub_categories":[
         {
-          "title": "Kidanesh Ayalkm",
+          "title": "ኪዳንሽ አያልቅም 1",
           "image": "assets/Image/yellow.png",
           "fileLocation": ""
         }

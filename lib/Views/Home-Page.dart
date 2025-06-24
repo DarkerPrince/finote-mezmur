@@ -112,16 +112,21 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
+                          Expanded(child: Container(
                             padding: EdgeInsets.symmetric(vertical: 4,horizontal: 8),
                             child:
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text( _data[index].title.toString()??"" ,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold ,color: Theme.of(context).colorScheme.primary),),
-                              const Text("32 Songs"),
-                            ],
-                          ),),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text( _data[index].title.toString()??"" ,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(fontSize: 16,
+                                      fontWeight: FontWeight.bold ,color: Theme.of(context).colorScheme.primary),),
+                                Text("${_data[index].subCategories.length} ${_data[index].subCategories.length==1?'ምድብ':'ምድቦች'}"),
+                              ],
+                            ),))
+                          ,
                           Stack(
                             alignment: Alignment.bottomCenter,
                             children: [
@@ -131,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                                 height: 160,
                                 child: Image.asset(
                                   height: 160,
-                                  width: 200,
+                                  width: 190,
                                   _data[index].image,
                                   fit: BoxFit.cover,
                                   alignment: Alignment.topCenter,

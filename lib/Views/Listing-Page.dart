@@ -92,66 +92,71 @@ class _ListPageState extends State<ListPage>
 
   void categorizeMezmurMethod(List<Mezmur> allMezmur, String categoryTitle) {
     switch (categoryTitle) {
-      case "Kidest Silase":
+      case "የቅድስት ሥላሴ":
         print("Category in Kidest Silase");
 
         categorizedMezmur = {
-          "Tir": allMezmur.where((m) => m.trinitySong["Tir"] == true).toList(),
-          "Hamle": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
-          "Mesgana": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
+          "ጥር": allMezmur.where((m) => m.trinitySong["Tir"] == true).toList(),
+          "ሐምሌ": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
+          "ምሥጋና": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
         };
         break;
 
-      case "Kidest Kidanmhret":
+      case "የቅድስት ኪዳነ ምሕረት":
         print("Category in Kidest kidanmhret");
         categorizedMezmur = {
-          "Yekatit": allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
-          "Nehase": allMezmur.where((m) => m.stMarySong["Nehase"] == true).toList(),
-          "Mesgana": allMezmur.where((m) => m.stMarySong["Mesgana"] == true).toList(),
+          "የካቲት": allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
+          "ነሐሴ": allMezmur.where((m) => m.stMarySong["Nehase"] == true).toList(),
+          "ምሥጋና": allMezmur.where((m) => m.stMarySong["Mesgana"] == true).toList(),
         };
         break;
 
-      case "Kidus Gebriel":
+      case "የቅዱስ ገብርኤል":
         print("Category in Kidest Silase");
         categorizedMezmur = {
-          "Tahsas": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
-          "Hamle": allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
-          "Mesgana": allMezmur.where((m) => m.kGebrielSong["Mesgana"] == true).toList(),
+          "ታህሳስ": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
+          "ሐምሌ": allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
+          "ምሥጋና": allMezmur.where((m) => m.kGebrielSong["Mesgana"] == true).toList(),
         };
         break;
 
-      case "Kidusan Meleakt":
+      case "የመላእክት":
         print("Category in Angels");
         categorizedMezmur = {
-          "Meleakt": allMezmur,
+          "የመላእክት": allMezmur,
         };
         break;
 
-      case "Bealat Mezmur":
+      case "በዓላት":
         print("Category in Bealat");
         categorizedMezmur = {
+          "የአዲስ ዓመት": allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
+          "የዘመነ ጽጌ": allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
+          "መስቀል": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
+          "ብሥራት": allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
+          "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
           "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
-          "Leloch": allMezmur.where((m) => m.about.isNotEmpty||m.mainHolidays.isNotEmpty||m.minorHolidays.isNotEmpty).toList()
+          "ሌላ": allMezmur.where((m) => m.about.isNotEmpty||m.mainHolidays.isNotEmpty||m.minorHolidays.isNotEmpty).toList()
         };
         break;
 
-      case "Nesha Mezmur":
+      case "የንስሐ":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
-          "Neseha": allMezmur,
+          "የንስሐ": allMezmur,
         };
         break;
 
-      case "Kidanesh Ayalkm":
+      case "ኪዳንሽ አያልቅም":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
-          "Kidanesh Ayalkm": allMezmur,
+          "ኪዳንሽ አያልቅም 1": allMezmur,
         };
         break;
 
-      case "Leyu Leyu":
+      case "ልዩ ልዩ":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
           "የሐዘን": allMezmur.where((m) => m.others=="የሐዘን").toList(),
@@ -445,9 +450,9 @@ class _ListPageState extends State<ListPage>
 
   SingerInfoDisplay(Mezmur item){
     if(item.singer == "ሌላ ዘማሪ" ||item.singer == "ሌላ"){
-      return Text(item.singerOther??"");
+      return Text(item.singerOther??"-");
     }
-    return Text(item.singer??"");
+    return Text(item.singer??"--");
   }
 
 
@@ -464,7 +469,7 @@ class _ListPageState extends State<ListPage>
             tabs: widget.category.subCategories.map(
               (tabName){
                 print(tabName);
-                return Tab(text: tabName.title ?? 'Untitled');
+                return Tab(text: tabName.title ?? '');
               },
             ).toList(),
           ),
@@ -487,13 +492,13 @@ class _ListPageState extends State<ListPage>
 
                     if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
                       return Center(
-                        child: Text("Empty Mezmur"),
+                        child: Text("ባዶ መዝሙር"),
                       );
                     }
                     final Mezmur item = categorizedMezmur![tabName.title]![index];
                     return ListTile(
                       tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
-                      title: Text(item.title ?? "",style: TextStyle(fontWeight: FontWeight.bold),),
+                      title: Text(item.title ?? "ርዕስ አልባ",style: TextStyle(fontWeight: FontWeight.bold),),
                       leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
                       subtitle: SingerInfoDisplay(item),
                       trailing: Text(item.id),
