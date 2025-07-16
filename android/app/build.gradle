@@ -13,7 +13,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.example.finote1619.finotemezmur"
+    namespace = "com.finote1619.finotemezmur"
     compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
