@@ -82,7 +82,7 @@ jobs:
         with:
           flutter-version: '3.22.1'
           channel: "stable"
-          cache: true
+          cache: false
 
       - run: flutter clean
       - run: flutter pub get
