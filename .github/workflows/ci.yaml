@@ -137,4 +137,4 @@ jobs:
           packageName: com.finote1619.finotemezmur
           releaseFiles: app-release.aab
           track: internal
-          status: completed
+          status: draft
