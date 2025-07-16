@@ -1,0 +1,104 @@
+{
+  "version": 1.0,
+  "song":
+  [
+    {
+      "id": "28",
+      "Timestamp": "5/26/2025 20:25:07",
+      "Title": "የስሙ ትርጓሜ",
+      "singer": "ሊቀ መዘምራን ቴዎድሮስ ዮሴፍ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [
+        "ቅዱስ ሚካኤል"
+      ],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የስሙ ትርጓሜ ማን እንደ እግዚአብሔር ነው\n የሰውን ወደ አምላክ የአምላክን ወደ ሰው\nእኛን የሚረዳን ዘወትር በምልጃው\nየመላእክት አለቃ ቅዱስ ሚካኤል ነው",
+          "verse": [
+            "ከጉርጓድ ተጥሎ ፍፁም ከሚያስፈራው\nከተራቡ አናብስት ዳንኤልን ያዳንከው\nእኛንም ተራዳን ቸል አትበለን\nሰይጣን በተንኮሉ ወጥመድ ሳይጥለን",
+            "የክፉ ሰው ስራ ክፉ ሃሳብ ነውና\nበቅንነት መንገድ ከቶ አይሄድምና\nየሞቱን ደብዳቤ ለባህራን ሲሰጠው\nሚካኤል አጥፍቶ በደስታ ለወጠው",
+            "ገና ብላቴና ሳለሁ አንድ ፍሬ\nሰው ሁሉ ቢንቀኝ ምስጋናን ጀምሬ\nፀጋዬን አብዝቶ ያበቃኝ ለዚህ ክብር\nየሚካኤል አምላክ ይመስገን እግዚአብሔር",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "29",
+      "Timestamp": "5/26/2025 20:27:24",
+      "Title": "ዑራኤል መልአክ ",
+      "singer": "ሌላ",
+      "singerOther": "",
+      "repentanceSong": "",
+      "others": "",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [
+        "ቅዱስ ኡራኤል"
+      ],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ዑራኤል መልአክ በጽዋ ብርሃን ዕውቀትን ስጠን /2/ \nጥበባ ጥበቡን እንዲገልጽልን የጌታን መንገድ \nእንዲያሳውቀን ዑራኤል ሆይ እባክህ እርዳን /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "version": 1.0,
+  "song":
+    [
+      {
+        "id": "26",
+        "Timestamp": "5/26/2025 19:55:55",
+        "Title": "እምዬ ማርያም ምን ኾናለች ",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "የሕፃናት",
+        "about": [],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "እምዬ ማርያም ምን ኾናለች /2/\nአንገቷን ደፍታ ታለቅሳለች \n ",
+            "verse": [
+              "ሲወለድ ልጇ በበረት /2/ \nንጉሥ ከፈተ ጦርነት \nዱር ይዛው ኼደች በጀርባዋ /2/\n ብዙ ነበረ መከራዋ",
+              "ዕውር ሲያበራ ሲፈውስ /2/\nመስቀል ፈረደ ጲላጦስ\nልቧበብርቱ ተሰበረ /2/\nኀዘን እንባዋ ይኽ ነበረ",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "27",
+        "Timestamp": "5/26/2025 20:02:17",
+        "Title": "አምላካችን አንድም ሦስትም ነው",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "የሕፃናት",
+        "about": [],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "አምላካችን አንድም ሦስትም ነው /2/\nስሙም እግዚአብሔር ነው ",
+            "verse": [
+              "ከሦስት አካል አንዱ \nከድንግል ተወልዶ \nኢየሱስ ተብሎ\n ዓለምን አዳነ በመስቀል ተሰቅሎ",
+              "በስም በአካል በግብር \nሦስትነት ቢኖረው  \nበሥልጣን በአገዛዝ አንድ እግዚአብሔር ነው",
+              "ቅዱስ ቅዱስ ቅዱስ ኀያል የተባለው\nሰማይና ምድርን የፈጠረ እርሱ ነው",
+              "ቅዱስ ቅዱስ ቅዱስ ኀያል የተባለው\nለሕፃናት ምስጋና የፈጠረ እርሱ ነው",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "18",
+        "Timestamp": "5/26/2025 18:57:41",
+        "Title": "እግዚአብሔር መልካም ነው",
+        "singer": "ሊቀ መዘምራን ቴዎድሮስ ዮሴፍ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "የሐዘን",
+        "about": [],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "እግዚአብሔር መልካም ነው \nበመከራ ቀንም መሸሸጊያ ነው/2/ ",
+            "verse": [
+              "ከገነት ሲሰደድ አዳም አባታችን \nሞት ነግሶብን ሳለ በእኛ በሁላችን \nቃል እንደገባለት ተወልዶ ሊያድነን\nበመከራ ጊዜ መሸሸጊያ ሆነን/2/ ",
+              "አብርሃም ከካራን ከእናት ከአባቱ ቤት \nከነአን ሲገባ ሲሰደድ በእምነት \nከተሰጠው ተስፋ አንዳች ሳይጎልበት \nእንደ ምድር አሸዋ ዘሩን አበዛለት/2/ ",
+              "በሐዘን በችግር በመከራ ጊዜ \nጭንቀቴን የሚያርቅ ነው የፍሴን ትካዜ \nየቀደመው እባብ ሰላሜን ሲነሳኝ \nእግዚአብሔር መልካም ነው ሐዘኔን አስረሳኝ \nየቀደመው እባብ ሰላሜን ቢነሳኝ \nክርስቶስ ኢየሱስ ሐዘኔን አስረሳኝ ",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "19",
+        "Timestamp": "5/26/2025 19:03:05",
+        "Title": "በመከራ ጽና ",
+        "singer": "ሌላ",
+        "singerOther": "አዲስ ለማ",
+        "repentanceSong": "",
+        "others": "የሐዘን",
+        "about": [],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "በመከራ ጽና በመከራ ጽና በፈተና ጽና\nለጊዜው ነው እንጂ ሁሉም ያልፋልና /2/",
+            "verse": [
+              "ኢዮብ ተጨነቀ በጣም ተማረረ\nበመከራው ብዛት ትዕግስትን ተማረ\nልጅ የሌለው ሆነ እጣንብረቱን \nበመከራ ጸና አልካደም አምላኩን",
+              "መፈተን መልካም ነው ያነጣል እንደወርቅ\nበመጨረሻው ቀን በክብር እንደትደምቅ\nአንዱን ሳትሻገር ሌላው ቢገጥም\nበሕይወት ዘመንህ መከራው ያንተው ነው",
+              "ከአምላክህ ተስማማ እራስህን አዋርድ\nበቃሉ ተመራ እንደፈቃዱ ሂድ\nዋጋህ ከአምላክ ዘንድ በሠማይ አለና\nበርታ ክርስቲያን ሆይ በመከራ ጽና",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "20",
+        "Timestamp": "5/26/2025 19:13:53",
+        "Title": "ሥላሴ  ይባርኳችሁ",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "",
+        "about": [
+          "የሠርግ"
+        ],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "ሥላሴ ይባርኳችሁ /2/\nበሥጋ ወደሙ ዛሬ ከበራችሁ ሥላሴ ይባርኳችሁ",
+            "verse": [
+              "እመ አምላክ ትከተልህ /2/\nፈተና እንዳይገጥምህ ድንግል ትከተልህ \nእመ አምላክ ትከተልህ",
+              "ሚካኤል በኑሯችሁ /2/\nአርምሞ ማስተዋል ትዕግስትን ይስጣችሁ \nሚካኤል በኑሯችሁ",
+              "ገብርኤል ከላይ ወርዶ /2/\nእርሱ ይራዳችሁ በክንፎቹ ጋርዶ \nገብርኤል ከላይ ወርዶ",
+              "ዑራኤል በምልጃው /2/\nየእውቀትን ጥበብ ይስጥህ በጽዋው \nዑራኤል በምልጃው",
+              "ጊዮርጊስ አይለያችሁ /2/\nበፈተና ጊዜ ጽናትን ይስጣችሁ\nጊዮርጊስ አይለያችሁ",
+              "ተክለሃይማኖት በጸሎት /2/\n ያግዟችሁ ዘወትር ሆነው ረዳት \n ተክለሃይማኖት በጸሎት",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "21",
+        "Timestamp": "5/26/2025 19:16:04",
+        "Title": "ንትቀበል መርዓዊ",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "",
+        "about": [
+          "የሠርግ"
+        ],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": true,
+          "shortLyrics": {
+            "lyrics": "ንትቀበል መርዓዊ ንትቀበል መርዓዊ /2/\nሰማያዊ ዐቢየ ኖላዊ /2/",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "",
+            "verse": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "22",
+        "Timestamp": "5/26/2025 19:26:56",
+        "Title": "ቤተ ክርስቲያን",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "",
+        "about": [
+          "የቤተ ክርስቲያን"
+        ],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": false,
+          "shortLyrics": {
+            "lyrics": "",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "ቤተ ክርስቲያን ባሕረ ጥበባት /4/\nአትመረመርም /2/ እጅግ ጥልቅ ናት\nኧኸ አትመረመርም /2/ እጅግ ጥልቅ ናት ",
+            "verse": [
+              "በሥጋዊ ጥበብ ለማወቅ ቢቃጣ /2/ \nየዕምነት መነጽሩን ይዞ ስላልመጣ /2/  \nአንዳንዱ   በስህተት /2/ ፈጣሪውን አጣ",
+              "እንመሰክራለን ፈጣሪያችን አለ \nእንመሰክራለን አማኑኤል አለ /2/\nእንመነው አንካደው አማኑዔል ቸር ነው /2/",
+              " እንመሰክራለን ማርያም አማላጅ ናት  \nእንመሰክራለን ድንግል አማላጅ ናት /2/\nእንመናት አንካዳት የአምላክ እናት ናት/2/ ",
+              "ሀበ ጥበባት ሀበ ልሳናት /2/ \nዮሐንስ /2/ ወንጌለ ስብከት",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "23",
+        "Timestamp": "5/26/2025 19:29:08",
+        "Title": "ለዛቲ ቤት ",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "",
+        "about": [
+          "የቤተ ክርስቲያን"
+        ],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": true,
+          "shortLyrics": {
+            "lyrics": "ለዛቲ ቤት ሐነፀ ወልድ /2/\nወፈፀማ መንፈስቅዱስ /4/",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "",
+            "verse": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      },
+      {
+        "id": "24",
+        "Timestamp": "5/26/2025 19:31:47",
+        "Title": "ኦ አባ ቅዱስ ዕቀቦሙ",
+        "singer": "ሌላ",
+        "singerOther": "",
+        "repentanceSong": "",
+        "others": "የጳጳሳት መቀበያ",
+        "about": [],
+        "minor_holidays": [],
+        "main_holidays": [],
+        "angels": [],
+        "Trinity_Song": {
+          "Tir": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "St_Mary_Song": {
+          "Yekatit": false,
+          "Nehase": false,
+          "Mesgana": false
+        },
+        "K_Gebriel_Song": {
+          "Tahsas": false,
+          "Hamle": false,
+          "Mesgana": false
+        },
+        "songLyrics": {
+          "isShortSong": true,
+          "shortLyrics": {
+            "lyrics": "አባ ቅዱስ ዕቀቦሙ /2/\nበስምከ ወበኃይልከ ዕቀቦሙ /2/\nከመይኩኑ አሐደብነ ከማነ /2/ ከመይኩኑ /2/  ",
+            "translation": ""
+          },
+          "longLyrics": {
+            "chorus": "",
+            "verse": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        }
+      }
+    ]
+}
