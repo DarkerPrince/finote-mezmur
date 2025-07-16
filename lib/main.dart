@@ -4,6 +4,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'Views/Listing-Page.dart';
 import 'package:finotemezmur/MainScreen.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool isDarkMode = false;
+  bool showSplash = true; // Only show once
 
   void toggleTheme(bool value) {
     setState(() {
@@ -65,14 +67,7 @@ class _MyAppState extends State<MyApp> {
           ),
           useMaterial3: true,
         ),
-      home: AnimatedSplashScreen(
-          duration: 8000,
-          splashIconSize: 200,
-          splash: 'assets/Image/logoSplash.gif',
-          nextScreen: MainScreen(onThemeToggle:toggleTheme,isDarkMode:isDarkMode),
-          splashTransition: SplashTransition.fadeTransition,
-          backgroundColor: Color(0xFFFCFCFA)
-      ),
+      home : MainScreen(onThemeToggle:toggleTheme,isDarkMode:isDarkMode),
     );
   }
 }

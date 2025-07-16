@@ -2,11 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:finotemezmur/Views/webView.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
   final bool isDarkMode;
   final Function(bool) onThemeToggle;
 
-  SettingsPage({required this.isDarkMode, required this.onThemeToggle});
+  const SettingsPage({required this.onThemeToggle,required this.isDarkMode, super.key});
+
+  @override
+  State<SettingsPage> createState() => _SettingsScreenState();
+}
+
+
+class _SettingsScreenState extends State<SettingsPage> {
+
 
   final socialLinks = {
     'Facebook': 'https://web.facebook.com/FinoteTsidkeSundaySchool?_rdc=1&_rdr#',
@@ -83,8 +91,12 @@ class SettingsPage extends StatelessWidget {
             ListTile(
               title: Text('Dark Mode'),
               trailing: Switch(
-                value: isDarkMode,
-                onChanged: onThemeToggle,
+                value: widget.isDarkMode,
+                onChanged:  (value) {
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    widget.onThemeToggle(value);
+                  });
+                },
               ),),
               Spacer(),
               Container(
