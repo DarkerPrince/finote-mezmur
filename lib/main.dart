@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
 
       debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          fontFamily: 'FinotFont',
+          fontFamily: 'Font',
           brightness: Brightness.light,
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.blue,
