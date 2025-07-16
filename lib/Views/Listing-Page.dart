@@ -134,7 +134,7 @@ class _ListPageState extends State<ListPage>
           "የዘመነ ጽጌ": allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
           "መስቀል": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ብሥራት": allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
-          "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
+          "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ሆሳዕና")).toList(),
           "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
           "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),

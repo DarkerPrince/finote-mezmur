@@ -73,7 +73,7 @@ class _SettingsScreenState extends State<SettingsPage> {
               title: Text("አስተያየት ይስጡ"),
               leading: Icon(Icons.comment_bank,),
               trailing: Icon(Icons.arrow_forward_ios_rounded),
-              onTap: ()=>_launchURL("https://forms.gle/XhXgCSmSekQvtGuL8", context,"አስተያየት መስጫ ገጽ")
+              onTap: ()=>_launchURL("https://docs.google.com/forms/d/e/1FAIpQLSd6ClEc2EIUxTvx6S5gIObbfUUrk__muA9jSXEWWsagYwE65Q/viewform", context,"አስተያየት መስጫ ገጽ")
             ),
             SizedBox(height: 24),
             Text('የእኛን ማህበራዊ ይከተሉ', style: Theme.of(context).textTheme.titleMedium),
