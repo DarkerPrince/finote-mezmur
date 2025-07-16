@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Finote Mezmur',
+      title: 'Finote Mezmur App',
        themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
 
       debugShowCheckedModeBanner: false,
