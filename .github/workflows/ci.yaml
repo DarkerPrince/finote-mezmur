@@ -136,5 +136,5 @@ jobs:
           serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
           packageName: com.negatevents.negat
           releaseFiles: app-release.aab
-          track: production
+          track: internal
           status: completed
