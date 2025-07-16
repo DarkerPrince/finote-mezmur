@@ -49,14 +49,14 @@ jobs:
       - name: Create new file without newline char from version.txt
         run: tr -d '\n' < version.txt > version1.txt
 
-      - name: Read version
+      - name: Read version and export to env
         id: version
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: version1.txt
+        run: |
+          VERSION=$(cat version1.txt)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Update version in YAML
-        run: sed -i 's/1.2.4+1/${{ steps.version.outputs.content }}+${{ github.run_number }}/g' pubspec.yaml
+        run: sed -i 's/1.2.4+1/${{ env.VERSION }}+${{ github.run_number }}/g' pubspec.yaml
 
       - name: Download Android keystore
         id: android_keystore
@@ -94,7 +94,7 @@ jobs:
         with:
           artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/app-release.aab"
           token: ${{ secrets.GH_TOKEN }}
-          tag: ${{ steps.version.outputs.content }}
+          tag: ${{ env.VERSION }}
           commit: ${{ github.sha }}
 
       - name: Upload app bundle
