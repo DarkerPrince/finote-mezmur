@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Views/webView.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class SettingsPage extends StatefulWidget {
   final bool isDarkMode;
@@ -14,7 +15,12 @@ class SettingsPage extends StatefulWidget {
 
 
 class _SettingsScreenState extends State<SettingsPage> {
-
+  String _version = 'Loading...';
+  @override
+  void initState() {
+    super.initState();
+    _getAppVersion();
+  }
 
   final socialLinks = {
     'Facebook': 'https://web.facebook.com/FinoteTsidkeSundaySchool?_rdc=1&_rdr#',
@@ -35,6 +41,15 @@ class _SettingsScreenState extends State<SettingsPage> {
     // if (!await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
     //   throw 'Could not launch $url';
     // }
+  }
+
+  Future<void> _getAppVersion() async {
+    final info = await PackageInfo.fromPlatform();
+    setState(() {
+      _version = info.version;
+      print("Version is ${_version}");// You can also include build number: '${info.version}+${info.buildNumber}'
+    });
+
   }
 
   Widget _buildSocialIcon(String name, IconData icon, String url,BuildContext context) {
@@ -111,9 +126,9 @@ class _SettingsScreenState extends State<SettingsPage> {
                   color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
                 ),
                 child: ListTile(
-                  title: Text("Update መዝሙር"),
+                  title: Text("Version"),
                   leading: Icon(Icons.library_music,),
-                  subtitle: Text("Current Version: 1"),
+                  subtitle: Text("$_version"),
                   trailing: Icon(Icons.download),
                   onTap: (){
                     showDialog(

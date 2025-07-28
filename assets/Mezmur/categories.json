@@ -74,7 +74,21 @@
        "fileLocation": "assets/Mezmur/angels.json",
       "sub_categories":[
         {
-          "title": "የመላእክት",
+          "title": "ቅዱስ ሚካኤል",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "ቅዱስ ኡራኤል",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "ቅዱስ ሩፋኤል",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },{
+          "title": "ሁሉም",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         }
@@ -142,6 +156,18 @@
       "sub_categories":[
         {
           "title": "የንስሐ",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        }
+      ]
+    },
+    {
+      "title": "የቅዱሳን ጻድቃንና ሰማዕታት",
+      "image": "assets/Image/kidusan.png",
+      "fileLocation": "assets/Mezmur/kidusan.json",
+      "sub_categories":[
+        {
+          "title": "የቅዱሳን ጻድቃንና ሰማዕታት",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         }

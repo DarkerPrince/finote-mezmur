@@ -123,7 +123,10 @@ class _ListPageState extends State<ListPage>
       case "የመላእክት":
         print("Category in Angels");
         categorizedMezmur = {
-          "የመላእክት": allMezmur,
+          "ቅዱስ ሚካኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሚካኤል")).toList(),
+          "ቅዱስ ሩፋኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሩፋኤል")).toList(),
+          "ቅዱስ ኡራኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ኡራኤል")).toList(),
+          "ሁሉም": allMezmur.where((m) => m.angels.contains("ሁሉም")).toList(),
         };
         break;
 
@@ -156,6 +159,13 @@ class _ListPageState extends State<ListPage>
         };
         break;
 
+      case "የቅዱሳን ጻድቃንና ሰማዕታት":
+        print("Category in Nesha Mezmur");
+        categorizedMezmur = {
+          "የቅዱሳን ጻድቃንና ሰማዕታት": allMezmur,
+        };
+        break;
+
       case "ልዩ ልዩ":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
@@ -177,96 +187,6 @@ class _ListPageState extends State<ListPage>
 
     setState(() {});
   }
-
-
-  // filterMezmurLists(List<Mezmur> allMezmur){
-  //   List<Mezmur> filteredMezmur;
-  //
-  //   switch (widget.category.title) {
-  //   // Special case: Trinity
-  //     case "Kidest Silase":
-  //
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       (mezmur.trinitySong["Tir"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
-  //       ).toList();
-  //
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //     case "Kidest Kidanmhret":
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       (mezmur.stMarySong["Yekatit"] == true) || (mezmur.stMarySong["Nehase"] == true) || (mezmur.stMarySong["Mesgana"] == true)
-  //       ).toList();
-  //
-  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //     case "Kidus Gebriel":
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       (mezmur.kGebrielSong["Tahsas"] == true) || (mezmur.kGebrielSong["Hamle"] == true) || (mezmur.kGebrielSong["Mesgana"] == true)
-  //       ).toList();
-  //
-  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //     case "Kidusan Meleakt":
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       (mezmur.trinitySong["Tahsas"] == true) || (mezmur.trinitySong["Hamle"] == true) || (mezmur.trinitySong["Mesgana"] == true)
-  //       ).toList();
-  //
-  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //
-  //     case "Bealat Mezmur":
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       ( mezmur.mainHolidays.isNotEmpty ) || (mezmur.minorHolidays.isNotEmpty)
-  //       ).toList();
-  //
-  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //     case "Nesha Mezmur":
-  //
-  //       filteredMezmur = allMezmur.where((mezmur) =>
-  //       ( mezmur.repentanceSong!="")
-  //       ).toList();
-  //
-  //       print(" ✅ case on trinity ${allMezmur[0].trinitySong['tir']} ");
-  //       setState(() {
-  //         _data = filteredMezmur;
-  //       });
-  //       break;
-  //
-  //
-  //     //
-  //     default:
-  //       setState(() {
-  //         _data = allMezmur;
-  //       });
-  //       break;
-  //
-  //   }
-  // }
 
   Future<void> loadJson() async {
 
