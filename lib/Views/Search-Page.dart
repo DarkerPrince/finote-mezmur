@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:finotemezmur/Model/mezmur.dart';
 import 'package:finotemezmur/Model/ShortLyrics.dart';
 import 'package:finotemezmur/Model/LongLyrics.dart';
-import 'package:finotemezmur/Views/Listing-Page.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:finotemezmur/Model/category.dart';
 
+// Wrapper to hold matched result and matched line
+class MezmurSearchResult {
+  final Mezmur mezmur;
+  final String? matchedLine;
+
+  MezmurSearchResult(this.mezmur, this.matchedLine);
+}
 
 class SearchMezmurPage extends StatefulWidget {
   const SearchMezmurPage({super.key});
@@ -16,225 +21,22 @@ class SearchMezmurPage extends StatefulWidget {
 }
 
 class _SearchMezmurPageState extends State<SearchMezmurPage> {
-
-  List<Mezmur> _allMezmur = [];      // Full list loaded from JSON
-  List<Mezmur> _filteredMezmur = []; // Filtered based on search
+  List<Mezmur> _allMezmur = [];
+  List<MezmurSearchResult> _filteredMezmur = [];
   TextEditingController _searchController = TextEditingController();
 
-
-  void _performSearch(String query) {
-    setState(() {
-      _filteredMezmur = searchMezmur(_allMezmur, query);
-    });
-  }
-
-  List<Mezmur> searchMezmur(List<Mezmur> allMezmur, String query) {
-    final lowerQuery = query.toLowerCase();
-
-    return allMezmur.where((mezmur) {
-      final title = mezmur.title?.toLowerCase() ?? '';
-      final singer = mezmur.singer?.toLowerCase() ?? '';
-
-      final shortLyrics = mezmur.songLyrics.shortLyrics.lyrics?.toLowerCase() ?? '';
-      final chorus = mezmur.songLyrics.longLyrics.chorus?.toLowerCase() ?? '';
-      final verses = mezmur.songLyrics.longLyrics.verse
-          ?.map((line) => line.toLowerCase())
-          .join(',') ?? '';
-
-      final about = mezmur.about?.map((e) => e.toLowerCase()).join(',') ?? '';
-      final minorHolidays = mezmur.minorHolidays?.map((e) => e.toLowerCase()).join(',') ?? '';
-      final mainHolidays = mezmur.mainHolidays?.map((e) => e.toLowerCase()).join(',') ?? '';
-      final angels = mezmur.angels?.map((e) => e.toLowerCase()).join(',') ?? '';
-
-      return title.contains(lowerQuery) ||
-          singer.contains(lowerQuery) ||
-          shortLyrics.contains(lowerQuery) ||
-          chorus.contains(lowerQuery) ||
-          verses.contains(lowerQuery) ||
-          about.contains(lowerQuery) ||
-          minorHolidays.contains(lowerQuery) ||
-          mainHolidays.contains(lowerQuery) ||
-          angels.contains(lowerQuery);
-    }).toList();
-  }
-
-
-
+  Mezmur? _selectedMezmur;
   bool _showSheet = false;
-  late Mezmur _selectedMezmur;
   double _sheetSize = 1;
-  final DraggableScrollableController _controller =
-  DraggableScrollableController();
+  final DraggableScrollableController _controller = DraggableScrollableController();
 
-
-
-
-  LyricsDisplaySheet() {
-    Color backgroundColor = Theme.of(context).brightness == Brightness.dark
-        ? Color(0xFF121212)
-        : Colors.white;
-    if (_showSheet) {
-      return DraggableScrollableSheet(
-        initialChildSize: _sheetSize, // Starts small like a mini player
-        minChildSize: 0.14,
-        controller: _controller, // Minimum size when collapsed
-        maxChildSize: 1, // Maximum height when expanded
-        builder: (context, scrollController) {
-          return Container(
-            decoration: BoxDecoration(
-
-              boxShadow: [
-                BoxShadow(
-                  color: backgroundColor,
-                ),
-              ],
-            ),
-            child: ListView(
-              controller: scrollController,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Center(
-                    child: Container(
-                      width: 40,
-                      height: 5,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
-                ListTile(
-                  title: Text(_selectedMezmur.title ?? "" ,style: TextStyle(color: Theme.of(context).colorScheme.primary),),
-                  subtitle: Text(_selectedMezmur.singer ?? ""),
-                  trailing: IconButton(
-                      onPressed: () {
-                        setState(() {
-                          _showSheet = false;
-                        });
-                      },
-                      icon: Icon(Icons.close)),
-                ),
-                Divider(),
-                _selectedMezmur.songLyrics.isShortSong
-                    ? ShortMezmur(_selectedMezmur.songLyrics.shortLyrics)
-                    : LongMezmur(_selectedMezmur.songLyrics.longLyrics)
-                // Add more content as needed
-              ],
-            ),
-          );
-        },
-      );
-    } else {
-      return Container();
-    }
-  }
-
-  DisplayVerse(String Verse) {
-    return Container(
-      alignment: Alignment.center,
-      child: Wrap(
-        children: [
-          Text(Verse,
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: TextStyle(
-                fontSize: 24,
-              ))
-        ],
-      ),
-    );
-  }
-
-  TranslationDisplay(String Verse) {
-    return Verse==""?Container():Container(
-      color: Colors.blue,
-      alignment: Alignment.center,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            "ትርጉም:-",
-            style: TextStyle(
-              fontSize: 24,
-            ),
-          ),
-          Text(Verse,
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: TextStyle(
-                fontSize: 24,
-              ))
-        ],
-      ),
-    );
-  }
-
-  ShortMezmur(ShortLyrics shortMezmurLyrics) {
-    return Column(
-      children: [
-        DisplayVerse(shortMezmurLyrics.lyrics ?? ""),
-        TranslationDisplay(shortMezmurLyrics.translation ?? "")
-      ],
-    );
-  }
-
-  LongMezmur(LongLyrics longMezmurLyrics) {
-    return Column(
-        children: [
-          Container(
-            padding: EdgeInsets.all(12),
-            alignment: Alignment.center,
-            width: MediaQuery.of(context).size.width,
-            color: Theme.of(context).brightness == Brightness.dark
-                ? Colors.yellow.withOpacity(0.1)
-                : Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longMezmurLyrics.chorus ??"እዝ",
-                textAlign: TextAlign.center,
-                softWrap: true,
-                style: TextStyle(
-                  color: Theme.of(context).brightness == Brightness.dark
-                      ? Colors.yellow
-                      : Theme.of(context).primaryColor,
-                  fontSize: 24,
-                )),
-          ),
-          Column(
-            children: (longMezmurLyrics.verse as List)
-                .map((verse) => Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    DisplayVerse(verse),
-                    verse==""?Container():Container(
-                      padding: EdgeInsets.all(12),
-                      alignment: Alignment.center,
-                      width: MediaQuery.of(context).size.width,
-                      color: Theme.of(context).brightness == Brightness.dark
-                          ? Colors.yellow.withOpacity(0.1)
-                          : Theme.of(context).primaryColor.withOpacity(0.1),
-                      child: Text("እዝ",
-                          textAlign: TextAlign.center,
-                          softWrap: true,
-                          style: TextStyle(
-                            color: Theme.of(context).brightness == Brightness.dark
-                                ? Colors.yellow
-                                : Theme.of(context).primaryColor,
-                            fontSize: 24,
-                          )),
-                    )
-                  ],)
-
-            ))
-                .toList(),
-          )]);
+  @override
+  void initState() {
+    super.initState();
+    loadJson();
   }
 
   Future<void> loadJson() async {
-
     final List<String> jsonFiles = [
       'assets/Mezmur/kidanmhret.json',
       'assets/Mezmur/angels.json',
@@ -245,6 +47,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
       'assets/Mezmur/Repentance.json',
       'assets/Mezmur/St_Gebriel.json'
     ];
+
     List<Mezmur> allMezmur = [];
 
     for (String path in jsonFiles) {
@@ -258,43 +61,93 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
       allMezmur.addAll(mezmurList);
     }
 
-
-
     setState(() {
       _allMezmur = allMezmur;
-      _filteredMezmur = allMezmur;
+      _filteredMezmur = allMezmur.map((e) => MezmurSearchResult(e, null)).toList();
     });
   }
 
+  void _performSearch(String query) {
+    final lowerQuery = query.toLowerCase();
+    final results = <MezmurSearchResult>[];
 
+    for (final mezmur in _allMezmur) {
+      final title = mezmur.title?.toLowerCase() ?? '';
+      final singer = mezmur.singer?.toLowerCase() ?? '';
+      final shortLyrics = mezmur.songLyrics.shortLyrics.lyrics?.toLowerCase() ?? '';
+      final chorus = mezmur.songLyrics.longLyrics.chorus?.toLowerCase() ?? '';
+      final verses = mezmur.songLyrics.longLyrics.verse ?? [];
+      final otherSinger = mezmur.singerOther?.toLowerCase() ?? '';
 
-  @override
-  void initState() {
-    super.initState();
-    loadJson(); // load your _allMezmur here
-  }
+      String? matchedLine;
 
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
+      if (title.contains(lowerQuery)) matchedLine = mezmur.title;
+      else if (singer.contains(lowerQuery)) matchedLine = mezmur.singer;
+      else if (shortLyrics.contains(lowerQuery)) matchedLine = mezmur.songLyrics.shortLyrics.lyrics;
+      else if (chorus.contains(lowerQuery)) matchedLine = mezmur.songLyrics.longLyrics.chorus;
+      else if (otherSinger.contains(lowerQuery)) matchedLine = mezmur.singerOther;
+      else {
+        for (final line in verses) {
+          if (line.toLowerCase().contains(lowerQuery)) {
+            matchedLine = line;
+            break;
+          }
+        }
+      }
 
-  SingerInfoDisplay(Mezmur item){
-    if(item.singer == "ሌላ ዘማሪ" ||item.singer == "ሌላ"){
-      return Text(item.singerOther??"");
+      if (matchedLine != null) {
+        results.add(MezmurSearchResult(mezmur, matchedLine));
+      }
     }
-    return Text(item.singer??"");
+
+    setState(() {
+      _filteredMezmur = results;
+    });
+  }
+  TextSpan highlightMatch(String source, String query) {
+    final lowerSource = source.toLowerCase();
+    final lowerQuery = query.toLowerCase();
+    final startIndex = lowerSource.indexOf(lowerQuery);
+
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final highlightColor = Theme.of(context).colorScheme.primary;
+    final textColor = isDark ? Colors.black : Colors.white;
+
+    if (startIndex == -1 || query.isEmpty) {
+      return TextSpan(text: source);
+    }
+
+    return TextSpan(
+      children: [
+        TextSpan(text: source.substring(0, startIndex)),
+        TextSpan(
+          text: source.substring(startIndex, startIndex + query.length),
+          style: TextStyle(
+            backgroundColor: highlightColor,
+            color: textColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        TextSpan(text: source.substring(startIndex + query.length)),
+      ],
+      style: TextStyle(
+        color: Theme.of(context).textTheme.bodyMedium?.color,
+        fontSize: 14,
+      ),
+    );
+  }
+
+
+  Widget SingerInfoDisplay(Mezmur item) {
+    if (item.singer == "ሌላ ዘማሪ" || item.singer == "ሌላ") {
+      return Text(item.singerOther ?? "");
+    }
+    return Text(item.singer ?? "");
   }
 
   void _handleItemTap(Mezmur mezmur, double size) {
-    if (_showSheet && _selectedMezmur.title == mezmur.title) {
-      // If same item is tapped again, expand to full size
-      _controller.animateTo(
-        1.0,
-        duration: Duration(milliseconds: 300),
-        curve: Curves.easeInOut,
-      );
+    if (_showSheet && _selectedMezmur?.title == mezmur.title) {
+      _controller.animateTo(1.0, duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
     } else {
       setState(() {
         _selectedMezmur = mezmur;
@@ -304,12 +157,98 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
     }
   }
 
+  Widget LyricsDisplaySheet() {
+    if (!_showSheet || _selectedMezmur == null) return Container();
 
+    return DraggableScrollableSheet(
+      initialChildSize: _sheetSize,
+      minChildSize: 0.14,
+      controller: _controller,
+      maxChildSize: 1,
+      builder: (context, scrollController) {
+        return Container(
+          color: Theme.of(context).scaffoldBackgroundColor,
+          child: ListView(
+            controller: scrollController,
+            children: [
+              const SizedBox(height: 10),
+              Center(
+                child: Container(
+                  width: 40,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(_selectedMezmur!.title ?? "", style: TextStyle(color: Theme.of(context).colorScheme.primary)),
+                subtitle: Text(_selectedMezmur!.singer ?? ""),
+                trailing: IconButton(
+                    onPressed: () => setState(() => _showSheet = false),
+                    icon: const Icon(Icons.close)),
+              ),
+              const Divider(),
+              _selectedMezmur!.songLyrics.isShortSong
+                  ? DisplayShortLyrics(_selectedMezmur!.songLyrics.shortLyrics)
+                  : DisplayLongLyrics(_selectedMezmur!.songLyrics.longLyrics)
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget DisplayShortLyrics(ShortLyrics shortLyrics) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Text(shortLyrics.lyrics ?? "", textAlign: TextAlign.center, style: const TextStyle(fontSize: 24)),
+        ),
+        if (shortLyrics.translation?.isNotEmpty == true)
+          Container(
+            color: Colors.blue.withOpacity(0.1),
+            padding: const EdgeInsets.all(12),
+            child: Column(
+              children: [
+                const Text("ትርጉም:-", style: TextStyle(fontSize: 20)),
+                Text(shortLyrics.translation!, style: const TextStyle(fontSize: 20))
+              ],
+            ),
+          )
+      ],
+    );
+  }
+
+  Widget DisplayLongLyrics(LongLyrics longLyrics) {
+    return Column(
+      children: [
+        if (longLyrics.chorus?.isNotEmpty == true)
+          Container(
+            padding: const EdgeInsets.all(12),
+            color: Theme.of(context).primaryColor.withOpacity(0.1),
+            child: Text(longLyrics.chorus!, textAlign: TextAlign.center, style: const TextStyle(fontSize: 24)),
+          ),
+        ...?longLyrics.verse?.map((verse) => Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(verse, style: const TextStyle(fontSize: 20)),
+        ))
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('መዝሙር ፍለጋ')),
+      appBar: AppBar(title: const Text('መዝሙር ፍለጋ')),
       body: Column(
         children: [
           Padding(
@@ -337,28 +276,30 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
           ),
           Expanded(
             child: _filteredMezmur.isEmpty
-                ? Center(child: Text('መዝሙር አልተገኘም'))
-                : Center(child:
-                  Stack(children: [
+                ? const Center(child: Text('መዝሙር አልተገኘም'))
+                : Stack(
+              children: [
                 ListView.builder(
                   itemCount: _filteredMezmur.length,
                   itemBuilder: (context, index) {
-                    final mezmur = _filteredMezmur[index];
+                    final result = _filteredMezmur[index];
+                    final mezmur = result.mezmur;
+                    final matchedLine = result.matchedLine ?? '';
+
                     return ListTile(
-                      title: Text(mezmur.title,style: TextStyle(fontWeight: FontWeight.bold),),
-                      leading: Icon(Icons.queue_music , color: Theme.of(context).colorScheme.primary,),
-                      subtitle: SingerInfoDisplay(mezmur),
+                      title: Text(mezmur.title ?? "", style: const TextStyle(fontWeight: FontWeight.bold)),
+                      subtitle: RichText(text: highlightMatch(matchedLine, _searchController.text)),
+                      leading: Icon(Icons.queue_music, color: Theme.of(context).colorScheme.primary),
                       onTap: () => _handleItemTap(mezmur, 1),
                     );
                   },
                 ),
-                    LyricsDisplaySheet(),
-              ],)
-              ,)
+                LyricsDisplaySheet(),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
-
 }

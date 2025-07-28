@@ -89,7 +89,9 @@ class _WebViewExampleState extends State<WebViewExample> {
               ),
             )
           else
-            WebViewWidget(controller: _controller),
+            WebViewWidget(
+                controller: _controller
+            ),
           if (_isLoading)
             const Center(
               child: CircularProgressIndicator(),
