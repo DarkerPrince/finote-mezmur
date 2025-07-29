@@ -102,7 +102,7 @@ class _ListPageState extends State<ListPage>
         };
         break;
 
-      case "የቅድስት ኪዳነ ምሕረት":
+      case "የቅድስት ኪዳነምሕረት":
         print("Category in Kidest kidanmhret");
         categorizedMezmur = {
           "የካቲት": allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
