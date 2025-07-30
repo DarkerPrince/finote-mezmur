@@ -105,35 +105,32 @@
           "fileLocation": ""
         },
         {
-          "title": "የዘመነ ጽጌ",
-          "image": "assets/Image/image1.png",
-          "fileLocation": ""
-        },
-
-        {
           "title": "መስቀል",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },
-
         {
-          "title": "ጥምቀት",
+          "title": "የዘመነ ጽጌ",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },
-
         {
           "title": "ብሥራት",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },
         {
-          "title": "ሆሳዕና",
+          "title": "ልደት",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },
         {
-          "title": "ልደት",
+          "title": "ጥምቀት",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "ሆሳዕና",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },

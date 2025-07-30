@@ -28,6 +28,8 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
   Mezmur? _selectedMezmur;
   bool _showSheet = false;
   double _sheetSize = 1;
+  double _sheetExtent = 1;
+
   final DraggableScrollableController _controller = DraggableScrollableController();
 
   @override
@@ -158,85 +160,190 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
   }
 
   Widget LyricsDisplaySheet() {
-    if (!_showSheet || _selectedMezmur == null) return Container();
+    if (!_showSheet) return SizedBox.shrink();
 
-    return DraggableScrollableSheet(
-      initialChildSize: _sheetSize,
-      minChildSize: 0.14,
-      controller: _controller,
-      maxChildSize: 1,
-      builder: (context, scrollController) {
-        return Container(
-          color: Theme.of(context).scaffoldBackgroundColor,
-          child: ListView(
-            controller: scrollController,
-            children: [
-              const SizedBox(height: 10),
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(10),
+    return NotificationListener<DraggableScrollableNotification>(
+      onNotification: (notification) {
+        setState(() {
+          _sheetExtent = notification.extent;
+        });
+        return true;
+      },
+      child: DraggableScrollableSheet(
+        controller: _controller,
+        initialChildSize: _sheetSize,
+        minChildSize: 0.14,
+        maxChildSize: 1.0,
+        builder: (context, scrollController) {
+
+
+
+          final Color minColor = Theme.of(context).colorScheme.secondary;
+          final Color maxColor = Theme.of(context).brightness == Brightness.dark
+              ? const Color(0xFF121212)
+              : Colors.white;
+
+          print("The SheetSize initial is ${_sheetSize}");
+          print("The SheetExtent initial is ${_sheetExtent}");
+
+          final double factor = ((_sheetExtent - 0.14) / (1.0 - 0.14)).clamp(0.0, 1.0);
+          final double flippedFactor = 1.0 - factor;
+          final Color animatedColor = Color.lerp(minColor, maxColor, factor)!;
+
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            decoration: BoxDecoration(
+              color: animatedColor,
+              boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 8)],
+            ),
+            child: ListView(
+              controller: scrollController,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Center(
+                    child: Container(
+                      width: 40,
+                      height: 5,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
                   ),
                 ),
-              ),
-              ListTile(
-                title: Text(_selectedMezmur!.title ?? "", style: TextStyle(color: Theme.of(context).colorScheme.primary)),
-                subtitle: Text(_selectedMezmur!.singer ?? ""),
-                trailing: IconButton(
-                    onPressed: () => setState(() => _showSheet = false),
-                    icon: const Icon(Icons.close)),
-              ),
-              const Divider(),
-              _selectedMezmur!.songLyrics.isShortSong
-                  ? DisplayShortLyrics(_selectedMezmur!.songLyrics.shortLyrics)
-                  : DisplayLongLyrics(_selectedMezmur!.songLyrics.longLyrics)
-            ],
-          ),
-        );
-      },
-    );
-  }
-
-  Widget DisplayShortLyrics(ShortLyrics shortLyrics) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Text(shortLyrics.lyrics ?? "", textAlign: TextAlign.center, style: const TextStyle(fontSize: 24)),
-        ),
-        if (shortLyrics.translation?.isNotEmpty == true)
-          Container(
-            color: Colors.blue.withOpacity(0.1),
-            padding: const EdgeInsets.all(12),
-            child: Column(
-              children: [
-                const Text("ትርጉም:-", style: TextStyle(fontSize: 20)),
-                Text(shortLyrics.translation!, style: const TextStyle(fontSize: 20))
+                ListTile(
+                  title: Text(
+                    _selectedMezmur!.title ?? "",
+                    style: TextStyle(fontSize: 20,  color: Theme.of(context).colorScheme.primary,fontWeight: FontWeight.bold),
+                  ),
+                  subtitle: Text(_selectedMezmur!.singer ?? ""),
+                  trailing: IconButton(
+                    icon: Icon(Icons.close),
+                    onPressed: () {
+                      setState(() {
+                        _showSheet = false;
+                        _sheetExtent = 1;
+                      });
+                    },
+                  ),
+                ),
+                Divider(),
+                _selectedMezmur!.songLyrics.isShortSong
+                    ? ShortMezmur(_selectedMezmur!.songLyrics.shortLyrics)
+                    : LongMezmur(_selectedMezmur!.songLyrics.longLyrics),
               ],
             ),
-          )
+          );
+        },
+      ),
+    );
+  }
+
+
+  DisplayVerse(String Verse) {
+    return Container(
+      alignment: Alignment.center,
+      child: Wrap(
+        children: [
+          Text(Verse,
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: TextStyle(
+                fontSize: 24,
+              ))
+        ],
+      ),
+    );
+  }
+
+  TranslationDisplay(String Verse) {
+    return Verse==""?Container():Container(
+      color: Colors.blue,
+      alignment: Alignment.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "ትርጉም:-",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87, // Use Theme.of(context).primaryColor for dynamic color
+              letterSpacing: 1.2,
+            ),
+          ),
+          Text(Verse,
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: TextStyle(
+                fontSize: 24,
+              ))
+        ],
+      ),
+    );
+  }
+
+  ShortMezmur(ShortLyrics shortMezmurLyrics) {
+    return Column(
+      children: [
+        DisplayVerse(shortMezmurLyrics.lyrics ?? ""),
+        TranslationDisplay(shortMezmurLyrics.translation ?? "")
       ],
     );
   }
 
-  Widget DisplayLongLyrics(LongLyrics longLyrics) {
+  LongMezmur(LongLyrics longMezmurLyrics) {
     return Column(
-      children: [
-        if (longLyrics.chorus?.isNotEmpty == true)
+        children: [
           Container(
-            padding: const EdgeInsets.all(12),
-            color: Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longLyrics.chorus!, textAlign: TextAlign.center, style: const TextStyle(fontSize: 24)),
+            padding: EdgeInsets.all(12),
+            alignment: Alignment.center,
+            width: MediaQuery.of(context).size.width,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? Colors.yellow.withOpacity(0.1)
+                : Theme.of(context).primaryColor.withOpacity(0.1),
+            child: Text(longMezmurLyrics.chorus ??"እዝ",
+                textAlign: TextAlign.center,
+                softWrap: true,
+                style: TextStyle(
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? Colors.yellow
+                      : Theme.of(context).primaryColor,
+                  fontSize: 24,
+                )),
           ),
-        ...?longLyrics.verse?.map((verse) => Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(verse, style: const TextStyle(fontSize: 20)),
-        ))
-      ],
-    );
+          Column(
+            children: (longMezmurLyrics.verse as List)
+                .map((verse) => Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    DisplayVerse(verse),
+                    verse==""?Container():Container(
+                      padding: EdgeInsets.all(12),
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width,
+                      color: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.yellow.withOpacity(0.1)
+                          : Theme.of(context).primaryColor.withOpacity(0.1),
+                      child: Text("እዝ",
+                          textAlign: TextAlign.center,
+                          softWrap: true,
+                          style: TextStyle(
+                            color: Theme.of(context).brightness == Brightness.dark
+                                ? Colors.yellow
+                                : Theme.of(context).primaryColor,
+                            fontSize: 24,
+                          )),
+                    )
+                  ],)
+
+            ))
+                .toList(),
+          )]);
   }
 
   @override

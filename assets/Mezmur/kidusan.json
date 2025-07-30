@@ -3,54 +3,6 @@
   "song": [
     {
       "id": "1",
-      "Timestamp": 45825.565449270835,
-      "Title": "ሆሳዕና ለወልደ ዳዊት 1",
-      "singer": "ሌላ",
-      "about": [
-        "የቅዱሳን ጻድቃንና ሰማዕታት"
-      ],
-      "minor_holidays": [],
-      "main_holidays": [
-        "ሆሳዕና"
-      ],
-      "angels": [],
-      "Trinity_Song": {
-        "Tir": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "St_Mary_Song": {
-        "Yekatit": false,
-        "Nehase": false,
-        "Mesgana": false
-      },
-      "K_Gebriel_Song": {
-        "Tahsas": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "songLyrics": {
-        "isShortSong": false,
-        "shortLyrics": {
-          "lyrics": "",
-          "translation": ""
-        },
-        "longLyrics": {
-          "chorus": "ሆሳዕና /2/ ለወልደ ዳዊት/2/",
-          "verse": [
-            "አባቶች እናቶች ሕፃናት በሙሉ /2/\nለዓለም መድኃኒት ሆሳእና በሉ /2/",
-            "ከአህያዋ ጀርባ አምላክ ቁጭ አለና /2/\nአሳየ ለሕዝቡ ታላቅ ትህትና /2/",
-            "ቤተ መቅደስ ገብቶ የሰላሙ ዳኛ/2/ \nይውጡ ብሎ አዘዘ ሌባና ቀማኛ/2/",
-            "አንቺ ኢየሩሳሌም በጣም ደስ ይበልሰሽ /2/\nንጉስ በአህያ ላይ ይኸው መጣልሽ /2/",
-            "",
-            "",
-            ""
-          ]
-        }
-      }
-    },
-    {
-      "id": "2",
       "Timestamp": 45857.44017158565,
       "Title": "የዓለሙን ክብር",
       "singer": "ማሕበረ ቅዱሳን",
@@ -96,7 +48,7 @@
       }
     },
     {
-      "id": "3",
+      "id": "2",
       "Timestamp": 45857.44941292824,
       "Title": "ኢትዮጵያዊ ሱራፊ",
       "singer": "ሌላ",
@@ -144,6 +96,54 @@
     },
     {
       "id": "4",
+      "Timestamp": 45863.941714699075,
+      "Title": "ቅዱሳን_ዘእምኀቤከ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [
+        "ጰራቅሊጦስ"
+      ],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ቅዱሳን ዘእምኀቤከ ወንጹሐነ ይኲኑ /2/\nጰራቅሊጦስሃ /2/ ዲቤነ መንፈስከ ፈኑ /2/",
+          "translation": "እንደአንተ ቅዱሳንና ንጹሐን ይሁኑ\nጰራቅሊጦስ መንፈስህን በእኛላይ ላክ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
       "Timestamp": 45859.58985508102,
       "Title": "የሕይወትን መዝገብ ",
       "singer": "ማሕበረ ቅዱሳን",
@@ -189,7 +189,7 @@
       }
     },
     {
-      "id": "5",
+      "id": "6",
       "Timestamp": 45861.70898761574,
       "Title": "በእውነት ሰማዕታት",
       "singer": "ማሕበረ ቅዱሳን",
@@ -235,7 +235,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "7",
       "Timestamp": 45862.50635127314,
       "Title": "ፃድቃን ሰማዕታት በሙሉ",
       "singer": "ሌላ",
@@ -282,7 +282,7 @@
       }
     },
     {
-      "id": "7",
+      "id": "8",
       "Timestamp": 45862.51222390046,
       "Title": "ያማልዱናል",
       "singer": "ሌላ",
@@ -329,7 +329,7 @@
       }
     },
     {
-      "id": "8",
+      "id": "9",
       "Timestamp": 45862.516322118056,
       "Title": "ሰዓሉ ለነ",
       "singer": "ሌላ",
@@ -376,105 +376,7 @@
       }
     },
     {
-      "id": "9",
-      "Timestamp": 45863.932095219905,
-      "Title": "ጌታ ተነስቷል",
-      "singer": "ሌላ",
-      "repentanceSong": "ሌሎች",
-      "about": [
-        "የቅዱሳን ጻድቃንና ሰማዕታት"
-      ],
-      "minor_holidays": [],
-      "main_holidays": [
-        "ትንሳኤ"
-      ],
-      "angels": [],
-      "Trinity_Song": {
-        "Tir": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "St_Mary_Song": {
-        "Yekatit": false,
-        "Nehase": false,
-        "Mesgana": false
-      },
-      "K_Gebriel_Song": {
-        "Tahsas": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "songLyrics": {
-        "isShortSong": false,
-        "shortLyrics": {
-          "lyrics": "",
-          "translation": ""
-        },
-        "longLyrics": {
-          "chorus": "ጌታ ተነስቷል እልል እልል በሉ \nአምላክ ተነስቷል የምስራች በሉ\nሙስና መቃብር በኃይሉ አጥፍቶ\nሁላችን አየነው ክርስቶስ ተነስቶ",
-          "verse": [
-            "አዳምን ለማዳን ቃልኪዳን ገብቶለት\nዘመኑን ጠብቆ ካሳ ሊከፍልለት\nከሰማያት ወርዶ የተሰቀለው\nሞትን በሞት ሽሮ ይኸው አየነው",
-            "ደቀ መዛሙርቱ እጅጉን ተጨንቀው\nበጌታቸው መሞት በኀዘን ተመተው\nበተዘጋ ደጃፍ ተሰብስበው ሳለ\nእጆቹን ዘርግቶ ሰላም ለእናንተ አለ",
-            "ማርያም መግደላዊት እየገሰገሰች\nበለሊት ተነስታ ወደ አምላኳ ሄደች\nአይሁድ አንገላተው የሰቀሉት ጌታ\nተነስቶ አግኝታው ተመላች በደስታ",
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      }
-    },
-    {
       "id": "10",
-      "Timestamp": 45863.941714699075,
-      "Title": "ቅዱሳን_ዘእምኀቤከ",
-      "singer": "ሌላ",
-      "repentanceSong": "ሌሎች",
-      "about": [
-        "የቅዱሳን ጻድቃንና ሰማዕታት"
-      ],
-      "minor_holidays": [],
-      "main_holidays": [
-        "ጰራቅሊጦስ"
-      ],
-      "angels": [],
-      "Trinity_Song": {
-        "Tir": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "St_Mary_Song": {
-        "Yekatit": false,
-        "Nehase": false,
-        "Mesgana": false
-      },
-      "K_Gebriel_Song": {
-        "Tahsas": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "songLyrics": {
-        "isShortSong": true,
-        "shortLyrics": {
-          "lyrics": "ቅዱሳን ዘእምኀቤከ ወንጹሐነ ይኲኑ /2/\nጰራቅሊጦስሃ /2/ ዲቤነ መንፈስከ ፈኑ /2/",
-          "translation": "እንደአንተ ቅዱሳንና ንጹሐን ይሁኑ\nጰራቅሊጦስ መንፈስህን በእኛላይ ላክ"
-        },
-        "longLyrics": {
-          "chorus": "",
-          "verse": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      }
-    },
-    {
-      "id": "11",
       "Timestamp": 45866.59028971065,
       "Title": "ጻድቃን ኢሞቱ",
       "singer": "ሌላ",
@@ -520,7 +422,7 @@
       }
     },
     {
-      "id": "12",
+      "id": "11",
       "Timestamp": 45866.5942046412,
       "Title": "ወይቤሎሙ ሑሩ",
       "singer": "ማሕበረ ቅዱሳን",
@@ -566,7 +468,7 @@
       }
     },
     {
-      "id": "13",
+      "id": "12",
       "Timestamp": 45866.597633576384,
       "Title": "ገድሉ ተአምራቱ",
       "singer": "ዘማሪት ፋንቱ ወልዴ",
@@ -612,7 +514,7 @@
       }
     },
     {
-      "id": "14",
+      "id": "13",
       "Timestamp": 45866.605223506944,
       "Title": "ተክለ ሃይማኖት ባህታዊ",
       "singer": "ሌላ",
@@ -659,7 +561,7 @@
       }
     },
     {
-      "id": "15",
+      "id": "14",
       "Timestamp": 45866.60862568287,
       "Title": "ሐዋርያው መነኩሴ",
       "singer": "ሌላ",
@@ -706,7 +608,7 @@
       }
     },
     {
-      "id": "16",
+      "id": "15",
       "Timestamp": 45866.685820011575,
       "Title": "አረሳት ኢትዮጵያን",
       "singer": "ሊቀ መዘምራን ይልማ ኃይሉ",
@@ -752,7 +654,7 @@
       }
     },
     {
-      "id": "17",
+      "id": "16",
       "Timestamp": 45866.687094050925,
       "Title": "አባ አቡነ",
       "singer": "ሌላ",
@@ -798,7 +700,7 @@
       }
     },
     {
-      "id": "18",
+      "id": "17",
       "Timestamp": 45866.68900798611,
       "Title": "ተክለ አብ ተክለወልድ ተክለ መንፈስ ቅዱስ",
       "singer": "ሌላ",
@@ -845,7 +747,7 @@
       }
     },
     {
-      "id": "19",
+      "id": "18",
       "Timestamp": 45866.69026800926,
       "Title": "ኢትዮጵያዊ ሱራፊ",
       "singer": "ሌላ",
@@ -883,6 +785,423 @@
             "ሥጋ መለኮትን ለሰዉት እጆችህ\nደመ መለኮትን ለቀዱ ጣቶችህ\nለታጠቅከው ቅናት ለደረብከው ካባ\nሰላም እንላለን ባርከነ አባ",
             "ተክለ አብ ተክለ ወልድ ተክለ መንፈስቅዱስ\nየሕግ መምህር ኢትዮጲያዊ ጳውሎስ\nብጹዕ ሐዋርያ የአምላክ አገልጋይ\nወንጌልን በምድር ቅዳሴን በሰማይ",
             "ኢትዮጲያዊ ሱራፊ በምድር ላይ መልአክ\nመንበረ ሥላሴን በማዕጠንት ያጠንክ\nአእራጌ ጸሎት ሰማያዊ ካህን\nሰባኬ ሃይማኖት በሃይማኖት አጽናን",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "19",
+      "Timestamp": 45867.482518495366,
+      "Title": "በፍኖተ ጽድቁ",
+      "singer": "ሌላ",
+      "singerOther": "መዝሙር ዘማሪ ወንደሰን ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "በፍኖተ ጽድቁ ኢትዮጵያን ያበራ\nድንቅ ተአምራትን በሁሉም የሰራ\nመንበሩን ለማጠን በይባቤ ዐረገ\nተክለሃይማኖት ነው ጽድቅን ያደረገ",
+          "verse": [
+            "ጻድቅ ጸሎተኛ የእግዚአርያ ፍሬ\nአምላክ የመረጠው የወንጌል ገበሬ\nሞቶሎሚ ቢያብል በክፋት ጥማሬ\nለክብር አበቃኸው አጠመከው ዛሬ",
+            "ሰባት ዓመት ቆሞ ለጸሎት የተጋ\nከፈጣሪ አምላክ የተሰጠው ጸጋ\nበአንድ እግሩ የቆመ ሲጠባ ሲነጋ\nአማልዶ እንዲያድነን እርሱን እንጠጋ",
+            "ደግ ሰው መምህር የተዋህዶ አርበኛ\nወንጌላዊ ካህን የጽድቅ መገኛ\nኃጢአታችን በዝታ እንዳንዝል ዳግመኛ\nበምልጃህ አስበን ተመልከት ወደኛ",
+            "በእስራ አርባዕቱ ካህናተ ሰማይ \nመንበሩን ያጠንከው ከፈጣሪ አዶናይ\nጸልይ ለኢትዮጲያ ከበደል ከኃጢአት\nጸድቅ እንጂ ኩነኔ ፍጹም እንዳያያት",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "20",
+      "Timestamp": 45868.66326037037,
+      "Title": "ለተክለ ሃይማኖት ጻድቅ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ለተክለ ሃይማኖት ጻድቅ መጠነ በዝሃ ህማሙ\nትዌድሶ ደብረ ሊባኖሰ ገዳሙ /2/ ",
+          "verse": [
+            "እምነ አድባራት ኩሎን ዘተለአለት በስሙ \nትዌድሶ ደብረ ሊባኖሰ ገዳሙ /2/ ",
+            "እስመ በውስቴታ ተገብረ ፍልሠተ ሥጋሁ ወአጽሙ \nትዌድሶ ደብረ ሊባኖሰ ገዳሙ /2/ ",
+            "ኢየሱስ ክርስቶሰ እንተ ቀደሳ በደሙ \n ትዌድሶ ደብረ ሊባኖሰ ገዳሙ /2/ ",
+            "ትርጉም፦ ጻድቁ ተክለሃይማኖት ብዙ ህማም የተቀበለባት ቅዱስ አጽሙ ያረፈባት በስሙ ከታነጹት አድባራት ሁሉ ከፍ ያለች ኢየሱስ ክርስቶስ በደሙ የቀደሳት ደብረ ሊባኖስ ታመሰግነዋለች\n",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "21",
+      "Timestamp": 45868.66695706018,
+      "Title": "በፍኖተ ጽድቁ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ወንደሰን ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "በፍኖተ ጽድቁ ኢትዮጵያን ያበራ\nድንቅ ተአምራትን በሁሉም የሰራ\nመንበሩን ለማጠን በይባቤ ዐረገ\nተክለሃይማኖት ነው ጽድቅን ያደረገ",
+          "verse": [
+            "ጻድቅ ጸሎተኛ የእግዚአርያ ፍሬ\nአምላክ የመረጠው የወንጌል ገበሬ\nሞቶሎሚ ቢያብል በክፋት ጥማሬ\nለክብር አበቃኸው አጠመከው ዛሬ",
+            "ሰባት ዓመት ቆሞ ለጸሎት የተጋ\nከፈጣሪ አምላክ የተሰጠው ጸጋ\nበአንድ እግሩ የቆመ ሲጠባ ሲነጋ\nአማልዶ እንዲያድነን እርሱን እንጠጋ",
+            "ደግ ሰው መምህር የተዋህዶ አርበኛ\nወንጌላዊ ካህን የጽድቅ መገኛ\nኃጢአታችን በዝታ እንዳንዝል ዳግመኛ\nበምልጃህ አስበን ተመልከት ወደኛ",
+            "በእስራ አርባዕቱ ካህናተ ሰማይ \nመንበሩን ያጠንከው ከፈጣሪ አዶናይ\nጸልይ ለኢትዮጲያ ከበደል ከኃጢአት\nጸድቅ እንጂ ኩነኔ ፍጹም እንዳያያት",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "22",
+      "Timestamp": 45868.66748239583,
+      "Title": "ደም ወማይ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ደም ወማይ ወሀሊብ እምነ ክሳዱ/ፈልፈለ/2/\nሶበ ተከለለ /2/ ጊዮርጊስ ሶበ ተከለለ /2/ ",
+          "translation": "ጊዮርጊስ አንገቱን በተቆረጠ ጊዜ ደም ውሃና ወተት ወጣ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "Timestamp": 45868.66960666666,
+      "Title": "ፀሐይ ዘልዳ ",
+      "singer": "ሌላ",
+      "singerOther": "ደብረ ብርሃን ሰ/ት/ቤት ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እምነ ሠናያት ኩሎ እለ ውስተ ባሕር ወየብስ /2/\nሶበ ነጸርኩ በሃሢሥ ዘከማከ አልቦ ጊዮርጊስ /2/",
+          "verse": [
+            "የመከራ ገፈት ቀምሳ ለሰጠችህ\nልጅ ሆነሃልና ለማርያም እናትህ\nስምዐ ክርስቶስ አርአያ ሰማዕታት\nሆነህ የተሰየምክ የሰማዕታት አባት",
+            "የገድልህን ነገር ጆሮአችን ሲሰማ\nልባችን ይቀልጣል ለጽናትህ ዜና\nየጌታህን ትዕግሥት ቀራንዮን እያሰብክ\nበወጣትነትህ ተጋድሎህን ፈጸምክ",
+            "በጭንቅ በመከራ ጽናትህ ሲፈተን\nከአምላክ ተምረህ ቁጣን ሳትናገር\nሁሉን ስለ ጌታ ችለህ ታግሰሃል\nየብርሃን አክሊልን በሰማይ ደፍተሃል",
+            "ስዕለ ገጽህን ዘወትር እያየን\nነገረ ገድልህን ሁልጊዜ እያደነቅን\nፍቅርህ በልባችን ስለተሳለብን\nይኸው አንዘምራለን ጊዮርጊስ እያልን",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "24",
+      "Timestamp": 45868.670364791666,
+      "Title": "ነዋ ጊዮርጊስ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ነዋ ጊዮርጊስ አሐዱ እም ቅዱሳን ሰማዕት /2/\nመጽአ ይርድአኒ ይቤ ምኒልክ ንጉሥ /2/",
+          "translation": "ንጉሥ ምኒልክ አለ እነሆ ከቅዱሳን ሰማዕት አንድ የሆነ ጊዮርጊስ ሊረዳኝ መጣ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "25",
+      "Timestamp": 45868.670919027776,
+      "Title": "ጸለየ ቅዱስ ጊዮርጊስ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ጸለየ ቅዱስ ጊዮርጊስ እንዘ ይብል /2/\nኢትግድፋ ለነፍስየ ኢየሱስ ክርስቶስ /2/",
+          "translation": "ቅዱስ ጊዮርጊስ እንዲህ ሲል ለመነ ጌታዬ ኢየሱስ ክርስቶስ ሆይ ነፍሴን አትተዋት"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "26",
+      "Timestamp": 45868.67144358796,
+      "Title": "ከመ ጸበል ዘነፋስ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ከመ ጸበል ዘነፋስ ዘረውዎ ደብረ ይድራስ /2/\nለብጹዕ ወለቅዱስ ቅዱስ ቅዱስ ጊዮርጊስ ሰማዕት /2/",
+          "translation": "እንደ ነፋስ ትቢያ በተኑት በይድራስ ተራራ /2/\nብጹዑንና ምስጉኑን ምስጉን ምስጉን ጊዮርጊስ ሰማዕት /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "27",
+      "Timestamp": 45868.67196603009,
+      "Title": "በፍቅረ አምላኩ ",
+      "singer": "ሌላ",
+      "about": [
+        "የቅዱሳን ጻድቃንና ሰማዕታት"
+      ],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በፍቅረ አምላኩ ጊዮርጊስ /2/\nተጋደለ /4/ ወፈጸመ ገድሎ /2/",
+          "translation": "በአምላኩ ፍቅር ቅዱስ ጊዮርጊስ ተጋድሎውን ፈጸመ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
             "",
             "",
             "",

@@ -86,8 +86,6 @@ class _ListPageState extends State<ListPage>
 
   List<Mezmur> _data = [];
 
-  // List<Mezmur> filteredMezmur=[];
-
   Map<String, List<Mezmur>> categorizedMezmur = {};
 
   void categorizeMezmurMethod(List<Mezmur> allMezmur, String categoryTitle) {
@@ -132,16 +130,25 @@ class _ListPageState extends State<ListPage>
 
       case "በዓላት":
         print("Category in Bealat");
+        // Define known keywords
+        final knownAbouts = ["የአዲስ ዓመት", "የዘመነ ጽጌ"];
+        final knownMainHolidays = ["መስቀል", "ብሥራት", "ሆሳዕና", "ልደት", "ጥምቀት", "ትንሳኤ"];
+
         categorizedMezmur = {
           "የአዲስ ዓመት": allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
           "የዘመነ ጽጌ": allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
-          "መስቀል": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
+          "መስቀል": allMezmur.where((m) => m.mainHolidays.contains("መስቀል")).toList(),
           "ብሥራት": allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
           "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ሆሳዕና")).toList(),
           "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
           "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
-          "ሌላ": allMezmur.where((m) => m.about.isNotEmpty||m.mainHolidays.isNotEmpty||m.minorHolidays.isNotEmpty).toList()
+          "ሌላ": allMezmur.where((m) {
+            // Check if not in any of the above categories
+            bool isKnownAbout = knownAbouts.any((about) => m.about.contains(about));
+            bool isKnownHoliday = knownMainHolidays.any((holiday) => m.mainHolidays.contains(holiday));
+            return !isKnownAbout && !isKnownHoliday;
+          }).toList()
         };
         break;
 
