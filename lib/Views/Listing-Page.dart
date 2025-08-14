@@ -112,7 +112,7 @@ class _ListPageState extends State<ListPage>
       case "የቅዱስ ገብርኤል":
         print("Category in Kidest Silase");
         categorizedMezmur = {
-          "ታህሳስ": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
+          "ታኅሣሥ": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
           "ሐምሌ": allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
           "ምሥጋና": allMezmur.where((m) => m.kGebrielSong["Mesgana"] == true).toList(),
         };
@@ -179,7 +179,7 @@ class _ListPageState extends State<ListPage>
           "የሐዘን": allMezmur.where((m) => m.others=="የሐዘን").toList(),
           "የሕፃናት": allMezmur.where((m) => m.others=="የሕፃናት").toList(),
           "የጳጳሳት መቀበያ": allMezmur.where((m) => m.others=="የጳጳሳት መቀበያ").toList(),
-          "የሠርግ": allMezmur.where((m) => m.about.contains("የሠርግ")).toList(),
+          "የሰርግ": allMezmur.where((m) => m.about.contains("የሠርግ")).toList(),
           "የቤተ ክርስቲያን": allMezmur.where((m) => m.about.contains("የቤተ ክርስቲያን")).toList(),
         };
         break;
@@ -313,7 +313,7 @@ class _ListPageState extends State<ListPage>
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.yellow.withOpacity(0.1)
                 : Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longMezmurLyrics.chorus ??"እዝ",
+            child: Text(longMezmurLyrics.chorus ??"አዝ",
                 textAlign: TextAlign.center,
                 softWrap: true,
                 style: TextStyle(
@@ -338,7 +338,7 @@ class _ListPageState extends State<ListPage>
                     color: Theme.of(context).brightness == Brightness.dark
                         ? Colors.yellow.withOpacity(0.1)
                         : Theme.of(context).primaryColor.withOpacity(0.1),
-                    child: Text("እዝ",
+                    child: Text("አዝ",
                         textAlign: TextAlign.center,
                         softWrap: true,
                         style: TextStyle(
@@ -375,12 +375,52 @@ class _ListPageState extends State<ListPage>
 
   bool _isFavorite = false;
 
-  SingerInfoDisplay(Mezmur item){
-    if(item.singer == "ሌላ ዘማሪ" ||item.singer == "ሌላ"){
-      return Text(item.singerOther??"-");
-    }
-    return Text(item.singer??"--");
+  SingerInfoDisplay(Mezmur item) {
+    String singerText = item.singer == "ሌላ"
+        ? (item.singerOther ?? "-")
+        : (item.singer ?? "--");
+
+    return RichText(
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: singerText,
+            style: const TextStyle(
+              fontSize: 12,
+              color: Colors.grey
+            ),
+          ),
+          item.songLyrics.isShortSong ? WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 4),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 0.5),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.primary,
+                    width: 1,
+                  ),
+                ),
+                child: Text(
+                   "አጭር",
+                  style: TextStyle(
+                    fontSize: 8,
+                    color: Theme.of(context).colorScheme.primary,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ),
+          ):WidgetSpan(child: Text("")),
+        ],
+      ),
+      softWrap: true,
+    );
   }
+
 
 
   @override
@@ -409,7 +449,7 @@ class _ListPageState extends State<ListPage>
                 // final List<Mezmur> _data = tabName.value;
                 print("Amount of ${widget.category.title} ${tabName.title} \n");
                 // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
-                print("============ \n\n");
+                print("============ Length \n\n ${categorizedMezmur[tabName.title]?.length}");
                 // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
                 return ListView.separated(
                   shrinkWrap: true,
@@ -428,8 +468,7 @@ class _ListPageState extends State<ListPage>
                       title: Text(item.title ?? "ርዕስ አልባ",style: TextStyle(fontWeight: FontWeight.bold),),
                       leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
                       subtitle: SingerInfoDisplay(item),
-                      trailing: Text(item.id),
-                      // trailing: Icon(Icons.keyboard_arrow_right_rounded),
+                      trailing: Icon(Icons.keyboard_arrow_right_rounded),
                       onTap: () => _handleItemTap(item, 1),
                     );
                   },

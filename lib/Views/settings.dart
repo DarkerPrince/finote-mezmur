@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Views/webView.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
@@ -21,6 +23,13 @@ class _SettingsScreenState extends State<SettingsPage> {
     super.initState();
     _getAppVersion();
   }
+  void launchInBrowser(String url) async {
+    final Uri uri = Uri.parse(url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $url';
+    }
+  }
+
 
   final socialLinks = {
     'Facebook': 'https://web.facebook.com/FinoteTsidkeSundaySchool?_rdc=1&_rdr#',
@@ -88,7 +97,7 @@ class _SettingsScreenState extends State<SettingsPage> {
               title: Text("አስተያየት ይስጡ"),
               leading: Icon(Icons.comment_bank,),
               trailing: Icon(Icons.arrow_forward_ios_rounded),
-              onTap: ()=>_launchURL("https://docs.google.com/forms/d/e/1FAIpQLSd6ClEc2EIUxTvx6S5gIObbfUUrk__muA9jSXEWWsagYwE65Q/viewform", context,"አስተያየት መስጫ ገጽ")
+              onTap: ()=>launchInBrowser("https://docs.google.com/forms/d/e/1FAIpQLSd6ClEc2EIUxTvx6S5gIObbfUUrk__muA9jSXEWWsagYwE65Q/viewform")
             ),
             SizedBox(height: 24),
             Text('የእኛን ማህበራዊ ይከተሉ', style: Theme.of(context).textTheme.titleMedium),

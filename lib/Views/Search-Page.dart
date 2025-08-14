@@ -140,11 +140,49 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
   }
 
 
-  Widget SingerInfoDisplay(Mezmur item) {
-    if (item.singer == "ሌላ ዘማሪ" || item.singer == "ሌላ") {
-      return Text(item.singerOther ?? "");
-    }
-    return Text(item.singer ?? "");
+  SingerInfoDisplay(Mezmur item) {
+    String singerText = item.singer == "ሌላ"
+        ? (item.singerOther ?? "-")
+        : (item.singer ?? "--");
+
+    return RichText(
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: singerText,
+            style: const TextStyle(
+              fontSize: 12,
+            ),
+          ),
+          item.songLyrics.isShortSong ? WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 4),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 0.5),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.primary,
+                    width: 1,
+                  ),
+                ),
+                child: Text(
+                  "አጭር",
+                  style: TextStyle(
+                    fontSize: 8,
+                    color: Theme.of(context).colorScheme.primary,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ),
+          ):WidgetSpan(child: Text("")),
+        ],
+      ),
+      softWrap: true,
+    );
   }
 
   void _handleItemTap(Mezmur mezmur, double size) {
@@ -304,7 +342,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.yellow.withOpacity(0.1)
                 : Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longMezmurLyrics.chorus ??"እዝ",
+            child: Text(longMezmurLyrics.chorus ??"አዝ",
                 textAlign: TextAlign.center,
                 softWrap: true,
                 style: TextStyle(
@@ -329,7 +367,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
                       color: Theme.of(context).brightness == Brightness.dark
                           ? Colors.yellow.withOpacity(0.1)
                           : Theme.of(context).primaryColor.withOpacity(0.1),
-                      child: Text("እዝ",
+                      child: Text("አዝ",
                           textAlign: TextAlign.center,
                           softWrap: true,
                           style: TextStyle(

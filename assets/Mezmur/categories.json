@@ -52,7 +52,7 @@
       "fileLocation": "assets/Mezmur/St_Gebriel.json",
       "sub_categories": [
     {
-        "title": "ታህሳስ",
+        "title": "ታኅሣሥ",
         "image": "assets/Image/image1.png",
         "fileLocation": ""
       },
@@ -191,7 +191,7 @@
           "fileLocation": ""
         },
         {
-          "title": "የሠርግ",
+          "title": "የሰርግ",
           "image": "assets/Image/image1.png",
           "fileLocation": ""
         },
