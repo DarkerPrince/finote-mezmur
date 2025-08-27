@@ -123,7 +123,7 @@ class _ListPageState extends State<ListPage>
         categorizedMezmur = {
           "ቅዱስ ሚካኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሚካኤል")).toList(),
           "ቅዱስ ሩፋኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሩፋኤል")).toList(),
-          "ቅዱስ ኡራኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ኡራኤል")).toList(),
+          "ቅዱስ ዑራኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ዑራኤል")).toList(),
           "ሁሉም": allMezmur.where((m) => m.angels.contains("ሁሉም")).toList(),
         };
         break;
@@ -137,7 +137,7 @@ class _ListPageState extends State<ListPage>
         categorizedMezmur = {
           "የአዲስ ዓመት": allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
           "የዘመነ ጽጌ": allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
-          "መስቀል": allMezmur.where((m) => m.mainHolidays.contains("መስቀል")).toList(),
+          "መስቀል": allMezmur.where((m) => m.minorHolidays.contains("መስቀል")).toList(),
           "ብሥራት": allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
           "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ሆሳዕና")).toList(),
           "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
