@@ -85,7 +85,7 @@ class _SettingsScreenState extends State<SettingsPage> {
             Wrap(
               children: [
                 Text(
-                  'ይህ የአየር ጤና አንቀጸ ብርሃን ቅድስት ኪዳነ ምሕረት ፍኖተ ጽድቅ ሰንበት ት/ቤት የመዝሙር መተግበሪያ ሲሆን ማንኛውም አይነት ሐሳብ፣ አስተያየትና ማስተካከያ ካሎት ከዚህ በታች ያለውን የሐሳብ መስጫ በመጫን ያስቀምጡልን:: እናመሰግናለን 🙏',
+                  'ይህ የአየር ጤና አንቀጸ ብርሃን ቅድስት ኪዳነ ምሕረት ካቴድራል ፍኖተ ጽድቅ ሰንበት ት/ቤት የመዝሙር መተግበሪያ ሲሆን ማንኛውም አይነት ሐሳብ፣ አስተያየትና ማስተካከያ ካሎት ከዚህ በታች ያለውን የሐሳብ መስጫ በመጫን ያስቀምጡልን:: እናመሰግናለን 🙏',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
@@ -136,31 +136,31 @@ class _SettingsScreenState extends State<SettingsPage> {
                 ),
                 child: ListTile(
                   title: Text("Version"),
-                  leading: Icon(Icons.library_music,),
+                  leading: Icon(Icons.touch_app_outlined,),
                   subtitle: Text("$_version"),
-                  trailing: Icon(Icons.download),
-                  onTap: (){
-                    showDialog(
-                      context: context,
-                      builder: (context) => AlertDialog(
-                        title: Text('ያረጋግጡ'),
-                        content: Text('እርግጠኛ? የመዝሙርን ፋይል ማዘመን ትፈልጋለህ?'),
-                        actions: [
-                          TextButton(
-                            onPressed: () => Navigator.pop(context), // Cancel
-                            child: Text('አልፈልግም'),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {
-                              Navigator.pop(context);
-                              // TODO: Add your update logic here
-                            },
-                            child: Text('አዎ'),
-                          ),
-                        ],
-                      ),
-                    );
-                  },
+                  // trailing: Icon(Icons.download),
+                  // onTap: (){
+                  //   showDialog(
+                  //     context: context,
+                  //     builder: (context) => AlertDialog(
+                  //       title: Text('ያረጋግጡ'),
+                  //       content: Text('እርግጠኛ? የመዝሙርን ፋይል ማዘመን ትፈልጋለህ?'),
+                  //       actions: [
+                  //         TextButton(
+                  //           onPressed: () => Navigator.pop(context), // Cancel
+                  //           child: Text('አልፈልግም'),
+                  //         ),
+                  //         ElevatedButton(
+                  //           onPressed: () {
+                  //             Navigator.pop(context);
+                  //             // TODO: Add your update logic here
+                  //           },
+                  //           child: Text('አዎ'),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   );
+                  // },
                 ),
               ),
               SizedBox(height: 80),
