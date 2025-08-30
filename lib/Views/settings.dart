@@ -58,7 +58,6 @@ class _SettingsScreenState extends State<SettingsPage> {
       _version = info.version;
       print("Version is ${_version}");// You can also include build number: '${info.version}+${info.buildNumber}'
     });
-
   }
 
   Widget _buildSocialIcon(String name, IconData icon, String url,BuildContext context) {

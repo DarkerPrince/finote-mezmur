@@ -71,6 +71,9 @@ class _ListPageState extends State<ListPage>
             "ትርጉም:-",
             style: TextStyle(
               fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87, // Use Theme.of(context).primaryColor for dynamic color
+              letterSpacing: 1.2,
             ),
           ),
           Text(Verse,
@@ -132,7 +135,8 @@ class _ListPageState extends State<ListPage>
         print("Category in Bealat");
         // Define known keywords
         final knownAbouts = ["የአዲስ ዓመት", "የዘመነ ጽጌ"];
-        final knownMainHolidays = ["መስቀል", "ብሥራት", "ሆሳዕና", "ልደት", "ጥምቀት", "ትንሳኤ"];
+        final knownMinorHolidays = ["ደብረ ታቦር", "መስቀል"];
+        final knownMainHolidays = ["መስቀል", "ብሥራት", "ሆሳዕና", "ልደት", "ጥምቀት", "ትንሳኤ" ,"እርገት" , "ጰራቅሊጦስ" ];
 
         categorizedMezmur = {
           "የአዲስ ዓመት": allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
@@ -143,12 +147,15 @@ class _ListPageState extends State<ListPage>
           "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
           "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
           "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
-          "ሌላ": allMezmur.where((m) {
-            // Check if not in any of the above categories
-            bool isKnownAbout = knownAbouts.any((about) => m.about.contains(about));
-            bool isKnownHoliday = knownMainHolidays.any((holiday) => m.mainHolidays.contains(holiday));
-            return !isKnownAbout && !isKnownHoliday;
-          }).toList()
+          "እርገት/ጰራቅሊጦስ": allMezmur.where((m) => (m.mainHolidays.contains("እርገት")||m.mainHolidays.contains("ጰራቅሊጦስ"))).toList(),
+          "ደብረ ታቦር": allMezmur.where((m) => m.minorHolidays.contains("ደብረ ታቦር")).toList(),
+          // "ሌላ": allMezmur.where((m) {
+          //   // Check if not in any of the above categories
+          //   bool isKnownAbout = knownAbouts.any((about) => m.about.contains(about));
+          //   bool isKnownMainHoliday = knownMainHolidays.any((holiday) => m.mainHolidays.contains(holiday));
+          //   bool isKnownMinorHoliday = knownMinorHolidays.any((holiday) => m.minorHolidays.contains(holiday));
+          //   return !isKnownAbout && !isKnownMainHoliday && !isKnownMinorHoliday;
+          // }).toList()
         };
         break;
 
@@ -390,7 +397,7 @@ class _ListPageState extends State<ListPage>
               color: Colors.grey
             ),
           ),
-          item.songLyrics.isShortSong ? WidgetSpan(
+          item.songLyrics.isShortSong ? isoneLongShortSongs(item.songLyrics.shortLyrics.lyrics!.length)?WidgetSpan(child: Text("")): WidgetSpan(
             alignment: PlaceholderAlignment.middle,
             child: Padding(
               padding: const EdgeInsets.only(left: 4),
@@ -421,7 +428,12 @@ class _ListPageState extends State<ListPage>
     );
   }
 
-
+bool isoneLongShortSongs(int shortLyricsLength){
+    if(shortLyricsLength>200){
+      return true;
+    }
+    return false;
+}
 
   @override
   Widget build(BuildContext context) {
