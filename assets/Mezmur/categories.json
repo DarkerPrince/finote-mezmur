@@ -140,8 +140,13 @@
           "fileLocation": ""
         },
         {
-          "title": "ሌላ",
-          "image": "assets/Image/blue.png",
+          "title": "እርገት/ጰራቅሊጦስ",
+          "image": "assets/Image/image1.png",
+          "fileLocation": ""
+        },
+        {
+          "title": "ደብረ ታቦር",
+          "image": "assets/Image/image1.png",
           "fileLocation": ""
         }
       ]
