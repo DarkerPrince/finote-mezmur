@@ -14,7 +14,7 @@ import 'package:finotemezmur/Model/category.dart';
 
 class ListPage extends StatefulWidget {
   final Category category;
-  const ListPage({super.key,required this.category});
+  const ListPage({super.key, required this.category});
 
   @override
   State<ListPage> createState() => _ListPageState();
@@ -34,12 +34,31 @@ class _ListPageState extends State<ListPage>
     super.initState();
     loadJson();
     _controller = DraggableScrollableController();
-    _tabController = TabController(length: widget.category.subCategories.length, vsync: this);
+    _controller.addListener(() {
+      final extent = _controller.size;
+      const minSize = 0.14;
+      const snapThreshold = 0.2; // Adjust this for earlier snapping
+
+      // If dragging down and sheet is below threshold, snap to min
+      if (extent < snapThreshold && !_controller.isAttached) {
+        // Wait for scroll to end before snapping
+        Future.microtask(() {
+          _controller.animateTo(
+            minSize,
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeOut,
+          );
+        });
+      }
+    });
+    _tabController = TabController(
+        length: widget.category.subCategories.length, vsync: this);
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
@@ -60,31 +79,34 @@ class _ListPageState extends State<ListPage>
   }
 
   TranslationDisplay(String Verse) {
-    return Verse==""?Container():Container(
-      color: Colors.blue,
-      alignment: Alignment.center,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            "ትርጉም:-",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.black87, // Use Theme.of(context).primaryColor for dynamic color
-              letterSpacing: 1.2,
+    return Verse == ""
+        ? Container()
+        : Container(
+            color: Colors.blue,
+            alignment: Alignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "ትርጉም:-",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors
+                        .black87, // Use Theme.of(context).primaryColor for dynamic color
+                    letterSpacing: 1.2,
+                  ),
+                ),
+                Text(Verse,
+                    textAlign: TextAlign.center,
+                    softWrap: true,
+                    style: TextStyle(
+                      fontSize: 24,
+                    ))
+              ],
             ),
-          ),
-          Text(Verse,
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: TextStyle(
-                fontSize: 24,
-              ))
-        ],
-      ),
-    );
+          );
   }
 
   List<Mezmur> _data = [];
@@ -98,35 +120,47 @@ class _ListPageState extends State<ListPage>
 
         categorizedMezmur = {
           "ጥር": allMezmur.where((m) => m.trinitySong["Tir"] == true).toList(),
-          "ሐምሌ": allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
-          "ምሥጋና": allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
+          "ሐምሌ":
+              allMezmur.where((m) => m.trinitySong["Hamle"] == true).toList(),
+          "ምሥጋና":
+              allMezmur.where((m) => m.trinitySong["Mesgana"] == true).toList(),
         };
         break;
 
       case "የቅድስት ኪዳነምሕረት":
         print("Category in Kidest kidanmhret");
         categorizedMezmur = {
-          "የካቲት": allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
-          "ነሐሴ": allMezmur.where((m) => m.stMarySong["Nehase"] == true).toList(),
-          "ምሥጋና": allMezmur.where((m) => m.stMarySong["Mesgana"] == true).toList(),
+          "የካቲት":
+              allMezmur.where((m) => m.stMarySong["Yekatit"] == true).toList(),
+          "ነሐሴ":
+              allMezmur.where((m) => m.stMarySong["Nehase"] == true).toList(),
+          "ምሥጋና":
+              allMezmur.where((m) => m.stMarySong["Mesgana"] == true).toList(),
         };
         break;
 
       case "የቅዱስ ገብርኤል":
         print("Category in Kidest Silase");
         categorizedMezmur = {
-          "ታኅሣሥ": allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
-          "ሐምሌ": allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
-          "ምሥጋና": allMezmur.where((m) => m.kGebrielSong["Mesgana"] == true).toList(),
+          "ታኅሣሥ":
+              allMezmur.where((m) => m.kGebrielSong["Tahsas"] == true).toList(),
+          "ሐምሌ":
+              allMezmur.where((m) => m.kGebrielSong["Hamle"] == true).toList(),
+          "ምሥጋና": allMezmur
+              .where((m) => m.kGebrielSong["Mesgana"] == true)
+              .toList(),
         };
         break;
 
       case "የመላእክት":
         print("Category in Angels");
         categorizedMezmur = {
-          "ቅዱስ ሚካኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሚካኤል")).toList(),
-          "ቅዱስ ሩፋኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ሩፋኤል")).toList(),
-          "ቅዱስ ዑራኤል": allMezmur.where((m) => m.angels.contains("ቅዱስ ዑራኤል")).toList(),
+          "ቅዱስ ሚካኤል":
+              allMezmur.where((m) => m.angels.contains("ቅዱስ ሚካኤል")).toList(),
+          "ቅዱስ ሩፋኤል":
+              allMezmur.where((m) => m.angels.contains("ቅዱስ ሩፋኤል")).toList(),
+          "ቅዱስ ዑራኤል":
+              allMezmur.where((m) => m.angels.contains("ቅዱስ ዑራኤል")).toList(),
           "ሁሉም": allMezmur.where((m) => m.angels.contains("ሁሉም")).toList(),
         };
         break;
@@ -136,19 +170,41 @@ class _ListPageState extends State<ListPage>
         // Define known keywords
         final knownAbouts = ["የአዲስ ዓመት", "የዘመነ ጽጌ"];
         final knownMinorHolidays = ["ደብረ ታቦር", "መስቀል"];
-        final knownMainHolidays = ["መስቀል", "ብሥራት", "ሆሳዕና", "ልደት", "ጥምቀት", "ትንሳኤ" ,"እርገት" , "ጰራቅሊጦስ" ];
+        final knownMainHolidays = [
+          "መስቀል",
+          "ብሥራት",
+          "ሆሳዕና",
+          "ልደት",
+          "ጥምቀት",
+          "ትንሳኤ",
+          "እርገት",
+          "ጰራቅሊጦስ"
+        ];
 
         categorizedMezmur = {
-          "የአዲስ ዓመት": allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
-          "የዘመነ ጽጌ": allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
-          "መስቀል": allMezmur.where((m) => m.minorHolidays.contains("መስቀል")).toList(),
-          "ብሥራት": allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
-          "ሆሳዕና": allMezmur.where((m) => m.mainHolidays.contains("ሆሳዕና")).toList(),
-          "ልደት": allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
-          "ጥምቀት": allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
-          "ትንሳኤ": allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
-          "እርገት/ጰራቅሊጦስ": allMezmur.where((m) => (m.mainHolidays.contains("እርገት")||m.mainHolidays.contains("ጰራቅሊጦስ"))).toList(),
-          "ደብረ ታቦር": allMezmur.where((m) => m.minorHolidays.contains("ደብረ ታቦር")).toList(),
+          "የአዲስ ዓመት":
+              allMezmur.where((m) => m.about.contains("የአዲስ ዓመት")).toList(),
+          "የዘመነ ጽጌ":
+              allMezmur.where((m) => m.about.contains("የዘመነ ጽጌ")).toList(),
+          "መስቀል":
+              allMezmur.where((m) => m.minorHolidays.contains("መስቀል")).toList(),
+          "ብሥራት":
+              allMezmur.where((m) => m.mainHolidays.contains("ብሥራት")).toList(),
+          "ሆሳዕና":
+              allMezmur.where((m) => m.mainHolidays.contains("ሆሳዕና")).toList(),
+          "ልደት":
+              allMezmur.where((m) => m.mainHolidays.contains("ልደት")).toList(),
+          "ጥምቀት":
+              allMezmur.where((m) => m.mainHolidays.contains("ጥምቀት")).toList(),
+          "ትንሳኤ":
+              allMezmur.where((m) => m.mainHolidays.contains("ትንሳኤ")).toList(),
+          "እርገት/ጰራቅሊጦስ": allMezmur
+              .where((m) => (m.mainHolidays.contains("እርገት") ||
+                  m.mainHolidays.contains("ጰራቅሊጦስ")))
+              .toList(),
+          "ደብረ ታቦር": allMezmur
+              .where((m) => m.minorHolidays.contains("ደብረ ታቦር"))
+              .toList(),
           // "ሌላ": allMezmur.where((m) {
           //   // Check if not in any of the above categories
           //   bool isKnownAbout = knownAbouts.any((about) => m.about.contains(about));
@@ -183,11 +239,13 @@ class _ListPageState extends State<ListPage>
       case "ልዩ ልዩ":
         print("Category in Nesha Mezmur");
         categorizedMezmur = {
-          "የሐዘን": allMezmur.where((m) => m.others=="የሐዘን").toList(),
-          "የሕፃናት": allMezmur.where((m) => m.others=="የሕፃናት").toList(),
-          "የጳጳሳት መቀበያ": allMezmur.where((m) => m.others=="የጳጳሳት መቀበያ").toList(),
+          "የሐዘን": allMezmur.where((m) => m.others == "የሐዘን").toList(),
+          "የሕፃናት": allMezmur.where((m) => m.others == "የሕፃናት").toList(),
+          "የጳጳሳት መቀበያ":
+              allMezmur.where((m) => m.others == "የጳጳሳት መቀበያ").toList(),
           "የሰርግ": allMezmur.where((m) => m.about.contains("የሠርግ")).toList(),
-          "የቤተ ክርስቲያን": allMezmur.where((m) => m.about.contains("የቤተ ክርስቲያን")).toList(),
+          "የቤተ ክርስቲያን":
+              allMezmur.where((m) => m.about.contains("የቤተ ክርስቲያን")).toList(),
         };
         break;
 
@@ -203,7 +261,6 @@ class _ListPageState extends State<ListPage>
   }
 
   Future<void> loadJson() async {
-
     final String response =
         await rootBundle.loadString(widget.category.fileLocation);
     final Map<String, dynamic> jsonData = json.decode(response);
@@ -212,8 +269,7 @@ class _ListPageState extends State<ListPage>
         .map((mezmur) => Mezmur.fromJson(mezmur))
         .toList();
 
-      categorizeMezmurMethod(allMezmur,widget.category.title);
-
+    categorizeMezmurMethod(allMezmur, widget.category.title);
   }
 
   double _sheetExtent = 1; // Default initial value
@@ -234,20 +290,26 @@ class _ListPageState extends State<ListPage>
         minChildSize: 0.14,
         maxChildSize: 1.0,
         builder: (context, scrollController) {
-
-
-
           final Color minColor = Theme.of(context).colorScheme.secondary;
           final Color maxColor = Theme.of(context).brightness == Brightness.dark
               ? const Color(0xFF121212)
               : Colors.white;
 
+          // Set a threshold for switching
+          const double threshold = 0.5;
+
+          final double factor =
+              ((_sheetExtent - 0.14) / (1.0 - 0.14)).clamp(0.0, 1.0);
+
+// Pick color instantly instead of lerping
+          final Color animatedColor = factor < threshold ? minColor : maxColor;
+
           print("The SheetSize initial is ${_sheetSize}");
           print("The SheetExtent initial is ${_sheetExtent}");
 
-          final double factor = ((_sheetExtent - 0.14) / (1.0 - 0.14)).clamp(0.0, 1.0);
-          final double flippedFactor = 1.0 - factor;
-          final Color animatedColor = Color.lerp(minColor, maxColor, factor)!;
+          // final double factor = ((_sheetExtent - 0.14) / (1.0 - 0.14)).clamp(0.0, 1.0);
+          // final double flippedFactor = 1.0 - factor;
+          // final Color animatedColor = Color.lerp(minColor, maxColor, factor)!;
 
           return AnimatedContainer(
             duration: const Duration(milliseconds: 300),
@@ -274,7 +336,10 @@ class _ListPageState extends State<ListPage>
                 ListTile(
                   title: Text(
                     _selectedMezmur.title ?? "",
-                    style: TextStyle(fontSize: 20,  color: Theme.of(context).colorScheme.primary,fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text(_selectedMezmur.singer ?? ""),
                   trailing: IconButton(
@@ -299,8 +364,6 @@ class _ListPageState extends State<ListPage>
     );
   }
 
-
-
   ShortMezmur(ShortLyrics shortMezmurLyrics) {
     return Column(
       children: [
@@ -311,55 +374,60 @@ class _ListPageState extends State<ListPage>
   }
 
   LongMezmur(LongLyrics longMezmurLyrics) {
-    return Column(
-        children: [
-          Container(
-            padding: EdgeInsets.all(12),
-            alignment: Alignment.center,
-            width: MediaQuery.of(context).size.width,
-            color: Theme.of(context).brightness == Brightness.dark
-                ? Colors.yellow.withOpacity(0.1)
-                : Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longMezmurLyrics.chorus ??"አዝ",
-                textAlign: TextAlign.center,
-                softWrap: true,
-                style: TextStyle(
-                  color: Theme.of(context).brightness == Brightness.dark
-                      ? Colors.yellow
-                      : Theme.of(context).primaryColor,
-                  fontSize: 24,
-                )),
-          ),
-          Column(
-      children: (longMezmurLyrics.verse as List)
-          .map((verse) => Padding(
+    return Column(children: [
+      Container(
+        padding: EdgeInsets.all(12),
+        alignment: Alignment.center,
+        width: MediaQuery.of(context).size.width,
+        color: Theme.of(context).brightness == Brightness.dark
+            ? Colors.yellow.withOpacity(0.1)
+            : Theme.of(context).primaryColor.withOpacity(0.1),
+        child: Text(longMezmurLyrics.chorus ?? "አዝ",
+            textAlign: TextAlign.center,
+            softWrap: true,
+            style: TextStyle(
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? Colors.yellow
+                  : Theme.of(context).primaryColor,
+              fontSize: 24,
+            )),
+      ),
+      Column(
+        children: (longMezmurLyrics.verse as List)
+            .map((verse) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                  DisplayVerse(verse),
-                  verse==""?Container():Container(
-                    padding: EdgeInsets.all(12),
-                    alignment: Alignment.center,
-                    width: MediaQuery.of(context).size.width,
-                    color: Theme.of(context).brightness == Brightness.dark
-                        ? Colors.yellow.withOpacity(0.1)
-                        : Theme.of(context).primaryColor.withOpacity(0.1),
-                    child: Text("አዝ",
-                        textAlign: TextAlign.center,
-                        softWrap: true,
-                        style: TextStyle(
-                          color: Theme.of(context).brightness == Brightness.dark
-                              ? Colors.yellow
-                              : Theme.of(context).primaryColor,
-                          fontSize: 24,
-                        )),
-                  )
-                ],)
-
-              ))
-          .toList(),
-    )]);
+                    DisplayVerse(verse),
+                    verse == ""
+                        ? Container()
+                        : Container(
+                            padding: EdgeInsets.all(12),
+                            alignment: Alignment.center,
+                            width: MediaQuery.of(context).size.width,
+                            color:
+                                Theme.of(context).brightness == Brightness.dark
+                                    ? Colors.yellow.withOpacity(0.1)
+                                    : Theme.of(context)
+                                        .primaryColor
+                                        .withOpacity(0.1),
+                            child: Text("አዝ",
+                                textAlign: TextAlign.center,
+                                softWrap: true,
+                                style: TextStyle(
+                                  color: Theme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? Colors.yellow
+                                      : Theme.of(context).primaryColor,
+                                  fontSize: 24,
+                                )),
+                          )
+                  ],
+                )))
+            .toList(),
+      )
+    ]);
   }
 
   void _handleItemTap(Mezmur mezmur, double size) {
@@ -375,7 +443,6 @@ class _ListPageState extends State<ListPage>
         _selectedMezmur = mezmur;
         _sheetSize = size;
         _showSheet = true;
-
       });
     }
   }
@@ -383,57 +450,61 @@ class _ListPageState extends State<ListPage>
   bool _isFavorite = false;
 
   SingerInfoDisplay(Mezmur item) {
-    String singerText = item.singer == "ሌላ"
-        ? (item.singerOther ?? "-")
-        : (item.singer ?? "--");
+    String singerText =
+        item.singer == "ሌላ" ? (item.singerOther ?? "-") : (item.singer ?? "--");
 
     return RichText(
       text: TextSpan(
         children: [
           TextSpan(
             text: singerText,
-            style: const TextStyle(
-              fontSize: 12,
-              color: Colors.grey
-            ),
+            style: const TextStyle(fontSize: 12, color: Colors.grey),
           ),
-          item.songLyrics.isShortSong ? isoneLongShortSongs(item.songLyrics.shortLyrics.lyrics!.length)?WidgetSpan(child: Text("")): WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 4),
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 0.5),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: Theme.of(context).colorScheme.primary,
-                    width: 1,
-                  ),
-                ),
-                child: Text(
-                   "አጭር",
-                  style: TextStyle(
-                    fontSize: 8,
-                    color: Theme.of(context).colorScheme.primary,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-            ),
-          ):WidgetSpan(child: Text("")),
+          item.songLyrics.isShortSong
+              ? isoneLongShortSongs(item.songLyrics.shortLyrics.lyrics!.length)
+                  ? WidgetSpan(child: Text(""))
+                  : WidgetSpan(
+                      alignment: PlaceholderAlignment.middle,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 4),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 4, vertical: 0.5),
+                          decoration: BoxDecoration(
+                            color: Theme.of(context)
+                                .colorScheme
+                                .primary
+                                .withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(
+                              color: Theme.of(context).colorScheme.primary,
+                              width: 1,
+                            ),
+                          ),
+                          child: Text(
+                            "አጭር",
+                            style: TextStyle(
+                              fontSize: 8,
+                              color: Theme.of(context).colorScheme.primary,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+              : WidgetSpan(child: Text("")),
         ],
       ),
       softWrap: true,
     );
   }
 
-bool isoneLongShortSongs(int shortLyricsLength){
-    if(shortLyricsLength>200){
+  bool isoneLongShortSongs(int shortLyricsLength) {
+    if (shortLyricsLength > 200) {
       return true;
     }
     return false;
-}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -446,7 +517,7 @@ bool isoneLongShortSongs(int shortLyricsLength){
             controller: _tabController,
             isScrollable: true,
             tabs: widget.category.subCategories.map(
-              (tabName){
+              (tabName) {
                 print(tabName);
                 return Tab(text: tabName.title ?? '');
               },
@@ -461,33 +532,41 @@ bool isoneLongShortSongs(int shortLyricsLength){
                 // final List<Mezmur> _data = tabName.value;
                 print("Amount of ${widget.category.title} ${tabName.title} \n");
                 // print("This is the categroy Title ${categorizedMezmur[tabName.title]!.length}");
-                print("============ Length \n\n ${categorizedMezmur[tabName.title]?.length}");
+                print(
+                    "============ Length \n\n ${categorizedMezmur[tabName.title]?.length}");
                 // categorizedMezmur[tabName.title] = categorizedMezmur[tabName.title] ?? [];
                 return ListView.separated(
                   shrinkWrap: true,
                   separatorBuilder: (context, index) => SizedBox(height: 4),
                   itemCount: categorizedMezmur[tabName.title]?.length ?? 0,
                   itemBuilder: (context, index) {
-
-                    if(categorizedMezmur[tabName.title]?.isEmpty ?? true){
+                    if (categorizedMezmur[tabName.title]?.isEmpty ?? true) {
                       return Center(
                         child: Text("ባዶ መዝሙር"),
                       );
                     }
-                    final Mezmur item = categorizedMezmur![tabName.title]![index];
+                    final Mezmur item =
+                        categorizedMezmur![tabName.title]![index];
                     return ListTile(
-                      tileColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
-                      title: Text(item.title ?? "ርዕስ አልባ",style: TextStyle(fontWeight: FontWeight.bold),),
-                      leading: Icon(Icons.music_note,color: Theme.of(context).colorScheme.primary,),
+                      tileColor: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withOpacity(0.05),
+                      title: Text(
+                        item.title ?? "ርዕስ አልባ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      leading: Icon(
+                        Icons.music_note,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
                       subtitle: SingerInfoDisplay(item),
                       trailing: Icon(Icons.keyboard_arrow_right_rounded),
                       onTap: () => _handleItemTap(item, 1),
                     );
                   },
                 );
-
-              })
-                  .toList(),
+              }).toList(),
             ),
             LyricsDisplaySheet()
           ],

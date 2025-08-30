@@ -41,7 +41,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     },
     {
       "image": "assets/Image/onboarding7.png",
-      "title": "ከ፩፱፻፹፬ ጀምሮ",
+      "title": "ከ፲፱፻፹፬ ጀምሮ",
       "desc": "የአየርጤና አንቀጸ ብርሃን ቅድስት ኪዳነምሕረት ፍኖተ ጽድቅ ሰንበት ትምህርት ቤት",
     }
   ];
