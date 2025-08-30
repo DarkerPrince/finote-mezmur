@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.8.1+9
+version: 1.8.2+10
 
 environment:
   sdk: ^3.5.4
@@ -90,10 +90,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-fonts:
-  - family: 'FinotFont'
-    fonts:
-      - asset: assets/fonts/NokiaPureHeadline-Regular.ttf
+#  fonts:
+#    - family: 'NokiaPureHeadline'
+#      fonts:
+#        - asset: assets/font/NokiaPureHeadline-Bold.ttf
+#        - asset: assets/font/NokiaPureHeadline-ExtraBold.ttf
+#        - asset: assets/font/NokiaPureHeadline-Light.ttf
+#        - asset: assets/font/NokiaPureHeadline-UltraLight.ttf
+#        - asset: assets/font/NokiaPureHeadline-Regular.ttf
 #       - asset: fonts/Schyler-Italic.ttf
 #         style: italic
   #   - family: Trajan Pro

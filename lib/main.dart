@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'FinotFont',
+        // fontFamily: 'NokiaPureHeadline',
         brightness: Brightness.light,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.blue,
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       darkTheme: ThemeData(
-        fontFamily: 'FinotFont',
+        // fontFamily: 'NokiaPureHeadline',
         brightness: Brightness.dark,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.blue,
