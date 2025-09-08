@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Views/Home-Page.dart';
-import 'package:finotemezmur/Views/Fav-Page.dart';
+import 'package:finotemezmur/Views/MezmurTagWidget.dart';
 import 'package:finotemezmur/Views/Search-Page.dart';
 import 'package:finotemezmur/Views/settings.dart';
 

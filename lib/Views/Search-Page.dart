@@ -1,3 +1,4 @@
+import 'package:finotemezmur/Views/MezmurTagWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Model/mezmur.dart';
 import 'package:finotemezmur/Model/ShortLyrics.dart';
@@ -106,31 +107,48 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
       _filteredMezmur = results;
     });
   }
-  TextSpan highlightMatch(String source, String query) {
+
+  TextSpan highlightMatch(
+      String source,
+      String query,
+      BuildContext context,
+        int surrounding ,
+      ) {
+    if (query.isEmpty) return TextSpan(text: source);
+
     final lowerSource = source.toLowerCase();
     final lowerQuery = query.toLowerCase();
     final startIndex = lowerSource.indexOf(lowerQuery);
+
+    if (startIndex == -1) return TextSpan(text: source);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final highlightColor = Theme.of(context).colorScheme.primary;
     final textColor = isDark ? Colors.black : Colors.white;
 
-    if (startIndex == -1 || query.isEmpty) {
-      return TextSpan(text: source);
-    }
+    // Make sure indices are always valid
+    final snippetStart = (startIndex - surrounding).clamp(0, source.length);
+    final snippetEnd =
+    (startIndex + query.length + surrounding).clamp(0, source.length);
+
+    final before = source.substring(snippetStart, startIndex);
+    final match = source.substring(startIndex, startIndex + query.length);
+    final after = source.substring(startIndex + query.length, snippetEnd);
 
     return TextSpan(
       children: [
-        TextSpan(text: source.substring(0, startIndex)),
+        if (snippetStart > 0) const TextSpan(text: "…"),
+        if (before.isNotEmpty) TextSpan(text: before),
         TextSpan(
-          text: source.substring(startIndex, startIndex + query.length),
+          text: match,
           style: TextStyle(
             backgroundColor: highlightColor,
             color: textColor,
             fontWeight: FontWeight.bold,
           ),
         ),
-        TextSpan(text: source.substring(startIndex + query.length)),
+        if (after.isNotEmpty) TextSpan(text: after),
+        if (snippetEnd < source.length) const TextSpan(text: "…"),
       ],
       style: TextStyle(
         color: Theme.of(context).textTheme.bodyMedium?.color,
@@ -312,6 +330,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
               letterSpacing: 1.2,
             ),
           ),
+          SizedBox(height: 4,),
           Text(Verse,
               textAlign: TextAlign.center,
               softWrap: true,
@@ -431,11 +450,30 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
                     final mezmur = result.mezmur;
                     final matchedLine = result.matchedLine ?? '';
 
-                    return ListTile(
-                      title: Text(mezmur.title ?? "", style: const TextStyle(fontWeight: FontWeight.bold)),
-                      subtitle: RichText(text: highlightMatch(matchedLine, _searchController.text)),
-                      leading: Icon(Icons.queue_music, color: Theme.of(context).colorScheme.primary),
-                      onTap: () => _handleItemTap(mezmur, 1),
+                    return Container(
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: Colors.grey.shade300, // border color
+                            width: 1, // border thickness
+                          ),
+                        ),
+                      ),
+                      child: ListTile(
+                        title: Text(mezmur.title ?? "", style: const TextStyle(fontWeight: FontWeight.bold)),
+                        subtitle: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            _searchController.text == ""? Container ():RichText(text: highlightMatch(matchedLine, _searchController.text, context , 10)),
+                            SizedBox(height: 4,),
+                            MezmurTagWidget(mezmur: mezmur)
+                          ],
+                        ),
+                        leading: Icon(Icons.queue_music, color: Theme.of(context).colorScheme.primary),
+                        trailing: Icon(Icons.keyboard_arrow_right_rounded),
+                        onTap: () => _handleItemTap(mezmur, 1),
+                      ),
                     );
                   },
                 ),
