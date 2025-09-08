@@ -97,8 +97,55 @@
     },
     {
       "id": "3",
-      "Timestamp": 45803.78249783565,
-      "Title": "ለምኚ ድንግል ለምኚ",
+      "Timestamp": 45902.666528472226,
+      "Title": "ለማርያም እንዘምራለን",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ለማርያም/2/\nእንዘምራለን ለዘለዓለም/2/\n",
+          "verse": [
+            "የተዘጋጅበር           ለዘለዓለም\nህዝቅኤል ብሏል     ለዘለዓለም \nንጽህት ናት በእውነት    ››       \nበፍፁም ድንግል         ›› \nአብነት አድርገን         ››     \nእኛም እርሱን          ››\nበፍፁም ፍቅር እንዘምራለን/2/\n",
+            "የዋህት ርግብ     ለዘለዓለም\nሠላም አብሳሪ         ››\nለጨለማ ሕይወቴን    ››     \nብርሃንን አብሪ        ››\nእማጸንሻለሁ          ››     \nድንግል ለነፍሴ        ›› \nአደራ ቅድስት አንቺ ነሽ ዋሴ/2/\n",
+            "እጅግ  የበዛ ነው   ለዘለዓለም\nያለኝ ፍቅር          ››\nአይወሰንም          ››     \nአይነገርም           ›› \nበእርሷ ደስ ይለኛል   ››     \nሐሴት አደርጋለሁ    ››\nስሟን እየጠራሁ እዘምራለሁ/2/\n",
+            "እጅግ  የበዛ ነው   ለዘለዓለም\nያለኝ ፍቅር          ››\nአይወሰንም          ››     \nአይነገርም           ›› \nበእርሷ ደስ ይለኛል   ››     \nሐሴት አደርጋለሁ    ››\nስሟን እየጠራሁ እዘምራለሁ/2/\n",
+            "ንኢ ንኢ ስላት    ለዘለዓለም\nቀንና ሌሊት         ››\nአትለየኝም          ››    \nለእኔስ ቅርቤ ናት    ›› \nእጹብ እጹብ ብለው  ››     \nአመሰገኗት         ››                               \nክብርዋን ሊገልጹ ቢያጥራቸው ቃላት/2/\n",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "Timestamp": 45906.64512261574,
+      "Title": "ለምኚ ድንግል ለምኚ ",
       "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
       "about": [],
       "minor_holidays": [],
@@ -128,11 +175,11 @@
         "longLyrics": {
           "chorus": "ለምኚ ድንግል ለምኚ /2/\nለኃጥአን /3/ አይደለም ለጻድቃን",
           "verse": [
-            "ለምኚ ታላቅ ስጦታዬ \n“    ” አዛኝ ሩህሩህ ነሽ\n“    ” የጌታዬ እናት\n“    ” ጸጋን የተሞላሽ \n“    ” የአምላክ ማደሪያ \n“    ” ለምነሽ አስምሪኝ\n“    ”  አማናዊት ፅዮን \n“    ” ከእኔ አትለይኝ",
-            "ለምኚ ታላቅ ስጦታዬ \n“    ” አዛኝ ሩህሩህ ነሽ\n“    ” የጌታዬ እናት\n“    ” ጸጋን የተሞላሽ \n“    ” የአምላክ ማደሪያ \n“    ” ለምነሽ አስምሪኝ\n“    ”  አማናዊት ፅዮን \n“    ” ከእኔ አትለይኝ",
-            "ለምኚ ሐዘንሽ ሐዘኔ \n“    ” ለእኔ ይሁን ድንግል\n“    ” የተንከራተትሽው \n“    ” በሃገረ እሥራኤል \n“    ” ትዕግስትሽን ሳየው\n“    ” ልቤ ይመሰጣል\n“    ” የሐዘን እንባ ጎርፍ \n“    ” ዐይኔን ይሞላዋል",
-            "ለምኚ በቀራንዮ አንባ\n“    ” በዚያ የፍቅር ቦታ \n“    ” በዕግረ መስቀሉ ሥር\n“    ” ከክርስቶስ ጌታ \n“    ” ለእኛ ተሰጥተሻል \n“    ” እናት እንድትሆኚን\n“    ” ልጆችሽ ነንና \n“    ” ምልጃሽ አይለየን",
-            "ለምኚ አንደበቴን ጌታ\n“    ” በምስጋና ሙላው \n“    ” ደስ ይበልሽ ብዬ \n“    ” እኔም ላመስግናት\n“    ”  አንደበቴን ጌታ\n“    ” በምስጋና ሙላው\n“    ” ደስ ይበልሽ ብዬ\n“    ” እኔም ላመስግናት",
+            "ለምኚ ታላቅ ስጦታዬ \n››    አዛኝ ሩህሩህ ነሽ\n››    የጌታዬ እናት   \n››    ጸጋን የተሞላሽ\n››    የአምላክ ማደሪያ\n››    ለምነሽ አስምሪኝ\n››    አማናዊት ጽዮን \n››    ከእኔ አትለይኝ",
+            "ለምኚ ሐዘንሽ ሐዘኔ \n››    ለእኔ ይሁን ድንግል\n››    የተንከራተትሽው  \n››    በሀገረ እስራኤል\n››    ትዕግስትሽን ሳየው\n››    ልቤ ይመሰጣል\n››    የሐዘን እንባ ጎርፍ \n››    ዐይኔን ይሞላዋል",
+            "ለምኚ በቀራንዮ አንባ \n››    በዚያ የፍቅር ቦታ\n..    በእግረ መስቀሉ ስር \n››    ከክርስቶስ ጌታ\n››    ለእኛ ተሰጥተሻል \n››    እናት እንድትሆኚን\n››    ልጆችሽ ነንና   \n››    ምልጃሽ አይለየን",
+            "ለምኚ አንደበቴን ጌታ\n››    በምስጋና ሙላው\n››    ደስ ይበልሽ ብዬ \n››    እኔም ላመስግናት\n››    አንደበቴን ጌታ\n››    በምስጋና ሙላው\n››    ደስ ይበልሽ ብዬ \n››    እኔም ላመስግናት",
+            "",
             "",
             "",
             "",
@@ -143,7 +190,102 @@
       }
     },
     {
-      "id": "4",
+      "id": "5",
+      "Timestamp": 45902.66379983796,
+      "Title": "ለውዳሴሽ ልትጋ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ቀሲስ አሸናፊ ገ/ማርያም",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ለውዳሴሽ ልትጋ ስምሽ ግርማ ያለው/2/\nእመቤቴ እኸ እመቤቴ ስልሽ እውላለሁ/2/\n",
+          "verse": [
+            "ከልቤ አቀርባለሁ ምስጋና ለስምሽ \nመለመኛዬ ነው ጽኑ ቃል ኪዳንሽ \nበሰላምታ ድምፅሽ ያልጸና ማን አለ\nጽንሱ በማህጸን በደስታ ዘለለ\n",
+            "ማርና ወተት ነው የስምሽ ስያሜ\nእመቤቴ ስልሽ ይቀላል ሸክሜ \nቅኔ ማህሌቱ ሰዓታት መዝሙሩ\nያመሰግንሻል ምድርና ጠፈሩ\n",
+            "እናቱ ነሽና አንቺ ለአዶናይ\nማለድኩኝ ከፊትሽ ይቅርታውን እንዳይ\nሰዓሊ ለነ ብዬ ይኸው ተርፌአለሁ                        \nበአንቺ ተደግፌ ነገም እኖራለሁ\n",
+            "ነይ ነይ እልሻለሁ እንደ ካህናቱ\nበሰዓታት ጸሎት ቆሜ በሌሊቱ\nዝም አልልም እኔ አወድስሻለሁ \nየዓለምን መከራ እረሳብሻለሁ\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "Timestamp": 45906.49955653935,
+      "Title": "ልቤን አነሳስቶ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ልቤን አነሳስቶ ያመለክተኛል የአምላክን እናት እመናት ይለኛል /2/\nእመን /6/ የአምላክን እናት አዛኝቷን/2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
       "Timestamp": 45849.507304513885,
       "Title": "ልዑል ሠምራ ",
       "singer": "ሌላ",
@@ -190,7 +332,101 @@
       }
     },
     {
-      "id": "5",
+      "id": "8",
+      "Timestamp": 45906.49045416666,
+      "Title": "መሠረተ ሕይወት ማርያም ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "መሠረተ ሕይወት ማርያም በረድኤት ነይ/2/\nምሕረት ቸርነትን ይዘሽ ከሰማይ ማርያም ድንግል በረድኤት ነይ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "9",
+      "Timestamp": 45906.49612769676,
+      "Title": "መሠረት ሕይወት ማርያም ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "መሠረት ሕይወት ማርያም ወጥንተ መድኃኒት ዘእምቀዲሞ /2/\nለወልድኪ/2/ አምሳለ ደሙ /2/",
+          "translation": "ቅድመ ዓለም የነበረ መድኃኒት ከሚባል የተገኘሽ የሕይወት መሠረት ማርያም\nአንቺ ነሽ መሠረትሽም የልጅሽ ደሙ ምሳሌ ነው"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "10",
       "Timestamp": 45842.732890115745,
       "Title": "መርሕ ዘገነት ",
       "singer": "ሌላ",
@@ -237,7 +473,54 @@
       }
     },
     {
-      "id": "6",
+      "id": "11",
+      "Timestamp": 45906.665747280094,
+      "Title": "መርሕ ዘገነት ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "መርሕ ዘገነት /2/\nአንቺ ነሽ /2/ ኪዳነ ምሕረት ",
+          "verse": [
+            "ቅድስት እመቤቴ የጌታዬ እናት \nሆነሽ የተገኘሽ ንጽሕት ቅድስት \nአንቺ ነሽ /2/ ኪዳነ ምሕረት ",
+            "የሲና ሐመልማል የሰው ልጅ ሕይወት \nአንቺን የመረጠ ይክበር መለኮ \nአንቺ ነሽ /2/ ኪዳነ ምሕረት ",
+            "አዘክ ድንግል ከልጅሽ በእውነት  \nበደህና እንዲያደርሰን ለመጪው ዓመት \nአንቺ ነሽ /2/ ኪዳነ ምሕረት ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "12",
       "Timestamp": 45849.681033263885,
       "Title": "መሶበ ወርቅ",
       "singer": "ሌላ",
@@ -284,7 +567,101 @@
       }
     },
     {
-      "id": "7",
+      "id": "13",
+      "Timestamp": 45906.494890648144,
+      "Title": "መሶበ ወርቅ ዘመና ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "መሶበ ወርቅ ዘመና አግዓዚት ማርያም ቅድስት/2/\nቅድስተ ቅዱሳን ይብልዋ ካህናት /2/",
+          "verse": [
+            "አንቺን ያመነ ከልቡ የተማጸነ ስምሽንም የጠራ /2/\nይኖራል ለዘለዓለም ደምቆ በብርሃንሽ /2/",
+            "ብርሃንሽም ደመቀ በዚህ ዓለም ላይ እመቤታችን ነይ ነይ /2/\nአማላጃችን ነሽ ከጌታ በሰማይ /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "14",
+      "Timestamp": 45906.489814375,
+      "Title": "መንክር ግርማ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "መንክር ግርማ ኃይለ ልዑል ፀለላ /2/\nአማን/2/ መላዕክት ይኬልልዋ /2/",
+          "translation": "በሚያስደንቅ ግርማ የልዑል ኃይል ጋረዳት /2/\nበእውነት/2/ መላዕክት አመሰገኗት /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
       "Timestamp": 45849.49840327546,
       "Title": "ሙሴ ዘርእያ",
       "singer": "ሌላ",
@@ -331,7 +708,101 @@
       }
     },
     {
-      "id": "8",
+      "id": "16",
+      "Timestamp": 45906.49871039352,
+      "Title": "ማርያም ተዐቢ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ማርያም ተዐቢ እምኩሉ ፍጥረት /2/\nኢያውዓያ እሣተ መለኮት/4/",
+          "translation": "ማርያም ትበልጣለች ከሁሉም ፍጥረት \nስለያዘች እሣተ መለኮት"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "17",
+      "Timestamp": 45906.641936099535,
+      "Title": "ማርያም ንጽሕት ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ማርያም ንጽሕት ድንግል ማእምንት ወላዲተ አምላክ ሰአሊተ ምሕረት ለውሉደ ሰብእ /2/\nሰአሊለነ ኀበ ክርስቶስ ወልድኪ ይሥረይ ኃጢአተነ ሰአሊለነ ቅድስት /2/",
+          "translation": "ማርያም ንጽሕት ድንግል ታማኝ አምላክን የወለድሽ የምሕረት አማላጅ ለሰው ልጆች /2/\t\nአማልጂን ከልጅሽ ከክርስቶስ ይቅር እንዲለን ቅድስት ሆይ ለምኚልን /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "18",
       "Timestamp": 45803.77479847222,
       "Title": "ማርያም አርጋለች",
       "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
@@ -378,7 +849,101 @@
       }
     },
     {
-      "id": "9",
+      "id": "19",
+      "Timestamp": 45906.49143090278,
+      "Title": "ማርያም እመ ብዙኀን",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ማርያም እመ ብዙኀን/2/\nእመ ብዙኀን /2/ ማርያም /2/",
+          "translation": "ማርያም የብዙዎች እናት /2/\nየብዙዎች እናት /2/ ማርያም /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "20",
+      "Timestamp": 45906.489075335645,
+      "Title": "ማርያም እንወድሻለን ",
+      "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ማርያም እንወድሻለን /2/ \nስለወለድሽ የሕይወት ምግብን \nማርያም እንወድሻለን",
+          "verse": [
+            "ድክመቴን አትይው   ማርያም \nበኃጢአት መውደቄን     ’’\nተስፋዬ አንቺው ነሽ       ’’ \nእስከ ዕለተ ሞቴ             ’’\nላልከዳሽ ምያለሁ          ’’ \nከስርሽ ላልጠፋ             ’’\nገፀ በረከቴ                     ’’\nየሕይወቴ ዋስትና         ’’",
+            "የምዕመናን ውበት   ማርያም\nዘውድ አክሊላቸው        ’’\nድንግል አንቺ እኮ ነሽ   ’’ \nየመንገድ ስንቃቸው     ’’ \nምስክር ነኝ ለአንቺ      ’’ \nእንደ ነቢያቱ               ’’\nስጦታ መሆንሽን         ’’\nለአዳም ልጆች ሁሉ     ’’",
+            "\nሞገስና ጸጋ       ማርያም\nበጌታፊት ያለሽ       ’’\nከሰይጣን መሸሻ        ’’\nዋስ ጠበቃችን ነሽ     ’’ \nእንዴት ነበር ያኔ      ’’ \nጌታን ስትወልጂው   ’’\nየእረኞቹ ደስታ        ’’\nየመላእክት ዝማሬ    ’’",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "21",
       "Timestamp": 45842.50293695602,
       "Title": "ማርያም ዐረገች ",
       "singer": "ሌላ",
@@ -425,7 +990,54 @@
       }
     },
     {
-      "id": "10",
+      "id": "22",
+      "Timestamp": 45906.493934259255,
+      "Title": "ማኀደረ መለኮት",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ማኀደረ መለኮት /2/\nማርያም እመብዙኀን /2/",
+          "translation": "የመለኮት ማደሪያ ማርያም የብዙዎች እናት ነሽ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
       "Timestamp": 45842.722938136576,
       "Title": "ምሕረት እንድናገኝ ",
       "singer": "ሌላ",
@@ -472,7 +1084,148 @@
       }
     },
     {
-      "id": "11",
+      "id": "24",
+      "Timestamp": 45906.49442971065,
+      "Title": "ምስለ ሚካኤል ወገብርኤል ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ምስለ ሚካኤል ወገብርኤል ንኢ ሰናይተ ማርያም/2/\nንኢ /8/ እመ አምላክ ንኢ ማርያም /2/",
+          "translation": "ከሚካኤልና ከገብርኤል ጋር የአምላክ እናት ማርያም\nነይ/8/ የአምላክ እናት ነይ ማሪያም/2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "25",
+      "Timestamp": 45906.66814674769,
+      "Title": "ሰላም ለኪ ማርያም እመ አምላክ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": true,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ሰላም ለኪ ማርያም እመ አምላክ /2/\nወልድኪ ይጼውአኪ ውስተ ሕይወት ወመንግስተ ክብር /2/",
+          "translation": "የአምላክ እናት ማርያም ሰላም እልሻለሁ \nወደ ሕይወትና ክብር ወዳለው ጌትነት ልጅሽ ይጠራሻል።"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "26",
+      "Timestamp": 45906.60213230324,
+      "Title": "ሰላም ሰላም ለኪ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ሰላም ሰላም ለኪ ማርያም ሰላም ለኪ /2/\n",
+          "verse": [
+            "የሕይወት መሠረት  ሰላም ለኪ\nየፍጥረት አለኝታ     ’’\nድንግል አደራሽን     ’’\nሁኝልኝ መከታ      ’’",
+            "\nበላዔሰብዕ ዳነ ሰለም ለኪ\nብዙ ነፍስ አጥፍቶ    ’’\nየአንቺን ስም ለጠራ   ’’\nጥርኝ ውሀ ሰቶ      ’’",
+            "ተማፅነንብሻል  ሰላም ለኪ\nበአማላጅነትሽ        ’’\nድንግል ሆይ አደራ   ’’\nአማልጂን ከልጅሽ    ’’",
+            "\nእኛ ብንከተል ሰላም ለኪ\nበጎ ምግባርን     ’’\nበሰላም በጤና    ’’\nእንኖራለን       ’’",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "27",
       "Timestamp": 45842.709445243054,
       "Title": "ሰላም ንብለኪ ",
       "singer": "ሌላ",
@@ -519,7 +1272,7 @@
       }
     },
     {
-      "id": "12",
+      "id": "28",
       "Timestamp": 45803.78505825231,
       "Title": "ሰአሊ ለነ",
       "singer": "ሌላ",
@@ -566,7 +1319,7 @@
       }
     },
     {
-      "id": "13",
+      "id": "29",
       "Timestamp": 45842.50729841435,
       "Title": "ሰአሊ ለነ ማርያም",
       "singer": "ሌላ",
@@ -613,7 +1366,101 @@
       }
     },
     {
-      "id": "14",
+      "id": "30",
+      "Timestamp": 45906.65392391203,
+      "Title": "ሰዓሊ ለነ ቅድስት",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ሰዓሊ ለነ ቅድስት እንልሻለን /2/\nእንደ ኤፍሬም እንደ አባታችን \nለምኝልን እመቤታችን /2/",
+          "verse": [
+            "ተስፋ አንቺ ነሽና ለፍጥረት ዓለም\nእየተመኩብሽ እስከ ዘለዓለም\nኀጢአታቸው ተደምስሶላቸው\nበአንቺ ጸሎት ዳነች ሕይወታቸው /2/",
+            "ስምሽም ስልጡን ነው በእግዚአብሔር መንበር \nቃልኪዳን ገባልሽ ልጆችሽን ሊምር\nበአንቺ ጸሎት ይተማመናሉ\nጠዋት ማታ ቅድስት ሆይ ይላሉ /2/",
+            "ዓለም ስትዋጋን በምኞት ስለት\nነፍሳችን ስትደክም ሲከባት ኀጢአት \nጨልሞብን ግራ ሲገባን\nብርሃናችን ነይ እናታችን/2/",
+            "የልባችን ሐዘን እጅግ ከብዶብናል\nኀጢአታችን በዝቶ መቆም ተስኖናል\nእንደኤልሳቤጥ እንደ ዘመድሽ\nደስ አሰኝን ይሰማን ድምፅሽ /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "31",
+      "Timestamp": 45902.66808495371,
+      "Title": "ስምሽን ጠርቼ",
+      "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ስምሽን ጠርቼ መቼ አፍራለሁ \nማርያም ብዬ መቼ እወድቃለሁ \nየምጽናናበት ስምሽነውና\nድንግል ሆይ ላቅርብ ላንቺ ምስጋና\n",
+          "verse": [
+            "ጨለማ ውጦኝ በጠላት ሀገር\nለዘመናት ስረገጥስኖር                           \nዲያብሎስ ማርኮ ሲያሰቃየኝ                             \nየዓለሙን መድን ወለድሽልኝ                                 \nከአባቶቼ ርስት ከሀገር ወጥቼ                                 \nበአሕዛብ ሀገር ስኖር ተሽጬ                                   \nደርሰሽ አጽናንተሽ አከበርሽኝ                                   \nብቸኝነቴን አስረሳሽኝ\n",
+            "ድንኳኑ ሞልቶ ሰዉ ታድሞ \nአስተናባሪው በጭንቀት ቆሞ \nምንአቀርባለሁ ብዬ ስቸገር\nምልጃሽ ደርሶልኝ ዳንኩኝ ከማፈር\nያሰብኩት ሐሳብ ደመና ሆኖ\nቢበተንብኝ እንደጉም ተኖ \nይሆናል ያልኩት ሳይሆን ቢቀርም\nበእመ አምላክ እኔስ ተስፋ አልቆርጥም\n",
+            "እናት አባቴ ባያስታውሱኝ                        \nይህቺ ዓለም ንቃ ገፍታ ብትተወኝ                              \nአንቺ ካለሽኝ ምን እሆናለሁ                             \nአውሎ ነፋሱን ባህሩን አልፋለሁ\nጠላቴ ደርሶ ቢያንገላታኝም\nመከራ አብዝቶ ቢያስጨንቀኝም                                 \nአላቋርጥም ያንቺን ምስጋና                              \nውለታሽ ድንግል አለብኝና\n",
+            "ክፉዎች ደርሰው ቢዝቱብኝም\nአንቺን መውደዴን አያስተዉኝም\nበአሕዛብ መሃል ስምሽን ስጠራ \nመከታ ሁኚኝ እናቴ አደራ\nጠላቴ ደርሶ ቢያንገላታኝም\nመከራ አብዝቶ ቢያስጨንቀኝም\nአላቋርጥም ያንቺን ምስጋና \nውለታሽ ድንግል አለብኝና\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "32",
       "Timestamp": 45842.728888854166,
       "Title": "ሶበሰ ኪዳንኩ ",
       "singer": "ሌላ",
@@ -660,7 +1507,7 @@
       }
     },
     {
-      "id": "15",
+      "id": "33",
       "Timestamp": 45842.64407521991,
       "Title": "ቅንዑ ለእንተ ",
       "singer": "ሌላ",
@@ -707,7 +1554,7 @@
       }
     },
     {
-      "id": "16",
+      "id": "34",
       "Timestamp": 45803.76864502315,
       "Title": "ቅንዑ ለእንተ ተዐቢ ጸጋ",
       "singer": "ሌላ",
@@ -755,7 +1602,339 @@
       }
     },
     {
-      "id": "17",
+      "id": "35",
+      "Timestamp": 45906.497229456014,
+      "Title": "ቅድስተ ቅዱሳን ማርያም ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ቅድስተ ቅዱሳን ማርያም ድንግል /2/\nለምኝልን አማልጅን ከልጅሽ ከመድኃኔዓለም /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "36",
+      "Timestamp": 45902.651936574075,
+      "Title": "ቋንቋዬ ነሽ ድንግል",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ልዑልሰገድ ጌታቸው",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "\n",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ቋንቋዬ ነሽ ድንግል መግባቢያዬ\nመልስ የማገኝብሽ ከጌታዬ /2/\nበአንቺ ቀርቤአለሁ ከአምላኬ ፊት\nቤቴ ሞልቶልኛል በበረከት /2/",
+          "verse": [
+            "በምን ስራዬ ነው ከፊቱ የቆምኩት\nመቼ በቅቼ ነው ስሙን የጠራሁት\nአስታራቂ እናት አንቺን ስለሰጠኝ\nስለ ቃልኪዳንሽ አቤት ልጄ አለኝ /2/",
+            "ቅድስና ሕይወት ከእኔ ተሰውሮ\nበውሸት በሃሜት አንደበቴ ታስሮ\nበእመ አምላክ ምልጃ አዲስ ሰው ሆኛለሁ\nእንደ መላእክቱ ይኸው እዘምራለሁ /2/",
+            "ስለ እመ አምላክ ብሎ ያፈረ የለም\nባንቺ ያልከበረ ሰው አይገኝም\nእንደ ባለማዕረግ እኔም ሰው መባሌ\nአንቺን አግኝቼ ነው ድንግል መሰላሌ /2/",
+            "ሰላም ለኪ ብዬ ስጀምር ጸሎቴን\nሐሴት ይመለዋል መላው ሰውነቴን\nእንደ ቅዱስ ኤፍሬም በምስጋናሽ ልጽና\nበእጆችሽ ያለው አምላኬ ነውና /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "37",
+      "Timestamp": 45902.66101083333,
+      "Title": "በሐዘኔ ደራሽነሽ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ሊቀ ዲያቆን ዋኘናቸው ካሳ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "በሐዘኔ ደራሽ ነሽ በጭንቀቴ\nበችግሬም ደራሽ ነሽ\nየአምላኬ እናት የጌታዬ እናት\nድንግል እመቤቴ ወላዲተ ቃል/2/\n",
+          "verse": [
+            "መልካሚቱ ርግብ     ድንግል እመቤቴ \nማርያም እናቴ ነሽ          ›› \nከፍጥረታት ሁሉ           ››\nገናና ነው ክብርሽ           ››\nየሐዘኔ መጽናኛ            ›› \nእንባዬን አባሽ ነሽ          ››\n",
+            "ዋሻ መጠለያ           ድንግል እመቤቴ \nየዘለዓም ቤቴ                ›› \nመንገድ ስሄድ ስንቄ          ›› \nመጠጤ ነሽ ምግቤ           ››\nእመ አምላክ ስጠራሽ         ››\nይጠፋል ርሃቤ              ››\n",
+            "የእናትነትሽን        ድንግል እመቤቴ \nፍቅርሽን አየሁት          ›› \nጎጆዬን ስትሞይው         ››\nባዶ የሆነውን             ››\n አንቺ እያለሽልኝ          ››\n ምን እሆናለሁኝ          ››\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "38",
+      "Timestamp": 45906.50058796296,
+      "Title": "በመኑ በአምሳለ መኑ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በመኑ በአምሳለ መኑ ናስተማስለኪ /2/\nእመቤቴ የኛ አማላጅ አዛኝቱ ኦ ድንግል ምልዕተ ውዳሴ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "39",
+      "Timestamp": 45906.66442954861,
+      "Title": "በምን በምን እንመስላት ",
+      "singer": "ሌላ",
+      "singerOther": "ወርቅነሽ ተፈራ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "በምን በምን እንመስላት ድንግል ማርያምን /2/\nምሳሌ /የላትም /2/ ክብሯን የሚመጥን /2/",
+          "verse": [
+            "የሙሴ ጽላት ነሽ  የምሕረት ቃልኪዳን \nየያዕቆብ መሰላል  የአብርሃም ድንኳን \nየብርሃን መውጫ የኖሕ ድንቅ መርከብ \nየመላእክት እህት /የሩህሩሃን እርግብ /2/",
+            "የሰሎሞን አክሊል  የአሮን በትር \nየእዝራ መሰንቆ   የጌዴዎን ፀምር\nድንግል እመቤት ናት የፃድቃኖች በር \nሆና የተገኘች /የአምላክ ማኅደር /2/",
+            "የቅዱሳን እናት የዓለም ንግስት \nችላ ተሸከመች መለኮት እሳት \nብርሃን ትሁነን ጨለማን ገላልጣ \nአማልዳ ታስምረን /ከዚህ ዓለም ጣጣ /2/",
+            "ከማር ይጣፍጣል የድንግል መአዛ \nአምላክን አቅፋለች በሁለት እጇ ይዛ\nዓለም ሁሉ የዳነው በልጅሽ ነውና \nእናታችን ጽዮን /ይድረስሽ ምስጋና /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "40",
+      "Timestamp": 45906.49688910879,
+      "Title": "በምድራዊ ሕይወት",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በምድራዊ ሕይወት /2/ በፈተና ቦታ /2/\nድንግል ትጠብቀን እጆቿን ዘርግታ ማርያም ትጠብቀን /እጆቿን ዘርግታ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "41",
+      "Timestamp": 45906.63687780093,
+      "Title": "በሰላም ንኢ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "በሰላም /2/ ንኢ /2/\nኧ ማርያም /2/ ኧ ምስለ ሚካኤል\nኧ ማርያም /2/ ኧ ምስለ ገብርኤል ",
+          "translation": "እመቤታችን ሆይ ከቅዱስ ሚካልና ከቅዱስ ገብርኤል ጋር በሰላም ነይ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "42",
       "Timestamp": 45849.6772821875,
       "Title": "በጽሐ ሠናይ",
       "singer": "ሌላ",
@@ -802,7 +1981,55 @@
       }
     },
     {
-      "id": "18",
+      "id": "43",
+      "Timestamp": 45902.650524756944,
+      "Title": "ባክኛለሁና",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ቀሲስ ወንደሰን በቀለ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ባክኛለሁና በሥጋ ፈተና  \nየዚህ ዓለም ሐዘን ጫፍ የለውምና     \nፈጥነሽ ወደኔ ነይ ከትንሿ ቤቴ \nአጽናኚኝ እመአምላክ ድንግል እመቤቴ",
+          "verse": [
+            "ባህሩ ትልቅ ነው ድንግል እመቤቴ\nትንሽ ናት መርከቤ      ››   /2/ \nየመንገዴ መሪ          ››   \nአንቺው ነሽ ወደቤ       ››   /2/",
+            "በመንገዴ ብዝል ድንግል እመቤቴ \nዓለም ትስቃለች        ››   /2/    \nመመኪያ እናቱ        ››   \nወዴት ነች እያለች      ››   /2/ ",
+            "በቀቢጸ ተስፋ ድንግል እመቤቴ\nእንዳልወድቅብሽ      ››   /2/\nበቀንም በሌሊት      ››   \nተስፋዬ አንቺ ነሽ     ››   /2/",
+            "የለም ያተረፍኩት ድንግል እመቤቴ\nወጥቼ ወርጄ            ››   /2/\nትርፌ አንቺ ብቻ ነሽ     ››  \nጽዮን አማላጄ            ››  /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "44",
       "Timestamp": 45842.52024155093,
       "Title": "ባዶ ነው መቃብሩ",
       "singer": "ሌላ",
@@ -849,7 +2076,7 @@
       }
     },
     {
-      "id": "19",
+      "id": "45",
       "Timestamp": 45842.51294936343,
       "Title": "ተበሃሉ በሰማያት",
       "singer": "ሌላ",
@@ -896,7 +2123,7 @@
       }
     },
     {
-      "id": "20",
+      "id": "46",
       "Timestamp": 45842.72591233796,
       "Title": "ተናዘዘብኪ ",
       "singer": "ሌላ",
@@ -943,7 +2170,101 @@
       }
     },
     {
-      "id": "21",
+      "id": "47",
+      "Timestamp": 45906.616254699074,
+      "Title": "ተወለደችልን",
+      "singer": "ማሕበረ ቅዱሳን",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ተወለደችልን ድንግል ማርያም \nየነቢያት ትንቢት ሕይወተ አዳም /2/",
+          "verse": [
+            "ሐናና ኢያቄም በጸሎት ሲተጉ \nየአምላክን ስጦታ ፀንተው ሲፈልጉ\nበሕግ በስርዓት ሆነው ሲማልዱ \nየፀሀይን እናት ሰማይን ወለዱ",
+            "አባቶች ነቢያት ያደረጓት ተስፋ \nምልክት የሆነች በሞት እንዳንጠፋ \nየቀረችልን ዘር የአምላክ መገኛ \nየሕይወት ውሃ ምንጭ ተወለደች ለእኛ ",
+            "የጥል ምክንያት ብትሆን ሔዋን \nበድንግል መወለድ ዕርቅ ሆነልን \nለአዳም ዘር ሁሉ መድኃኒት ናትና \nእናቱን የሰጠን ይድረሰው ምስጋና",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "48",
+      "Timestamp": 45902.64582578704,
+      "Title": "ታቦተ ሕጉ",
+      "singer": "ማሕበረ ቅዱሳን",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ታቦተ ሕጉ ለእግዚአብሔር በካህናት ሕፅርት ወበመንፈስቅዱስ ክልልት\nንጉሥኪ ጽዮን ኢይትመዋዕ ለፀር ወኢየኃድጋ ለሀገር /2/",
+          "translation": "የሕግ ጽላቱ ለእግዚአብሔር በካህናት የታጠረች በመንፈስ ቅዱስም የተከለለች /2/\nንጉሥሽ ጽዮን አይሸነፍም ለጠላት ሀገሪቱንም አይተዋት /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "49",
       "Timestamp": 45849.69192946759,
       "Title": "ታቦት እንተ ውስቴታ",
       "singer": "ሌላ",
@@ -991,7 +2312,149 @@
       }
     },
     {
-      "id": "22",
+      "id": "50",
+      "Timestamp": 45906.65793585648,
+      "Title": "ትህትናሽ ግሩም ነው ",
+      "singer": "ሌላ",
+      "singerOther": "የኢትዮጵያ ኦርቶዶክስ ተዋህዶ አርቲስቶች",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ትህትናሽ ግሩም ነው ደግነትሽም /2/\nእናቱ ሆነሻል ለመድኃኔዓለም /2/",
+          "verse": [
+            "ንጽሕት ስለሆንሽ    እመቤቴ /2/              \nእንከን የሌለብሽ          ››\nየፍጥረታት ጌታ          ››\nበአንቺ ያደረብሽ         ››\nየድንግል መመረጥ      ›› \nዜናው አስገረመኝ        ›› \nእሳቱን ታቀፈች          ›› \nየማይቻለውን              ››",
+            "ምርኩዜ ልበልሽ    እመቤቴ/2/\nጥላ ከለላዬ                        ›› \nጋሻዬ ነሽ አንቺ                ››\nየኔ መመኪያዬ                 ›› \nበዓለም እንዳልጠፋ          ›› \nሕይወቴ መሮብኝ             ›› \nእንደ ወይን አጣፍጪው   ›› \nድንግል ድረሽልኝ            ››",
+            "\nየምስራቅ ደጃፍ ነሽ      እመቤቴ/2/\nየሁላች ተስፋ                  ››\nእሙ ለፀሀይ ጽድቅ        ››\nየሁሉ ጠበቃ                   ››\nድንግል የድል አክሊል    ››\nድንግል የጽድቅ ሥራ     ››\nድንግል መሰላል ነሽ       ››\nየተዋህዶ ተስፋ              ››",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "51",
+      "Timestamp": 45906.641252650465,
+      "Title": "ትናዝዝኒ ኀዘነ ልብየ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ትናዝዝኒ /2/ ኀዘነ ልብየ\nበሰላም /ንዒ /2/ ማርያም /2/",
+          "verse": [
+            "ምስለ ወልድኪ /2/ አማኑኤል \nበሰላም /ንዒ /2/ ማርያም /2/",
+            "ምስለ ሱራፌል /2/ ወኪሩቤል /2/\nበሰላም /ንዒ /2/ ማርያም /2/",
+            "ምስለ ሚካኤል /2/ ወገብርኤል \nበሰላም /ንዒ /2/ ማርያም /2/",
+            "ምስለ ዑራኤል /2/ ወሩፋኤል \nበሰላም /ንዒ /2/ ማርያም /2/",
+            "ምስለ ፋኑኤል /2/ ወሳቁኤል \nበሰላም /ንዒ /2/ ማርያም /2/",
+            "ምስለ ኩሎሙ /2/ ቅዱሳን \nበሰላም /ንዒ /2/ ማርያም /2/",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "52",
+      "Timestamp": 45906.49567017361,
+      "Title": "ነይ ነይ ማርያም ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ነይ ነይ ማርያም ወላዲተ አምላክ የጻድቃን እመቤት የመላዕክት እህት /2/\nሁላችሁ እመኗት ከልብ አማላጅናትና በእውነት እናመስግናት እናወድሳት አማላጅ ኪዳነ ምሕረት /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "53",
       "Timestamp": 45849.49363005787,
       "Title": "ንጉሥኪ ጽዮን",
       "singer": "ሌላ",
@@ -1038,7 +2501,7 @@
       }
     },
     {
-      "id": "23",
+      "id": "54",
       "Timestamp": 45849.503631238425,
       "Title": "ንጽሕተ ንጹሐን",
       "singer": "ሌላ",
@@ -1085,7 +2548,54 @@
       }
     },
     {
-      "id": "24",
+      "id": "55",
+      "Timestamp": 45906.63931215278,
+      "Title": "ንጽሕተ ንጹሐን ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ንጽሕተ ንጹሐን ከዊና ከመታቦት ዘዶር ዘሲና ውስተ ቤተ መቅደስ ነበረት በድንግልና ነበረት /2/\nሲሳያ ሕብስተ መና ወስቴ ሃኒ ስቴ ፅሙና /2/\n",
+          "translation": "ከንጹሐንም ንጹሕ ሁና በሲና እንደ ነበረችው ታቦት በድንግልና በቤተ መቅደስ ውስጥ ኖረች ምግቧም ሕብስተ መና መጠጧም የፀጥታ መጠጥ ነበር::"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "56",
       "Timestamp": 45849.50500521991,
       "Title": "ንጽሕተ ንጹሐን 1",
       "singer": "ሌላ",
@@ -1132,7 +2642,7 @@
       }
     },
     {
-      "id": "25",
+      "id": "57",
       "Timestamp": 45842.72796423611,
       "Title": "አማን በአማን  ",
       "singer": "ሌላ",
@@ -1179,7 +2689,54 @@
       }
     },
     {
-      "id": "26",
+      "id": "58",
+      "Timestamp": 45906.61965493056,
+      "Title": "አምደ እሳት ፆርኪ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "አምደ እሳት ፆርኪ /2/\nኦ ማርያም /3/ መንክረ ልደትኪ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "59",
       "Timestamp": 45842.71800828703,
       "Title": "አንቲ ውእቱ  ",
       "singer": "ሌላ",
@@ -1226,7 +2783,7 @@
       }
     },
     {
-      "id": "27",
+      "id": "60",
       "Timestamp": 45842.71994534723,
       "Title": "አንቲ ውእቱ 2 ",
       "singer": "ሌላ",
@@ -1252,7 +2809,7 @@
       "songLyrics": {
         "isShortSong": true,
         "shortLyrics": {
-          "lyrics": "አንቲ ወእቱ ተስፋው ለአዳም /2/ \nአመ ይሰደድ /2/ እም ገነት /፬/",
+          "lyrics": "አንቲ ወእቱ ተስፋhu ለአዳም /2/ \nአመ ይሰደድ /2/ እም ገነት /4/",
           "translation": "አዳም ኪዳነ ከገነት በተሰደደ ጊዜ ተስፋው አንቺ ነሽ\n"
         },
         "longLyrics": {
@@ -1273,7 +2830,103 @@
       }
     },
     {
-      "id": "28",
+      "id": "61",
+      "Timestamp": 45906.64957922454,
+      "Title": "አንቺ የወይን ሐረግ ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ መምህር ዮሐንስ ስመኝ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "አንቺ የወይን ሐረግ ድንግል ልምላሜሽ የበዛ/2/\n/ምግብ ሆኖ/2/ተሰጠን ፍሬሽ ለእኛ ቤዛ/2/",
+          "verse": [
+            "በአንቺ ሰማይነት ድንግል የወጣው ፀሐይ/2/\n/ብርሃን ነው/2/ለጻድቃን ስሙም አዶናይ/2/",
+            "ፊደል ትመስያለሽ ድንግል ወንጌል ትወልጃለሽ/2/\n/ለመላእክት/2/የማይቻል ነበልባሉን የቻልሽ/2/",
+            "የመሶብ ምሳሌ ድንግል የኮከብ መገኛ/2/\nበሥጋችን በነፍሳችን እንዳንራብ አንቺ አለሽን ለእኛ/2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "62",
+      "Timestamp": 45902.66944989584,
+      "Title": "አንቺን የያዘ ሰው",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪተ ፀዳለ ጎበዜ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "አንቺን የያዘ ሰው ምን ይጎድልበታል \nበምልጃሽ በረከት ቤቱ ሞልቶለታል\nዘር መከር ባይኖረው ጎተራው ባይሞላ \nሁሉም ይሸፈናል በረድኤትሽ ጥላ/2/\n",
+          "verse": [
+            "በረከትሽ ብዙ የደናግል ገንዘብ     \nየምስኪናን እናት የርሁባን ቀለብ                                    \nለሁሉ መጋቢ ጸጋሽ የማይጎድል                                  \nስምሽ ጥዑም ምግብ ከረሃብ የሚያስጥል/2/\n",
+            "አንቺ ብትመጪ ከምስኪኗ ቤቴ\nእንደ መጥምቁ እናት በዛልኝ ሐሴቴ\nየሐዲስ ኪዳን ቁርባን መንበር ጠረጴዛ\nጽድቅን አሸተትን የሕይወትሽን መዓዛ/2/\n",
+            "ልቤ ተጠራጥሮ ኪዳንሽን ካልከዳ\nልመናም አልወርድም አልይዝም አኩፋዳ\nሁሉን እየሞላሽ መመገብ ታውቂያለሽ \nቢዝቁት የማያልቅ ጸጋና ሀብትአለሽ/2/\n",
+            "የእግዚአብሔር ማረፊያ ኮሬባዊት ዋሻ \nየሕይወት ውሃ ምንጭ የሕግ መፍሰሻ\nነበልባል ተዋህዶ ሙሴ አንቺን አይቷል\nጫማውን አውልቆ በፊትሽ ተደፍቷል/2/\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "63",
       "Timestamp": 45855.402338935186,
       "Title": "አእመራ ዘካርያስ",
       "singer": "ሌላ",
@@ -1320,7 +2973,7 @@
       }
     },
     {
-      "id": "29",
+      "id": "64",
       "Timestamp": 45842.510818379626,
       "Title": "አእረግዋ",
       "singer": "ሌላ",
@@ -1367,7 +3020,7 @@
       }
     },
     {
-      "id": "30",
+      "id": "65",
       "Timestamp": 45849.47970560185,
       "Title": "አክሊሎሙ ለሰማዕት",
       "singer": "ሌላ",
@@ -1414,7 +3067,54 @@
       }
     },
     {
-      "id": "31",
+      "id": "66",
+      "Timestamp": 45906.6251858912,
+      "Title": "አይ ይዕቲ ዛቲ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "አይ ይዕቲ ዛቲ እንተ ታስተርኢ እምርኁቅ ከመ ማኅቶት ደብረ ገነት /2/\nሙሴኒ ርዕያ ሀገረ ቅድስት እዝራኒ /ተናገራ /2/ ዘመራ ዳዊት /2/",
+          "translation": "ይህች ሙሴ ያያት እንደ መብራት ከሩቅ የምትታየው ማን ናት? ዕዝራ የተናገረላት ዳዊት የዘመረላት ቅድስት ሀገር ናት"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "67",
       "Timestamp": 45842.7364153125,
       "Title": "አዳም ንባብኪ  ",
       "singer": "ሌላ",
@@ -1461,7 +3161,7 @@
       }
     },
     {
-      "id": "32",
+      "id": "68",
       "Timestamp": 45849.50164416667,
       "Title": "ኢያቄም ወሐና",
       "singer": "ሌላ",
@@ -1508,7 +3208,102 @@
       }
     },
     {
-      "id": "33",
+      "id": "69",
+      "Timestamp": 45906.61513572917,
+      "Title": "ኢያቄም ወሐና ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ኢያቄም ወሐና እናት አባትሽ\nቤተ እግዚያብሔር ወስደው ስለት የሰጡሽ \nመና ከሰማያት የወረደልሽ\nዕጹብ ድንግል የሆንሽ ማርያም አንቺ ነሽ \nኦ /4/ እመ ክርስቶስ ማርያም አንቺ ነሽ \nኦ /4/ እመ ክርስቶስ ድንግል አንቺ ነሽ ",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "70",
+      "Timestamp": 45906.64371260417,
+      "Title": "እመ አምላክ ሙሽራ ነሽ ",
+      "singer": "ሌላ",
+      "singerOther": "ወርቅነሽ ተፈራና ትንቢት ቦጋለ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እመ አምላክ ሙሽራ ነሽ \nየቃል ማደርያ ለመሆን የበቃሽ /2/ ኸኸ ",
+          "verse": [
+            "አሥራ ሁለት ዓመት ቤተ መቅደስ ኖረሽ \nየመመረጥ ፀጋ ከጌታ ያገኘሽ\nአምላካዊ መልእክት እጹብ ድንቅ ዜና \nከሰማይ መጣልሽ  አቋርጦ ደመና",
+            "በስድስተኛው ወር ተልኮ ገብርኤል \nቤተ መቅደስ መጣ ሊያበስራት ለድንግልን\nበልዩ ሰላምታ ሰላም ለኪ አለሽ \nየክርስቶስ እናት ድንግል ደስ ይበልሽ ",
+            "መላእክት ከሰማይ ያመሰግኑሻል \nክብር ለአምላክ እናት ይድረሳት ይሉሻል\nበማህፀንሽ ቢያድር የሠራዊት ጌታ\nለመሆን ተመረጥሽ የአምላክ ቅዱስ ቦታ",
+            "የፈጣሪ እናት መሆንሽን ተረድቶ \nሰላም ለአንቺ ይሁን አለሽ እጅ ነስቶ \nከፍጡራን ሁሉ አንቺ ስለከበርሽ\nገብርኤል ተልኮ ደስታን አበሰረሽ",
+            "ምንኛ ድንቅ ነው ድንግል የአንቺ ብሥራት \nጌታን ትወልጃለሽ የሚል ቃልን መስማት\nይሁንልኝ ብለሽ ቃልን የተቀበልሽ \nድንግል ሆይ እናቴ እጅግ ልዩ እኮ ነሽ",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "71",
       "Timestamp": 45849.47720340278,
       "Title": "እመቤታችን ለአንቺ ",
       "singer": "ሊቀ መዘምራን ኪነ ጥበብ ወ/ቂርቆስ",
@@ -1556,7 +3351,243 @@
       }
     },
     {
-      "id": "34",
+      "id": "72",
+      "Timestamp": 45906.65984900463,
+      "Title": "እመቤቴ ማርያም እመቤቴ ",
+      "singer": "ሌላ",
+      "singerOther": "ዳግማዊ ደርቤ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እመቤቴ ማርያም እመቤቴ /2/\nበአንቺ ያደረብሽ የሠራዊት ጌታ\nእመቤቴ ማርያም ይድረስሽ ሰላምታ /2/",
+          "verse": [
+            "ሕይወቱን የሰጠ ፍጹም ለሰላም\nሁሉንም የሚችል ያለ በአርያም\nየአምላክ ማደሪያ ድንግል ማርያም /2/\nጌታ የመረጠሽ እስከ ዘለዓለም /2/",
+            "የምድር ባለጸጎች ሲማልዱ ፊትሽ\nየሰማይ መላእክት ምስጋና ያቅርቡልሽ\nአህዛብ ይንበርከክ ለሃያሉ ልጅሽ /2/\nክብር ይገባሻል በእናትነትሽ /2/ ",
+            "ለአንቺ ሲያስተላልፍ ገብርኤል ሠላምታ                            \nከልዑል ተልኮ ከሠራዊት ጌታ                                \nሰላም ለአንቺ ይሁን ብሎ ያበሰረሽ /2/\nእመቤቴ ማርያም ምስጋና ይድረስሽ /2/",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "73",
+      "Timestamp": 45902.66501880787,
+      "Title": "እመቤቴ የአምላክ እናት",
+      "singer": "ሊቀ መዘምራን ቴዎድሮስ ዮሴፍ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እመቤቴ የአምላክ እናት\nላመስግንሽ ቀን ከሌሊት\nለልጅሽም ክብር ውዳሴ \nታቀርባለች ዘውትር ነፍሴ/2/\n",
+          "verse": [
+            "ልቤ ተነሣሣ ተቀኘ ለክብርሽ \nበፍፁም ትህትና ሊያመሰግንሽ\nጽዮን መጠጊያ ነሽ የአብርሃም ድንኳን \nየታጠረች ተክል እመብርሃን\n",
+            "የለመለመች መስክ አምላክ የመረጣት\nየጽላቱ ኪዳን ታቦቱ ድንግል ናት\nየሰማይ የምድር ንግስት ናትና\nክብር ይገባታልዘውት ርጠዋት ማታ\n",
+            "አደራሽን ማርያም የሁሉ እናት\nበምልጃሽ አስቢኝ ኃላ ስራቆት\nያንን የእሳት ባህር አሻግሪኝ ድንግል ሆይ\nእንዳልወድቅ እንዳሞት ከቶ እንዳላይ ስቃይ\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "74",
+      "Timestamp": 45906.49223528935,
+      "Title": "እመቤቴ ጥላ ከለላዬ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "እመቤቴ ጥላ ከለላዬ ረዳቴ/2/\nየገነጽ ሙሽራ/4/ ማርያም የልዑል ማደሪያ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "75",
+      "Timestamp": 45906.62100424769,
+      "Title": "እም ሐና ወኢያቄም ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ኦ ድንግል አኮ በፍትወተ ደነስ ዘተፀነስኪ /2/\nእም ሐና ወኢያቄም ተወለድኪ /2/",
+          "translation": "ድንግል ሆይ በኃጢአት ፍትወት የተፀነሽ አይደለም በሕግ በሆነ ሩካቤ ከሐና ከኢያቄም ተወለድሽ እንጂ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "76",
+      "Timestamp": 45906.49919894676,
+      "Title": "እምነ እምነ ንኢ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "እምነ እምነ ንኢ /2/\nበሰላም /2/ ንኢ ማርያም /2/",
+          "translation": "እናታችን ነይ ነይ /2/\nበሰላም /2/ ነይ ማርያም /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "77",
       "Timestamp": 45803.777803969904,
       "Title": "እርገታ ለማርያም",
       "singer": "ሌላ",
@@ -1603,7 +3634,7 @@
       }
     },
     {
-      "id": "35",
+      "id": "78",
       "Timestamp": 45842.71229693287,
       "Title": "እንበለ ምግባር ",
       "singer": "ሌላ",
@@ -1650,7 +3681,243 @@
       }
     },
     {
-      "id": "36",
+      "id": "79",
+      "Timestamp": 45906.498162881944,
+      "Title": "እንተ በምድር ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "እንተ በምድር ሥረዊሃ ወበሰማይ አዕጹቂሃ /2/ \nሐረገ ወይን/2/ ድንግል ሐረገ ወይን/2/",
+          "translation": "ሥሮችዋ በምድር ጫፎችዋ በሰማይ የሆነ የወይን ሐረግ ድንግል ማርያም ናት"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "80",
+      "Timestamp": 45906.65531282408,
+      "Title": "እንደ  ኤልሳቤጥ ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እንደ  ኤልሳቤጥ ላመስግንሽ\nፊትሽ ወድቄ ልሳለምሽ\nየጌታዬ እናት የእኛ እመቤት \nአዛኝ ነሽ ከልብ ፍጹም የዋህት",
+          "verse": [
+            "ርኅራኄሽ ያስደንቀኛል\nስለኀጢአቴ ምልጃሽ ይቀድማል \nየሰላምታሽ ድምፅ ደስ ያሰኘኛል \nከትካዜዬም ያሳርፈኛል",
+            "ድምጽሽ ሲሰማኝ ልቤ ይረካል \nሐዘኔ ቀርቶ ፊቴ ይፈካል\nበእናትነት አንቺን ለሰጠኝ\nቸሩ አምላካችን ይክበር ይመስገን",
+            "የሁሉ እመቤት የሁሉ  አጽናኝ \nየአበው መድኃኒት ከአምላክ አገናኝ \nዛሬም በልቤ ደስታ ጨምረሽ\nእንደ ኤልሳቤጥ ሰላም ልበልሽ",
+            "ከሴቶች መካከል መርጦ ቀድሶሻል\nትውልድ ሁሉ ብፅዕት ይሉሻል \nበልዩ ውዳሴ ያመሰግኑሻል\nድንግል እናታችን በቀኙ ቆመሻል",
+            "የሰላምታሽን ድምፅ ልቤ ሲሰማ\nነፍሴ ደስ አላት ቀለለ ሸክሟ \nድንግል ለክብርሽ ስንበረከክ\nእጅሽ ይዘርጋ ለመባረክ",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "81",
+      "Timestamp": 45903.86724180555,
+      "Title": "እንደ ኤልሣቤጥ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እንደ  ኤልሳቤጥ ላመስግንሽ\nፊትሽ ወድቄ ልሳለምሽ\nየጌታዬ እናት የእኛ እመቤት \nአዛኝ ነሽ ከልብ ፍጹም የዋህት",
+          "verse": [
+            "\nርኅራኄሽ ያስደንቀኛል\nስለኀጢአቴ ምልጃሽ ይቀድማል \nየሰላምታሽ ድምፅ ደስ ያሰኘኛል \nከትካዜዬም ያሳርፈኛል",
+            "\nድምጽሽ ሲሰማኝ ልቤ ይረካል \nሐዘኔ ቀርቶ ፊቴ ይፈካል\nበእናትነት አንቺን ለሰጠኝ\nቸሩ አምላካችን ይክበር ይመስገን",
+            "                            \nየሁሉ እመቤት የሁሉ  አጽናኝ \nየአበው መድኃኒት ከአምላክ አገናኝ \nዛሬም በልቤ ደስታ ጨምረሽ\nእንደ ኤልሳቤጥ ሰላም ልበልሽ",
+            "\nከሴቶች መካከል መርጦ ቀድሶሻል\nትውልድ ሁሉ ብፅዕት ይሉሻል \nበልዩ ውዳሴ ያመሰግኑሻል\nድንግል እናታችን በቀኙ ቆመሻል",
+            "                              \n የሰላምታሽን ድምፅ ልቤ ሲሰማ\nነፍሴ ደስ አላት ቀለለ ሸክሟ \nድንግል ለክብርሽ ስንበረከክ\nእጅሽ ይዘርጋ ለመባረክ",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "82",
+      "Timestamp": 45903.85524633102,
+      "Title": "እንድናለን",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪት ፋንቱ ወልዴና ትእግስት",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እንድናለን እኛስ እንድናለን /2/\nእንድናለን ድንግል አንቺን ይዘን",
+          "verse": [
+            "\nበፍጹም ቸርነት   እንድናለን\nስለወደደን           ››\nእንዳንጠፋበት        ›› \nድንግልን ሰጠን       ››",
+            "\nየልባችን ደስታ      እንድናለን \nእኛስ አግኝተናል        ›› \nበአማላጅነቷ           ›› \nፈጣሪ ምሮናል         ››",
+            "\nምርኩዝ አንቺን ይዘን    እንድናለን \nስንቃችን ሰንቀን           ››\nበድንግል መሪነት          ›› \nጽድቅን እንወርሳለን        ›",
+            "የምታማልደን      እንድናለን\nድንግልን ሰጥቶናል     ››\nየእሳቱን ባህር         ››\nበእርሷ ተሻግረናል     ››",
+            "\nየልባችን ደስታ እንድናለን\nእኛስ አግኝተናል    ››\nበአማላጅነቷ       ››\nፈጣሪ ምሮናል     ››",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "83",
+      "Timestamp": 45906.6511703125,
+      "Title": "እንድናለን እኛስ ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "እንድናለን እኛስ እንድናለን /2/\nእንድናለን ድንግል አንቺን ይዘን",
+          "verse": [
+            "በፍጹም ቸርነት   እንድናለን\nስለወደደን                ››\nእንዳንጠፋበት         ›› \nድንግልን ሰጠን        ››",
+            "የልባችን ደስታ      እንድናለን \nእኛስ አግኝተናል        ›› \nበአማላጅነቷ               ›› \nፈጣሪ ምሮናል            ››",
+            "ምርኩዝ አንቺን ይዘን    እንድናለን \nስንቃችን ሰንቀን                ››\nበድንግል መሪነት              ›› \nጽድቅን እንወርሳለን          ››",
+            "የምታማልደን      እንድናለን\nድንግልን ሰጥቶናል     ››\nየእሳቱን ባህር              ››\nበእርሷ ተሻግረናል      ››",
+            "የልባችን ደስታ እንድናለን\nእኛስ አግኝተናል     ››\nበአማላጅነቷ            ››\nፈጣሪ ምሮናል         ››",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "84",
       "Timestamp": 45842.516761226856,
       "Title": "ኦ ርኅርኂተ ",
       "singer": "ሌላ",
@@ -1697,7 +3964,7 @@
       }
     },
     {
-      "id": "37",
+      "id": "85",
       "Timestamp": 45829.67936328704,
       "Title": "ከሊባኖስ",
       "singer": "ዘማሪት ፋንቱ ወልዴ",
@@ -1744,7 +4011,54 @@
       }
     },
     {
-      "id": "38",
+      "id": "86",
+      "Timestamp": 45906.61869644676,
+      "Title": "ከሊባኖስ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ከሊባኖስ ከሊባኖስ ከልጅሽ ጋር ነይ \nእመ አዶናይ ከሊባኖስ ወደኛ ነይ ",
+          "verse": [
+            "ጥበቃሽ ዘወትር  ከሊባኖስ \nእንዳይለየኝ            ’’\nበሔድኩበት ሁሉ    ’’\nማረፊያ ሁኚኝ        ’’  ",
+            "እኔ ባርያሽን     ከሊባኖስ \nድንግል አትርሺን     ’’\nበጽድቅ ሰሌዳ           ’’\nስሜን ፃፊልኝ            ’’",
+            "ነፍስና ሥጋዬን  ከሊባኖስ \nአደራ እልሻለሁ        ’’\nበልጅሽ ጽኑ ፍቅር   ’’\nተማፅኜሻለው          ’’",
+            "ከመሞቴ በፊት   ከሊባኖስ \nለንስሐ አብቂኝ        ’’\nለነፍሴ ማረፊያ       ’’\nአዘጋጂልኝ             ’’",
+            "ከአንበሶች መኖርያ ከሊባኖስ \nከነብሮች ተራራ          ’’\nመጥተሽ አስደስቺኝ   ’’\nእናቴ ሙሽራ             ’’",
+            "የልብስሽ መዓዛ  ከሊባኖስ\nየሊባኖስ ሽታ           ’’\nእሮማን ናርዶስ ነሽ  ’’\nእናቱ ለጌታ              ’’",
+            "እመቤቴ ስልሽ ከሊባኖስ\nስምሽን ስጠራ         ’’\nፈጥነሽ ድረሺልኝ   ’’\nከሚካኤል ጋራ        ’’\nፈጥነሽ ድረሺልኝ   ’’ \nከገብርኤል ጋራ      ’’",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "87",
       "Timestamp": 45849.67403299769,
       "Title": "ከርካዕ ዘተተክለት",
       "singer": "ሌላ",
@@ -1791,54 +4105,7 @@
       }
     },
     {
-      "id": "39",
-      "Timestamp": 45842.63435576389,
-      "Title": "ኪዳነ ምሕረት ንግሥት",
-      "singer": "ሌላ",
-      "about": [],
-      "minor_holidays": [],
-      "main_holidays": [],
-      "angels": [],
-      "Trinity_Song": {
-        "Tir": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "St_Mary_Song": {
-        "Yekatit": true,
-        "Nehase": false,
-        "Mesgana": false
-      },
-      "K_Gebriel_Song": {
-        "Tahsas": false,
-        "Hamle": false,
-        "Mesgana": false
-      },
-      "songLyrics": {
-        "isShortSong": true,
-        "shortLyrics": {
-          "lyrics": "ኪዳነ ምሕረት ንግሥት /2/ ሰማይ /2/\nንግሥተ ሰማይ /2/ ንግሥት /3/ ሰማይ/2/",
-          "translation": "ኪዳነ ምሕረት የሰማይ ንግሥት ናት"
-        },
-        "longLyrics": {
-          "chorus": "",
-          "verse": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ]
-        }
-      }
-    },
-    {
-      "id": "40",
+      "id": "88",
       "Timestamp": 45842.72696346065,
       "Title": "ኪዳነ ምሕረት ",
       "singer": "ሌላ",
@@ -1885,7 +4152,102 @@
       }
     },
     {
-      "id": "41",
+      "id": "89",
+      "Timestamp": 45842.63435576389,
+      "Title": "ኪዳነ ምሕረት ንግሥት",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": true,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ኪዳነ ምሕረት ንግሥት /2/ ሰማይ /2/\nንግሥተ ሰማይ /2/ ንግሥት /3/ ሰማይ/2/",
+          "translation": "ኪዳነ ምሕረት የሰማይ ንግሥት ናት"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "90",
+      "Timestamp": 45902.6587353588,
+      "Title": "ኪዳነ ምሕረት እመቤት",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪት ለምለም ከበደ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ኪዳነ ምሕረት እመቤት/2/\nነይልን/2/ካለንበት",
+          "verse": [
+            "ከሰማያት በላይ ካለው ከማደሪያሽ/2/\nዝማሬ ከሞላው ከዘለዓም ቤትሽ\nየምድር ፍጥረታት ማርያም/2/ ሲሉሽ/2/\nየቃል እናት እመቤቴ ነይ በሰረገላሽ/2/",
+            "ከፀጥታው ወደብ ከፍቅር አውድማ /2/\nከሰላሙ መንደር ከእውነት ከተማ\nሰዓሊ ለነ ቅድስት ውዳሴሽ ሲሰማ /2/ \nከሚካኤል ከገብርኤል ጋር ነይልን ከራማ /2/\n",
+            "ዘርፋፋው ቀሚስሽ ይውረድ ከሰማያት /2/ \nእንባችን ይታበስ በአንቺ አማላጅነት\nየጽዮን ዝማሬ ተሞላች ነፍሳችን /2/\nንዒ/3/ እንበል እንደ አባቶቻችን /2/\n",
+            "ፍጥረታት ሊድኑ በአማላጅነትሽ /2/\nየዘላለም ኪዳን አማኑኤል ሰጠሸ \nትውልድ ይህን አምኖ ብፅዕት ይልሻል /2/\nእናቴ መመኪያዬ ምርኩዜ ሆነሻል /2/\n",
+            "የልብን ሲያዋዩሽ ሰምተሸ ዝም አትይም /2/\nችግረኛን አይቶ ልብሽ አይጨክንም\nከአይን ጥቅሻ ፈጥነሽ ትደርሽለታለሽ /2/\nከሀዘን ከመከራ ታሳርፊዋለሽ /2/\n",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "91",
       "Timestamp": 45842.646186921294,
       "Title": "ኪዳንኪ ኃይልነ ",
       "singer": "ሌላ",
@@ -1932,7 +4294,7 @@
       }
     },
     {
-      "id": "42",
+      "id": "92",
       "Timestamp": 45842.71516587963,
       "Title": "ኪዳንኪ ኮነ",
       "singer": "ሌላ",
@@ -1979,7 +4341,7 @@
       }
     },
     {
-      "id": "43",
+      "id": "93",
       "Timestamp": 45842.72464295139,
       "Title": "ክነፈ ርግብ ",
       "singer": "ሌላ",
@@ -2026,7 +4388,7 @@
       }
     },
     {
-      "id": "44",
+      "id": "94",
       "Timestamp": 45842.509897615746,
       "Title": "ኸኸ ማርያምስ",
       "singer": "ሌላ",
@@ -2073,7 +4435,54 @@
       }
     },
     {
-      "id": "45",
+      "id": "95",
+      "Timestamp": 45906.66873777778,
+      "Title": "ወልድኪ ይጼውአኪ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": true,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ወልድኪ ይጼውአኪ /2/\nውስተ ሕይወት ወመንግስተ ክብር /4/",
+          "translation": "ልጅሽ ይጠራሻል /2/\nወደ ሕይወት የክብር መንግስት /4/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "96",
       "Timestamp": 45849.65840728009,
       "Title": "ወመጠዋ ጽዋዓ",
       "singer": "ሌላ",
@@ -2120,7 +4529,7 @@
       }
     },
     {
-      "id": "46",
+      "id": "97",
       "Timestamp": 45849.44212960648,
       "Title": "ወዳጄ ሆይ",
       "singer": "ሌላ",
@@ -2168,7 +4577,55 @@
       }
     },
     {
-      "id": "47",
+      "id": "98",
+      "Timestamp": 45902.65323574074,
+      "Title": "ውዳሴ ማርያም እጮሃለሁ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ እንግዳወርቅ በቀለ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ውዳሴ ማርያም እጮሃለሁ \nድንግል እናቴን እጣራለሁ\nእንደ አባ ኤፍሬም ነይ ባርኪኝ \nወድሰኒ ልጄ በይኝ",
+          "verse": [
+            "ውዳሴ ማርያም በሰርክ ጸሎት ላይ \n      ››      ዜማ ስናደርስ:\n      ››      ድንግል ትመጣለች \n      ››      በቤተ መቅደስ:\n      ››      የብርሃን ምንጣፍ \n      ››      ከፊቷ ተነጥፏል:\n      ››      ቅዱስ ኤፍሬም ታጥቆ \n      ››      ያመሰግናታል",
+            "ውዳሴ ማርያም አባ ሕርያቆስ \n      ››      ምስጋና ያደርሳል:\n      ››      የቅዳሴው ዜማ \n      ››      ልብን ይመስጣል:\n      ››      በጎ ነገር ልቤ \n      ››      አወጣ እያለ\n      ››      ዳዊት በገናውን \n      ››      እየደረደረ",
+            "ውዳሴ ማርያም የንጽሕናችን \n      ››      መሰረት ነሽና\n      ››      አንቺን ለማመስገን \n      ››      ልቦናዬ ይብራ\n      ››      ተፈስሒ ድንግል \n      ››      ኦ ቤተ ልሔም\n      ››      ካንቺ ተወለደ \n      ››      መድኃኒዓለም",
+            "ውዳሴ ማርያም ቅዱሳኑ ሁሉ \n      ››      ዙሪያሽን ከበዋል\n      ››      አባ ጊዮርጊስም \n      ››      ንዒ ድንግል ይላል\n      ››      በወርቅ ዙፋን ላይ \n      ››      ተቀምጠሽ ሳይሽ\n      ››      ልቤ ተሰወረ \n      ››      ድንግል በግርማሽ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "99",
       "Timestamp": 45842.5046924537,
       "Title": "ዐረገች በስብሐት",
       "singer": "ሌላ",
@@ -2215,7 +4672,7 @@
       }
     },
     {
-      "id": "48",
+      "id": "100",
       "Timestamp": 45842.49846231482,
       "Title": "ዕርገታ ውስተ ",
       "singer": "ሌላ",
@@ -2262,7 +4719,7 @@
       }
     },
     {
-      "id": "49",
+      "id": "101",
       "Timestamp": 45849.4908749537,
       "Title": "ዘይሃይድ ዓይነ",
       "singer": "ሌላ",
@@ -2309,7 +4766,101 @@
       }
     },
     {
-      "id": "50",
+      "id": "102",
+      "Timestamp": 45906.64780821759,
+      "Title": "የልቤን ሁሉ ",
+      "singer": "ዘማሪት ፋንቱ ወልዴ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የልቤን ሁሉ ለማን ላማክር \nእመቤቴ ሆይ ከአንቺ በቀር\nየደካማው ሰው መጠጊያ እኮ ነሽ \nሐዘን ጭንቀቴን የምረሳብሽ",
+          "verse": [
+            "ቅዱሳን አበው /አንቺን መረጡ /2/\nከሲኦል ዓለም ስላመለጡ\nፃድቅ በሥራው /ያኔ ሲድን/2/\nእጠራሻለሁ ድንግል አንቺን",
+            "የጭንቄ ደራሽ /አክኪሌ ነሽ/2/\nቂምበቀል አያውቅ የዋህ ልብሽ\nልቤ ለፍቅርሽ /ሰፊ ስፍራ አለው/2/\nበአዘንኩኝ ሠዓት እጠራሻለው",
+            "ዋሴ ነሽ ለእኔ /ድንግል እናቴ/2/\nስምሽ ጠበቀኝ ከልጅነቴ\nሁልጊዜ ለእኔ /በጎ አደረግሽልኝ/2/\nምን ልበል ለአንቺ ቃላት የለኝ",
+            "ለአዘንኩኝ ለእኔ /ደስታዬ ነሽ/2/\nያረጋጋሽኝ ፈጥነሽ ደርሰሽ\nስምሽ ኀጥአንን /የሚቀድስ/2/\nከሞት ወደ ሕይወት የሚመልስ ",
+            "የመንገዴስንቅ የረሃቤ መርሻ/2/ \nለታመመ ሰው ነሽ መፈወሻ\nየተማጸነ /በስምሽ አምኖ/2/\nማን አፍሮ ያውቃል አንቺን ለምኖ",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "103",
+      "Timestamp": 45906.63588592593,
+      "Title": "የመላእክት እህት",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "የመላእክት እህት የሰማእታት እናት የፃድቃን እመቤት /2/\nለምኚልን /2/ ከልጅሽ ማርያም ቅድስት \nለምኚልን /2/ ከልጅሽ ኪዳነ ምሕረት ",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "104",
       "Timestamp": 45842.72074181713,
       "Title": "የመላእክት እህት ",
       "singer": "ሌላ",
@@ -2356,7 +4907,149 @@
       }
     },
     {
-      "id": "51",
+      "id": "105",
+      "Timestamp": 45906.49180199074,
+      "Title": "የመላዕክት እህት ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "የመላዕክት እህት የሠማዕታት እናት የጻድቃን እመቤት /2/\nለምኝልን/2/ ከልጅሽ ማርያምቅድስት /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "106",
+      "Timestamp": 45906.630221099535,
+      "Title": "የሰራዊት ጌታ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "የሰራዊት ጌታ እግዚአብሔር በዚች ምድር ላይ ዘርን ባያስቀርልን /2/\r\nእንደሰዶም /3/ በሆን እንደገሞራ በመሰልን /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "107",
+      "Timestamp": 45902.6474771412,
+      "Title": "የብርሃን ጎርፍናት",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ተስፋዬ ኢዶ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የብርሃን ጎርፍናት ድንግል እናታችን \nከሰማይ እያበራች ደስአለው ልባችን\nፍቅርሽን ሰላምሽን ድኅነት ይሁነን\nፍጥረት በሙሉ/2/ፊትሽ ይወድቃሉ\n ጸጋሽ ይድረሰን/2/ ይስጠን እያሉ",
+          "verse": [
+            "የኔልብ ምን ጽድቅ አለው አንቺን ለማስተናገድ \nየኀጥያት ጎተራ ነው የተሞላ በስስት\nኧረ እንዴት/2/ ድንግል ትኑርበት\nአትፀየፍም የኔን ልብ ታሰናዳዋለች \nስለኀጢያቴ የኔ እናት ምልጃ ታቀርባለች",
+            "ልባቸውን የዘጉ ድንግልን ለማስገባት \nህሊናቸው ይመለስ እንጸልይ ለዚህ ጥፋት \nአምላክን ይዛነው ድንግልየምትመጣው\nእርሷን ስንመልስ ጌታን ነው የምናስቀይመው",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "108",
       "Timestamp": 45842.633102499996,
       "Title": "የአምላክ እናት  ",
       "singer": "ሌላ",
@@ -2403,7 +5096,7 @@
       }
     },
     {
-      "id": "52",
+      "id": "109",
       "Timestamp": 45849.49465771991,
       "Title": "የእሥራኤል ንግሥት",
       "singer": "ሌላ",
@@ -2450,7 +5143,7 @@
       }
     },
     {
-      "id": "53",
+      "id": "110",
       "Timestamp": 45849.49226141204,
       "Title": "የኪዳን ጽላት",
       "singer": "ሌላ",
@@ -2497,7 +5190,244 @@
       }
     },
     {
-      "id": "54",
+      "id": "111",
+      "Timestamp": 45902.66234675926,
+      "Title": "የያሬድ ውብ ዜማ       ",
+      "singer": "ዘማሪ ቀሲስ ምንዳዬ ብርሃኑ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የያሬድ ውብ ዜማ ድንግል እመቤቴ ስጦታዬ ነሽ /2/\nበምን አንደበቴ እንዴትስ ባለ ቃል ማርያም ልበልሽ /2/\n",
+          "verse": [
+            "ምድርና ሰማዩ ተአምርሽን ይንገሩ\nፍጥረታት በሙሉ ስለ አንቺ ይመስክሩ \nተነግሮ የማያልቅ ድንቅ ነው ሥራሽ \nድንግል ሆይ እናቴ አምሳያም የለሽ\nማርያም ድንግል እረዳቴ\nየምትደርሽልኝ ነይ ስልሽ በጭንቀቴ\nተአምርሽን በዓይኔ አይቻለሁ\nጽዮን ሆይ ስልሽ ድንግል ሆይ እጠግባለሁ\n",
+            "የእግዚአብሔር ጥበቡ ባንቺ ተገለጠ \nየአዳም ዘር በሙሉ ከሞት አመለጠ \nየመዳን ምክንያት ማርያም አንቺ ነሽ \nለፍጥረቱ ሁሉ መሰላል የሆንሽ                                         \nነገን ባላውቅ እኔንም ቢያስፈራኝ\nአንቺ ካለሽልኝ በፍፁም አልወድቅም \nበፊትሽ እንድቆም ለምስጋና\nማርያም ልበልሽ በትህትና\n",
+            "ትውልዱ በሙሉ ለምስጋና ይቁም \nበንቺ ስለሆነ የቀረለት መርገም\nአዳም ከነልጁ በሰማይ በምድር\nማርያም/2/ ይበል ተዓምርሽን ይናገር\nጨለማውም ከፊቴ ተገፈፈ\nማርያም በምልጃሽ ልቤ አረፈ\nከጎኔ ነሽ ስልሽ እጽናናለሁ\nእሳት ገደሉን ሁሉንም አልፈዋለሁ\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "112",
+      "Timestamp": 45906.4869187963,
+      "Title": "የጠሩሽ አንቺን ተማጽነው ",
+      "singer": "ሌላ",
+      "singerOther": "ተምሮ ማስተማር ሰንበት ት/ቤት",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የጠሩሽ አንቺን ተማጽነው የዳኑብሽ \nየበላዔ ሰብዕ እመቤት የአምላክ እናት \nድንግል አዛኝት ማርያም ቅድስት /2/",
+          "verse": [
+            "በቃል ኪዳንሽ ብዙዎች ድነዋል \nበምልጃሽም ጽድቅን አግኝተዋል\nየአምላክ ቸርነቱን አይተዋል /2/",
+            "የእሳት ባህር በአንቺ ተሻግረዋል\nየሰይጣንን ጾር በአንቺ ድል ነስተዋል \nለሰማያዊው ክብር በቅተዋል/2/",
+            "ነፍሳቸው ም ጽድቅን አግኝታለች\nሕይወታቸውም በአንቺ ትድናለች \nድንግል ሆይ አትጣይን ትላለች /2/",
+            "እኔም በአንቺ እታመናለሁ\nየአምላክ እናት አሳስቢ እላለሁ \nበአማላጅነትሽ እድናለሁ /2/",
+            "እኛም በአንቺ እንታመናለን\nየአምላክ እናት አሳስቢ እንላለን \nበአማላጅነትሽ እንድናለን /2/\t",
+            "ምዕመናንም በአንቺ ይታመናሉ\nየአምክ እናት አሳስቢን ይላሉ\nበአማላጅነትሽ ይድናል /2/ ",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "113",
+      "Timestamp": 45902.64917747685,
+      "Title": "የጽድቅ በር ነሽ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ዳግማዊ ደርቤ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የጽድቅ በር ነሽ የሙሴ ጽላት \nአክሊለ ሰማዕታት ምዕራገ ጸሎት \nየጌታዬ እናት ንጹህ አክሊላችን\nሐመልማለ ሲና እመቤታችን/2/",
+          "verse": [
+            "እመቤታችን የእኛ ምርኩዝ ነሽ \n      ››     ከለላም ሆንሽን              \n      ››     የእሳት ሙዳይ              \n      ››     እሳት ታቀፍሽ             \n      ››     በብርሃን ተከበሽ             \n      ››     ወርቅ ለብሰሽ     \n      ››     ከሴቶች ሁሉ                  \n      ››     አብ መረጠሽ ",
+            "እመቤታችን ድንግል ሆይ ልጆችሽ \n      ››     ዘወትር ይጠሩሻል\n      ››     ስምሽን ለልጅ ልጅ                               \n      ››     ያሳስቡልሻል\n      ››     በተሰጠሽ ጸጋ              \n      ››     በአማላጅነትሽ\n      ››     ምሕረትን አሰጭን        \n      ››     ከመሐሪው ልጅሽ ",
+            "እመቤታችን ያልታረሰች እርሻ\n  ››       ዘር ያልተዘራባት\n  ››       የሕይወትን ፍሬ         \n  ››       ሰጠችን የእኛ እናት\n  ››       የታረደው መሲህ       \n  ››       እናቱን ወደዳት\n  ››       በቀኙ ቆማለች         \n  ››       ድንግል እመቤት ናት \n",
+            "እመቤታችን የእውነት ደመና  \n  ››       ዝናብ የታየባት                                 \n  ››       ወዳናለች ድንግል          \n  ››       የታተመች ገነት\n  ››       ክብር ለሆነችው           \n  ››       ኑ እንዘምርላት\n  ››       ደስ ይበልሽ እንበል         \n  ››       የብርሃን እናት",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "114",
+      "Timestamp": 45906.661741840275,
+      "Title": "የፍቅር እናት የሰላም ",
+      "singer": "ሊቀ መዘምራን ቴዎድሮስ ዮሴፍ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "የፍቅር እናት የሰላም /2/\nይናፍቀኛል ስምሽን ሳልጠራው ስቀር ማርያም ",
+          "verse": [
+            "በሕይወቴ ውስጥ በኑሮዬ                                 \nቅደሚ ከፊት ከኋላዬ                                 \nተደላደለ ልቤ                          \n አንቺ አለሽና ከአጠገቤ",
+            "ምኞቴም ይስመር ድብቅ ህልሜ\nልለፍ ወጀቡን ተቋቁሜ\nየጌታዬ እናት ነሽ\nኃይልን ያደርጋል ጸሎትሽ",
+            "እንዴት እቀራለሁ ከመንገዴ                              \nአደራ እናቴ አስቢኝ                               \nለሚያስጨንቀኝ ጠላት                              \nለሚያሳድደኝ አትስጪኝ",
+            "ትላንትም ዛሬም አመስጋኝ ነኝ\nየለም ለነገ የሚያስፈራኝ\nሜዳ ይሆናል ተራራው\nልጅሽ ስላለ ከኔ ጋራ",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "115",
+      "Timestamp": 45906.65263872685,
+      "Title": "ያዕቆብ ከቤርሳቤህ ",
+      "singer": "ሊቀ መዘምራን ይልማ ኃይሉ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ያዕቆብ ከቤርሳቤህ ወደ ካራን ሲሄድ\nየለውም ነበረ አማካሪ ዘመድ\nፀሐይ ጠልቃ ነበር ከዚያ እንደደረሰ\nከእራሱም በታች ድንጋይ ተንተራሰ",
+          "verse": [
+            "ህልምንም ዓለመ ታላቁን ራዕይ\nመሰላል ተተክሎ ከምድር እስከ ሰማይ \nሲወጡ ሲወርዱ መላዕክት በእርሷ ላይ\nእግዚአብሔርም ቆሞ ከላይ ከጫፏ ላይ",
+            "የአባቶችህ አምላክ እኔ እግዚአብሔር ነኝ\nይህን ምድር ለርስትህ እሰጥሃለሁኝ\nዘርህ እንደ አሸዋ በምድር ይበዛል \nበአራቱም ማዕዘን ህዝብህም ይሆናል",
+            "አበው በምሳሌ እንደተናገሩት\nከምድር እስከ ሰማይ አምላክ የዘረጋት\nበላይዋ ተቀምጦ በግልፅ የታየባት \nየያዕቆብ መሰላል እመቤታችን ናት",
+            "ሰማይና ምድር የሚታረቁባት\nወልደ እጓለእምህያው የተወለደባት\nመላእክት ከሰማይ በአንድ የዘመሩላት \nታላቋ መሰላል እመቤታችን ናት",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "116",
       "Timestamp": 45842.50819447917,
       "Title": "ይቀበነ",
       "singer": "ሌላ",
@@ -2544,7 +5474,101 @@
       }
     },
     {
-      "id": "55",
+      "id": "117",
+      "Timestamp": 45906.62975989583,
+      "Title": "ይዌድስዋ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ይዌድስዋ /መላዕክት /2/ ለማርያም /2/\nበውስተ ውሳጤ መንጦላዕት ወይብልዋ በሐኪ ማርያም ሐዳስዩ ጣዕዋ /2/",
+          "translation": "መላእክት ማርያምን በመጋረጃ ውስጥ ያመሰግኗታል፤አዲሲቷ እንቦሳ ማርያም ሰላምታ ይገባሻል ይሏታል"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "118",
+      "Timestamp": 45906.501103055554,
+      "Title": "ድንግል ማርያም እናታችን ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ድንግል ማርያም እናታችን /2/\nየጌታችን እናት ለምኝልን ለእኛ\nየአማኑኤል እናት ለምኝልን ለእኛ",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "119",
       "Timestamp": 45825.039828043984,
       "Title": "ድንግል እመቤቴ",
       "singer": "ሌላ",
@@ -2591,7 +5615,102 @@
       }
     },
     {
-      "id": "56",
+      "id": "120",
+      "Timestamp": 45902.65525497685,
+      "Title": "ድንግል እመቤቴ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ድንግል እመቤቴ የሕይወቴ ረዳት\nየኑሮዬ ጣዕም ዋልታ መሠረት \nእለምንሻለሁ /2/ ፍፁም በረከት /2/",
+          "verse": [
+            "ትህትናሽ ሲታሰብ ድንግል እመቤቴ\nበሰዋች ልቦና ድንግል እመቤቴ\nግርምትን ይፈጥራል /2/ ልብ ይመስጥና\nፅዮን መጠጊያ ነሽ ድንግል እመቤቴ\nየአብርሃም ድንኳን ድንግል እመቤቴ\nየታጠረች ተክል /2/ እመብዙሃን /2/",
+            "ከሚካኤል ጋራ ድንግል እመቤቴ\nፈጥነሽ ድረሺልኝ ድንግል እመቤቴ\nቅዱስ ገብርኤል ይምጣ /2/ ክብርሽን ያብስረኝ\nከድንግል ጋር ሆነህ ድንግል እመቤቴ\nዑራኤል ፈጥነህ ና ድንግል እመቤቴ\nሩፋኤል ራጉኤል /2/ ንዑ በደመና",
+            "በደማችን ሰርጿል ድንግል እመቤቴ\nፍቅሯ የማርያም ድንግል እመቤቴ\nምስክር ነን እኛ /2/ እስከ ዘላለም\nበአባቶችሽ ፈንታ ድንግል እመቤቴ\nልጆች ስላለን ድንግል እመቤቴ\nስምሽን ለልጅ ልጅ /2/ እንዘክራለን\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "121",
+      "Timestamp": 45902.65698270833,
+      "Title": "ድንግል እመቤቴ",
+      "singer": "ሌላ",
+      "singerOther": "ዘማሪ ታድዮስ ግርማ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": false,
+        "shortLyrics": {
+          "lyrics": "",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "ድንግል እመቤቴ የሕይወቴ ረዳት\n የኑሮዬ ጣዕም ዋልታ መሰረት\nእለምንሻለሁ/2/ ፍጹም በረከት",
+          "verse": [
+            "ትህትናሽ ሲታሰብ ድንግል እመቤቴ \nበሰዎች ልቦና ድንግልእመቤቴ\nግርምትን ይፈጥራል/2/ ልብ ይመስጥና\nጽዮን መጠጊያ ነሽ ድንግል እመቤቴ              \nየአብርሃም ድንኳን ድንግል እመቤቴ\nየታጠረች ተክል/2/እመብዙሃን\n",
+            "ከሚካኤል ጋራ ድንግል እመቤቴ \nፈጥነሽ ድረሽልኝ ድንግል እመቤቴ\nቅዱስ ገብርኤል ይምጣ/2/ክብርሽን ያብስረን\nከድንግል ጋር ሆነህ ድንግል እመቤቴ\n ኡራኤል ፈጥነህና ድንግል እመቤቴ\nሩፋኤል ራጉኤል/2/ንኡ በደመና\n",
+            "በደማችን ሰርጿል ድንግል እመቤቴ                          \nፍቅርዋ የማርያም ድንግል እመቤቴ\nምስክር ነን እኛ/2/እስከ ዘለዓለም                       \n በአባቶች ፋንታ ድንግል እመቤቴ                         \nልጆች ስላለን ድንግልእመቤቴ\nስምሽን ለልጅ ልጅ/2/ እንዘክራለን\n",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "122",
       "Timestamp": 45824.931337118054,
       "Title": "ድንግል የዚያን ጊዜ",
       "singer": "ሌላ",
@@ -2639,7 +5758,7 @@
       }
     },
     {
-      "id": "57",
+      "id": "123",
       "Timestamp": 45842.505935127316,
       "Title": "ጴጥሮስ ወጳውሎስ ",
       "singer": "ሌላ",
@@ -2686,7 +5805,7 @@
       }
     },
     {
-      "id": "58",
+      "id": "124",
       "Timestamp": 45849.67050636574,
       "Title": "ጸምር ጸዓዳ",
       "singer": "ማሕበረ ቅዱሳን",
@@ -2733,7 +5852,7 @@
       }
     },
     {
-      "id": "59",
+      "id": "125",
       "Timestamp": 45849.67146809028,
       "Title": "ጸምር ጸዓዳ 2",
       "singer": "ሌላ",
@@ -2780,7 +5899,7 @@
       }
     },
     {
-      "id": "60",
+      "id": "126",
       "Timestamp": 45849.47803650463,
       "Title": "ጽላት ዘሙሴ",
       "singer": "ሌላ",
@@ -2827,7 +5946,7 @@
       }
     },
     {
-      "id": "61",
+      "id": "127",
       "Timestamp": 45849.497040312504,
       "Title": "ጽላት ዘሙሴ ጽላት",
       "singer": "ሌላ",
@@ -2874,7 +5993,7 @@
       }
     },
     {
-      "id": "62",
+      "id": "128",
       "Timestamp": 45842.63223953704,
       "Title": "ፀሐየ ጽድቅ ",
       "singer": "ሌላ",
@@ -2902,6 +6021,194 @@
         "shortLyrics": {
           "lyrics": "ፀሐየ ጽድቅ ፀሐየ ጽድቅ /2/\nኪዳንኪ /2/ ዘኢየኀልቅ /2/",
           "translation": "የጽድቅ ፀሐይ የማያልቅ ኪዳንሽ ነው\n"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "129",
+      "Timestamp": 45906.70365696759,
+      "Title": "አንቲ ምስራቅ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": true,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ክነፈ ርግብ በብሩር ዘግቡር ወገበዋቲሃኒ ሐመልማለ ወርቅ /2/ \nአንቲ ምሥራቅ ወወልድኪ ፀሐየ ጽድቅ አማን በአማን /3/ ኢይኃልቅ ኪዳንኪ ወላዲተ አምላክ /2/ ",
+          "translation": "እንደ ርግብ ክንፍ በብርም እንደተሠራ ጎኖችሽም የወርቅ ሐመልማል /2/ \nአንቺ ምሥራቅ ነሽ ልጅሽም የጽድቅ ፀሐይ ነው እውነት በእውነት /3/ አያልቅም ቃል ኪዳንሽ የአምላክ እናት /2/"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "130",
+      "Timestamp": 45906.70787158565,
+      "Title": "አመ ወርኀ ነጊድ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": true,
+        "Nehase": false,
+        "Mesgana": false
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "አመ ወርኀ ነጊድ የኃልቅ ወይጸራዕ ሤጥ/2/\nበገጸ ፈጣሪ ቤዛ የረኩነነ ኪዳነኪ /2/",
+          "translation": ""
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "131",
+      "Timestamp": 45906.715093923616,
+      "Title": "ተጋብኡ በቅጽበት ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ተጋብኡ በቅጽበት ለግንዘተ እሙ ቅድስት /2/\nብጹአን /5/ ሐዋርያት /2/",
+          "translation": "ቅድስት እናቱን ለመገነዝ ብጹአን ሐዋርያት በቅጽበት ተሰበሰቡ"
+        },
+        "longLyrics": {
+          "chorus": "",
+          "verse": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "id": "132",
+      "Timestamp": 45906.71559665509,
+      "Title": "ጊዜ እረፍታ ",
+      "singer": "ሌላ",
+      "about": [],
+      "minor_holidays": [],
+      "main_holidays": [],
+      "angels": [],
+      "Trinity_Song": {
+        "Tir": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "St_Mary_Song": {
+        "Yekatit": false,
+        "Nehase": false,
+        "Mesgana": true
+      },
+      "K_Gebriel_Song": {
+        "Tahsas": false,
+        "Hamle": false,
+        "Mesgana": false
+      },
+      "songLyrics": {
+        "isShortSong": true,
+        "shortLyrics": {
+          "lyrics": "ጊዜ እረፍታ /2/ ለሶልያና /2/\nወረደ ወልድ /4/ ወልድ እም ዲበ ልዕልና /2/",
+          "translation": "በማርያም ረፍት ጊዜ ወልድ ከሰማይ ወረደ"
         },
         "longLyrics": {
           "chorus": "",
