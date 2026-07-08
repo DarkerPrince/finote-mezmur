@@ -353,9 +353,9 @@ class _ListPageState extends State<ListPage>
                   ),
                 ),
                 Divider(),
-                _selectedMezmur.songLyrics.isShortSong
-                    ? ShortMezmur(_selectedMezmur.songLyrics.shortLyrics)
-                    : LongMezmur(_selectedMezmur.songLyrics.longLyrics),
+                _selectedMezmur.lyric.isShortSong
+                    ? ShortMezmur(_selectedMezmur.lyric)
+                    : LongMezmur(_selectedMezmur.lyric),
               ],
             ),
           );
@@ -364,16 +364,16 @@ class _ListPageState extends State<ListPage>
     );
   }
 
-  ShortMezmur(ShortLyrics shortMezmurLyrics) {
+  ShortMezmur(Lyric shortMezmurLyrics) {
     return Column(
       children: [
-        DisplayVerse(shortMezmurLyrics.lyrics ?? ""),
+        DisplayVerse(shortMezmurLyrics.chorus ?? ""),
         TranslationDisplay(shortMezmurLyrics.translation ?? "")
       ],
     );
   }
 
-  LongMezmur(LongLyrics longMezmurLyrics) {
+  LongMezmur(Lyric longMezmurLyrics) {
     return Column(children: [
       Container(
         padding: EdgeInsets.all(12),
@@ -460,8 +460,8 @@ class _ListPageState extends State<ListPage>
             text: singerText,
             style: const TextStyle(fontSize: 12, color: Colors.grey),
           ),
-          item.songLyrics.isShortSong
-              ? isoneLongShortSongs(item.songLyrics.shortLyrics.lyrics!.length)
+          item.songLyrics.verse.isEmpty
+              ? isoneLongShortSongs(item.songLyrics.verse!.length)
                   ? WidgetSpan(child: Text(""))
                   : WidgetSpan(
                       alignment: PlaceholderAlignment.middle,

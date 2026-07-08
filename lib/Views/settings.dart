@@ -1,9 +1,24 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'dart:convert';
+import 'package:finotemezmur/Views/fetchedMezmurs.dart';
+import 'package:finotemezmur/function/GraphqlClient.dart';
+import 'package:finotemezmur/function/query_mutation.dart';
+import 'package:finotemezmur/function/update_Fetch_files.dart';
+import 'package:flutter/services.dart';
+import 'package:graphql_flutter/graphql_flutter.dart';
+import 'package:path_provider/path_provider.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Views/webView.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+
+
 
 class SettingsPage extends StatefulWidget {
   final bool isDarkMode;
@@ -18,11 +33,55 @@ class SettingsPage extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsPage> {
   String _version = 'Loading...';
+  List<dynamic> fetchedMezmurs = [];
+
+
   @override
   void initState() {
     super.initState();
     _getAppVersion();
   }
+
+  final Map<String, String> queriesToFiles = {
+    'K_Gebriel_Song': fetchMezmursQuery,
+    'St_Mary_Song': fetchMezmursQuery,
+    'Trinity_Song': fetchMezmursQuery,
+    'Angel': fetchMezmursQuery,
+    'Holidays': fetchMezmursQuery,
+  };
+
+  Future<void> fetchAndStoreAllCategories() async {
+    final client = getClient();
+    final directory = await getApplicationDocumentsDirectory();
+    print('The Files are starting to Be created fetched and Stored updated');
+    for (var entry in queriesToFiles.entries) {
+      final fileName = entry.key;
+      final query = entry.value;
+      print('The File $fileName is starting to Be created and updated');
+      final result = await client.query(
+        QueryOptions(document: gql(query)),
+      );
+
+      if (result.hasException) {
+        print('GraphQL Error for $fileName: ${result.exception.toString()}');
+        continue; // skip this file and go to next
+      }
+
+      final data = result.data?['finote_mezmur']; // adjust key if query returns differently
+      if (data == null || data.isEmpty) {
+        print('No data for $fileName');
+        continue;
+      }
+
+      final file = File('${directory.path}/$fileName.json');
+      await file.writeAsString(jsonEncode(data));
+
+      print('$fileName saved at ${file.path}');
+    }
+  }
+
+
+
   void launchInBrowser(String url) async {
     final Uri uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
@@ -111,6 +170,8 @@ class _SettingsScreenState extends State<SettingsPage> {
               ],
             ),
             SizedBox(height: 24),
+
+
             ListTile(
               title: Text('Dark Mode'),
               trailing: Switch(
@@ -137,6 +198,16 @@ class _SettingsScreenState extends State<SettingsPage> {
                   title: Text("Version"),
                   leading: Icon(Icons.touch_app_outlined,),
                   subtitle: Text("$_version"),
+                  trailing:  ElevatedButton(
+                    onPressed: () async {
+                      await fetchAndStoreAllCategories();
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('Mezmurs fetched and stored!')),
+                      );
+                    },
+                    child: Text('Fetch Mezmurs'),
+                  ),
+
                   // trailing: Icon(Icons.download),
                   // onTap: (){
                   //   showDialog(
@@ -162,10 +233,48 @@ class _SettingsScreenState extends State<SettingsPage> {
                   // },
                 ),
               ),
-              SizedBox(height: 80),
+            ElevatedButton(onPressed: () async {
+              _showMezmursBottomSheet();
+            }, child: Text("View Mezmur")),
+
+            SizedBox(height: 80),
+
           ],
         ),
       ),
     );
   }
+
+  void _showMezmursBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true, // to make it taller
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return FetchFilesPage();
+
+        // return Container(
+        //   padding: EdgeInsets.all(16),
+        //   height: MediaQuery.of(context).size.height * 0.7, // 70% of screen
+        //   child: fetchedMezmurs.isEmpty
+        //       ? Center(child: Text('No mezmurs fetched yet'))
+        //       : ListView.builder(
+        //     itemCount: fetchedMezmurs.length,
+        //     itemBuilder: (context, index) {
+        //       final mezmur = fetchedMezmurs[index];
+        //       return ListTile(
+        //         title: Text(mezmur['title'] ?? 'No title'),
+        //         subtitle: Text('ID: ${mezmur['id'] ?? 'N/A'}'),
+        //       );
+        //     },
+        //   ),
+        // );
+      },
+    );
+  }
+
+
+
 }

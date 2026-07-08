@@ -118,7 +118,7 @@ class MezmurTagWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final collected = _collectTexts();
-    final songLyrics = mezmur.songLyrics;
+    final songLyrics = mezmur.lyric;
 
       if (collected.isNotEmpty){
        return Wrap(

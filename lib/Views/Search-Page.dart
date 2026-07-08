@@ -1,3 +1,4 @@
+import 'package:finotemezmur/Model/Lyrics.dart';
 import 'package:finotemezmur/Views/MezmurTagWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:finotemezmur/Model/mezmur.dart';
@@ -77,20 +78,20 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
     for (final mezmur in _allMezmur) {
       final title = mezmur.title?.toLowerCase() ?? '';
       final singer = mezmur.singer?.toLowerCase() ?? '';
-      final shortLyrics = mezmur.songLyrics.shortLyrics.lyrics?.toLowerCase() ?? '';
-      final chorus = mezmur.songLyrics.longLyrics.chorus?.toLowerCase() ?? '';
-      final verses = mezmur.songLyrics.longLyrics.verse ?? [];
+      final shortLyrics = mezmur.songLyrics.verse?.toLowerCase() ?? '';
+      final chorus = mezmur.songLyrics.chorus?.toLowerCase() ?? '';
+      final verses = mezmur.songLyrics.verse ?? [];
       final otherSinger = mezmur.singerOther?.toLowerCase() ?? '';
 
       String? matchedLine;
 
       if (title.contains(lowerQuery)) matchedLine = mezmur.title;
       else if (singer.contains(lowerQuery)) matchedLine = mezmur.singer;
-      else if (shortLyrics.contains(lowerQuery)) matchedLine = mezmur.songLyrics.shortLyrics.lyrics;
-      else if (chorus.contains(lowerQuery)) matchedLine = mezmur.songLyrics.longLyrics.chorus;
+      else if (shortLyrics.contains(lowerQuery)) matchedLine = mezmur.songLyrics.verse;
+      else if (chorus.contains(lowerQuery)) matchedLine = mezmur.songLyrics.chorus;
       else if (otherSinger.contains(lowerQuery)) matchedLine = mezmur.singerOther;
       else {
-        for (final line in verses) {
+        for (final line in mezmur.songLyrics.verse) {
           if (line.toLowerCase().contains(lowerQuery)) {
             matchedLine = line;
             break;
@@ -160,7 +161,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
 
   SingerInfoDisplay(Mezmur item) {
     String singerText = item.singer == "ሌላ"
-        ? (item.singerOther ?? "-")
+        ? (item.singer ?? "-")
         : (item.singer ?? "--");
 
     return RichText(
@@ -172,7 +173,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
               fontSize: 12,
             ),
           ),
-          item.songLyrics.isShortSong ? WidgetSpan(
+          item.lyric.isShortSong ? WidgetSpan(
             alignment: PlaceholderAlignment.middle,
             child: Padding(
               padding: const EdgeInsets.only(left: 4),
@@ -285,9 +286,9 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
                   ),
                 ),
                 Divider(),
-                _selectedMezmur!.songLyrics.isShortSong
-                    ? ShortMezmur(_selectedMezmur!.songLyrics.shortLyrics)
-                    : LongMezmur(_selectedMezmur!.songLyrics.longLyrics),
+                _selectedMezmur!.lyric.isShortSong
+                    ? ShortMezmur(_selectedMezmur!.lyric)
+                    : LongMezmur(_selectedMezmur!.lyric),
               ],
             ),
           );
@@ -342,16 +343,16 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
     );
   }
 
-  ShortMezmur(ShortLyrics shortMezmurLyrics) {
+  ShortMezmur(Lyric shortMezmurLyrics) {
     return Column(
       children: [
-        DisplayVerse(shortMezmurLyrics.lyrics ?? ""),
-        TranslationDisplay(shortMezmurLyrics.translation ?? "")
+        DisplayVerse(shortMezmurLyrics.chorus.first ?? ""),
+        TranslationDisplay(shortMezmurLyrics.translation.first ?? "")
       ],
     );
   }
 
-  LongMezmur(LongLyrics longMezmurLyrics) {
+  LongMezmur(Lyric longMezmurLyrics) {
     return Column(
         children: [
           Container(
@@ -361,7 +362,7 @@ class _SearchMezmurPageState extends State<SearchMezmurPage> {
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.yellow.withOpacity(0.1)
                 : Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text(longMezmurLyrics.chorus ??"አዝ",
+            child: Text(longMezmurLyrics.chorus.first ??"አዝ",
                 textAlign: TextAlign.center,
                 softWrap: true,
                 style: TextStyle(

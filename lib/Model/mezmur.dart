@@ -1,80 +1,57 @@
 import 'package:finotemezmur/Model/Lyrics.dart';
 
 class Mezmur {
+  final List<String> kGebrielSong;
+  final List<String> stMarySong;
+  final List<String> trinitySong;
+
+  final String? audioLink;
+  final String? genre;
   final String id;
-  final String title;
-  // final String? major;
+  final bool? isRepentanceSong;
+  final bool? isShortSong;
+  final int mezmurRefNumber;
+
+  final Lyric lyric;
 
   final String? singer;
-  final String? singerOther;
-  final String? repentanceSong;
-  final String? others;
-  final List<String> about;
-  final List<String> angels;
-  final List<String> mainHolidays;
-  final List<String> minorHolidays;
-  final SongLyrics songLyrics;
-  final Map<String, bool> trinitySong;
-  final Map<String, bool> stMarySong;
-  final Map<String, bool> kGebrielSong;
+  final String? special;
+  final String title;
+  final String? youtubeLink;
 
   Mezmur({
-    required this.id,
-    required this.title,
-    // required this.major,
-    required this.repentanceSong,
-    required this.singer,
-    required this.singerOther,
-    required this.others,
-    required this.about,
-    required this.angels,
-    required this.mainHolidays,
-    required this.minorHolidays,
-    required this.songLyrics,
-    required this.trinitySong,
-    required this.stMarySong,
     required this.kGebrielSong,
+    required this.stMarySong,
+    required this.trinitySong,
+    required this.audioLink,
+    required this.genre,
+    required this.id,
+    required this.isRepentanceSong,
+    required this.isShortSong,
+    required this.mezmurRefNumber,
+    required this.lyric,
+    required this.singer,
+    required this.special,
+    required this.title,
+    required this.youtubeLink,
   });
 
   factory Mezmur.fromJson(Map<String, dynamic> json) {
     return Mezmur(
-      id: json['id'],
-      title: json['Title']??"",
-      // major: json['major'],
-      singer: json['singer']??"",
-      singerOther: json['singerOther']??"",
-      repentanceSong: json['repentanceSong'],
-      others: json['others']??"",
-      about: List<String>.from(json['about'] ?? []),
-      angels: List<String>.from(json['angels'] ?? []),
-      mainHolidays: List<String>.from(json['main_holidays'] ?? []),
-      minorHolidays: List<String>.from(json['minor_holidays'] ?? []),
-      songLyrics: SongLyrics.fromJson(json['songLyrics']),
-      trinitySong: Map<String, bool>.from(json['Trinity_Song'] ?? {}),
-      stMarySong: Map<String, bool>.from(json['St_Mary_Song'] ?? {}),
-      kGebrielSong: Map<String, bool>.from(json['K_Gebriel_Song'] ?? {}),
+      kGebrielSong: List<String>.from(json["K_Gebriel_Song"] ?? []),
+      stMarySong: List<String>.from(json["St_Mary_Song"] ?? []),
+      trinitySong: List<String>.from(json["Trinity_Song"] ?? []),
+      audioLink: json["audio_link"],
+      genre: json["genre"],
+      id: json["id"],
+      isRepentanceSong: json["isRepentanceSong"],
+      isShortSong: json["isShortSong"],
+      mezmurRefNumber: json["mezmur_ref_number"],
+      lyric: Lyric.fromJson(json["lyric"]),
+      singer: json["singer"],
+      special: json["special"],
+      title: json["title"],
+      youtubeLink: json["youtube_link"],
     );
   }
-
-  @override
-  String toString() {
-    return 'Mezmur('
-        'id: $id, '
-        'title: $title, '
-        'singer: $singer, '
-        'singerOther: $singerOther, '
-        'repentanceSong: $repentanceSong, '
-        'others: $others, '
-        'about: ${about.join(", ")}, '
-        'angels: ${angels.join(", ")}, '
-        'mainHolidays: ${mainHolidays.join(", ")}, '
-        'minorHolidays: ${minorHolidays.join(", ")}, '
-        'songLyrics: ${songLyrics.toString()}, '
-        'trinitySong: $trinitySong, '
-        'stMarySong: $stMarySong, '
-        'kGebrielSong: $kGebrielSong'
-        ')';
-  }
-
-
 }
